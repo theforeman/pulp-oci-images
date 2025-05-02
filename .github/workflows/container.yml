@@ -1,0 +1,28 @@
+name: Container build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.ref_name }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  container:
+    name: ${{ matrix.container }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container:
+          - pulpcore
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ${{ matrix.container }} container
+        run: make build

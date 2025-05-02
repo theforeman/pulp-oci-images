@@ -1,0 +1,10 @@
+FROM quay.io/centos/centos:stream9
+
+RUN dnf -y update && \
+    dnf clean all
+
+RUN dnf -y --nodocs --setopt install_weak_deps=False install \
+    https://stagingyum.theforeman.org/pulpcore/nightly/el9/x86_64/pulpcore-repos-3.73-0.1.nightly.el9.noarch.rpm -y && \
+    dnf -y --nodocs --setopt install_weak_deps=False install \
+    python3.12-pulpcore python3.12-pulp-rpm python3.12-pulp-ostree python3.12-pulp-container python3.12-pulp-python python3.12-pulp_manifest python3.12-pulp-glue python3.12-pulp-glue-deb -y && \
+    dnf clean all
