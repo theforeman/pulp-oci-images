@@ -1,6 +1,6 @@
 # Pulp Container Images
 
-The [pulpcore-oci-images](https://github.com/theforeman/pulpcore-oci-images) repository is used to provide a Pulp container image configured for the Foreman project's use case.
+This repository provides Pulp container images for the Foreman project's use case.
 
 Note that OCI stands for "Open Container Initiative", see [here](https://opencontainers.org/).
 
