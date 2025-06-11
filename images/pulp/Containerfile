@@ -1,4 +1,4 @@
-ARG VERSION=3.73
+ARG VERSION=nightly
 
 FROM quay.io/centos/centos:stream9
 
@@ -12,17 +12,12 @@ ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
 
 RUN dnf -y update && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
-    https://yum.theforeman.org/pulpcore/${VERSION}/el9/x86_64/pulpcore-repos-${VERSION}-0.1.nightly.el9.noarch.rpm && \
+    https://yum.theforeman.org/pulpcore/${VERSION}/el9/$(uname -m)/pulpcore-release.rpm && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
     pulpcore \
     pulpcore-plugin\({ansible,container,deb,ostree,rpm,python}\) && \
     dnf clean all
 
-COPY assets/pulp-api /usr/bin/pulp-api
-RUN chmod +x /usr/bin/pulp-api
-
-COPY assets/pulp-content /usr/bin/pulp-content
-RUN chmod +x /usr/bin/pulp-content
-
-COPY assets/pulp-content /usr/bin/pulp-worker
-RUN chmod +x /usr/bin/pulp-worker
+COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
+COPY --chmod=0755 assets/pulp-content /usr/bin/pulp-content
+COPY --chmod=0755 assets/pulp-worker /usr/bin/pulp-worker
