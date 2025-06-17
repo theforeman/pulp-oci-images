@@ -1,10 +1,28 @@
+ARG VERSION=3.73
+
 FROM quay.io/centos/centos:stream9
 
+ARG VERSION
+
+ENV PULP_GUNICORN_TIMEOUT=${PULP_GUNICORN_TIMEOUT:-90}
+ENV PULP_API_WORKERS=${PULP_API_WORKERS:-2}
+ENV PULP_API_WORKERS_MAX_REQUESTS=${PULP_API_WORKERS_MAX_REQUESTS:-800}
+ENV PULP_API_WORKERS_MAX_REQUESTS_JITTER=${PULP_API_WORKERS_MAX_REQUESTS_JITTER:-100}
+ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
+
 RUN dnf -y update && \
+    dnf -y --nodocs --setopt install_weak_deps=False install \
+    https://yum.theforeman.org/pulpcore/${VERSION}/el9/x86_64/pulpcore-repos-${VERSION}-0.1.nightly.el9.noarch.rpm && \
+    dnf -y --nodocs --setopt install_weak_deps=False install \
+    pulpcore \
+    pulpcore-plugin\({ansible,container,deb,ostree,rpm,python}\) && \
     dnf clean all
 
-RUN dnf -y --nodocs --setopt install_weak_deps=False install \
-    https://stagingyum.theforeman.org/pulpcore/nightly/el9/x86_64/pulpcore-repos-3.73-0.1.nightly.el9.noarch.rpm -y && \
-    dnf -y --nodocs --setopt install_weak_deps=False install \
-    python3.12-pulpcore python3.12-pulp-rpm python3.12-pulp-ostree python3.12-pulp-container python3.12-pulp-python python3.12-pulp_manifest python3.12-pulp-glue python3.12-pulp-glue-deb -y && \
-    dnf clean all
+COPY assets/pulp-api /usr/bin/pulp-api
+RUN chmod +x /usr/bin/pulp-api
+
+COPY assets/pulp-content /usr/bin/pulp-content
+RUN chmod +x /usr/bin/pulp-content
+
+COPY assets/pulp-content /usr/bin/pulp-worker
+RUN chmod +x /usr/bin/pulp-worker
