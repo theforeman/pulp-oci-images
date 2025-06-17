@@ -1,0 +1,6 @@
+#!/bin/bash -eu
+
+exec /usr/bin/pulpcore-content \
+			--timeout "${PULP_GUNICORN_TIMEOUT}" \
+			--workers "${PULP_API_WORKERS}" \
+			--access-logfile -
