@@ -15,7 +15,7 @@ RUN dnf -y update && \
     https://yum.theforeman.org/pulpcore/${VERSION}/el9/$(uname -m)/pulpcore-release.rpm && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
     pulpcore \
-    pulpcore-plugin\({ansible,container,deb,ostree,rpm,python}\) && \
+    pulpcore-plugin\({ansible,container,deb,ostree,rpm,python,smart_proxy}\) && \
     dnf clean all
 
 COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
