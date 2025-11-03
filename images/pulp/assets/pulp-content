@@ -2,5 +2,5 @@
 
 exec /usr/bin/pulpcore-content \
 			--timeout "${PULP_GUNICORN_TIMEOUT}" \
-			--workers "${PULP_API_WORKERS}" \
+			--workers "${PULP_CONTENT_WORKERS}" \
 			--access-logfile -
