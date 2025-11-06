@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-for i in $(seq 1 ${PULP_WORKERS}); do
+for i in $(seq 1 $((PULP_WORKERS - 1))); do
     /usr/bin/pulpcore-worker &
 done
-wait
+exec /usr/bin/pulpcore-worker
