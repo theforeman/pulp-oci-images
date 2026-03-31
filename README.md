@@ -25,39 +25,42 @@ make push
 
 ## Development
 
-Edit `images/pulp-development/Containerfile` to specify the plugin versions you need:
-
-```dockerfile
-# Install specific plugin versions
-# Edit these versions as needed for your environment
-RUN pip install --upgrade pip && \
-    pip install \
-        pulpcore==3.105.1 \
-        pulp-ansible==0.29.6 \
-        pulp-container==2.27.3 \
-        pulp-rpm==3.35.2 \
-        pulp-ostree==2.6.0 \
-        pulp-python==3.27.0 \
-        pulp-deb==3.8.1 \
-        pulp-smart-proxy
-```
-
-The containerfile also contains commented lines for increaseing the maximum Pulpcore version.
-This is helpful for when pulp_smart_proxy isn't yet tested with a newer version of Pulpcore.
-
 ### How to Build
 
-To build the container image locally:
+Build with default versions (pulpcore 3.105.1):
+```bash
+PROJECT=pulp-development make build
+```
 
+Build with custom plugin versions:
+```bash
+PROJECT=pulp-development \
+VERSION=3.85 \
+PULPCORE_VERSION=3.85.13 \
+PULP_ANSIBLE_VERSION=0.28.5 \
+PULP_CONTAINER_VERSION=2.26.7 \
+PULP_RPM_VERSION=3.32.9 \
+PULP_OSTREE_VERSION=2.5.3 \
+PULP_PYTHON_VERSION=3.19.1 \
+PULP_DEB_VERSION=3.8.1 \
+make build
 ```
-PROJECT=pulp-development VERSION=3.105 make build
+
+### Version Compatibility
+
+For newer pulpcore versions that pulp-smart-proxy doesn't officially support yet:
+```bash
+PROJECT=pulp-development \
+PULPCORE_VERSION=3.105.1 \
+PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=true \
+make build
 ```
+
+This installs pulp-smart-proxy from source with version constraints relaxed.
 
 ### How to Release
 
-To push a new version of the container:
-
-```
+```bash
 PROJECT=pulp-development VERSION=3.105 make push
 ```
 
