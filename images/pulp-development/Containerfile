@@ -1,9 +1,8 @@
-ARG VERSION=3.105
+ARG VERSION=3.105.1
 FROM quay.io/pulp/pulp:${VERSION}
 
 # Re-declare ARG to make it available after FROM
-ARG VERSION=3.105
-ARG PULPCORE_VERSION=3.105.1
+ARG VERSION=3.105.1
 ARG PULP_ANSIBLE_VERSION=0.29.6
 ARG PULP_CONTAINER_VERSION=2.27.3
 ARG PULP_RPM_VERSION=3.35.2
@@ -11,9 +10,6 @@ ARG PULP_OSTREE_VERSION=2.6.0
 ARG PULP_PYTHON_VERSION=3.27.0
 ARG PULP_DEB_VERSION=3.8.1
 ARG PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=false
-
-# Install git and build dependencies
-#USER root
 
 ENV PULP_GUNICORN_TIMEOUT=${PULP_GUNICORN_TIMEOUT:-90}
 ENV PULP_API_WORKERS=${PULP_API_WORKERS:-2}
@@ -41,7 +37,7 @@ RUN pip install --upgrade pip && \
     if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
         echo "Installing Pulp plugins without pulp-smart-proxy (will install from source later)..."; \
         pip install \
-            pulpcore==${PULPCORE_VERSION} \
+            pulpcore==${VERSION} \
             pulp-ansible==${PULP_ANSIBLE_VERSION} \
             pulp-container==${PULP_CONTAINER_VERSION} \
             pulp-rpm==${PULP_RPM_VERSION} \
@@ -51,7 +47,7 @@ RUN pip install --upgrade pip && \
     else \
         echo "Installing Pulp plugins including pulp-smart-proxy from PyPI..."; \
         pip install \
-            pulpcore==${PULPCORE_VERSION} \
+            pulpcore==${VERSION} \
             pulp-ansible==${PULP_ANSIBLE_VERSION} \
             pulp-container==${PULP_CONTAINER_VERSION} \
             pulp-rpm==${PULP_RPM_VERSION} \
