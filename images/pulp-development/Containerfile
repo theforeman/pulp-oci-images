@@ -1,0 +1,88 @@
+ARG VERSION=3.105
+FROM quay.io/pulp/pulp:${VERSION}
+
+# Re-declare ARG to make it available after FROM
+ARG VERSION=3.105
+ARG PULPCORE_VERSION=3.105.1
+ARG PULP_ANSIBLE_VERSION=0.29.6
+ARG PULP_CONTAINER_VERSION=2.27.3
+ARG PULP_RPM_VERSION=3.35.2
+ARG PULP_OSTREE_VERSION=2.6.0
+ARG PULP_PYTHON_VERSION=3.27.0
+ARG PULP_DEB_VERSION=3.8.1
+
+# Install git and build dependencies
+#USER root
+
+ENV PULP_GUNICORN_TIMEOUT=${PULP_GUNICORN_TIMEOUT:-90}
+ENV PULP_API_WORKERS=${PULP_API_WORKERS:-2}
+ENV PULP_API_WORKERS_MAX_REQUESTS=${PULP_API_WORKERS_MAX_REQUESTS:-800}
+ENV PULP_API_WORKERS_MAX_REQUESTS_JITTER=${PULP_API_WORKERS_MAX_REQUESTS_JITTER:-100}
+ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
+
+RUN dnf install -y git gcc python3-devel sed unzip zip && dnf clean all
+
+# VERSION CONSTRAINT FIX
+#
+# Modify pulp-smart-proxy to allow pulpcore >= 3.105 by changing the version constraint
+# from "pulpcore>=3.49.0,<3.100" to "pulpcore>=3.49.0,<3.110"
+#
+# Uncomment if you need to loosen the upper bound before it's officially in the pulp_smart_proxy repo
+#
+# Clone pulp-smart-proxy plugin source code
+#RUN git clone https://github.com/theforeman/pulp_smart_proxy.git /tmp/pulp_smart_proxy && \
+#    cd /tmp/pulp_smart_proxy && \
+#    git checkout develop
+#
+# Update pyproject.toml
+#RUN cd /tmp/pulp_smart_proxy && \
+#    sed -i 's/"pulpcore>=3.49.0,<3.100"/"pulpcore>=3.49.0,<3.110"/' pyproject.toml && \
+#    echo "Modified version constraint:" && \
+#    grep pulpcore pyproject.toml
+
+# Install specific plugin versions
+# Edit these versions as needed for your environment
+RUN pip install --upgrade pip && \
+    pip install \
+        pulpcore==${PULPCORE_VERSION} \
+        pulp-ansible==${PULP_ANSIBLE_VERSION} \
+        pulp-container==${PULP_CONTAINER_VERSION} \
+        pulp-rpm==${PULP_RPM_VERSION} \
+        pulp-ostree==${PULP_OSTREE_VERSION} \
+        pulp-python==${PULP_PYTHON_VERSION} \
+        pulp-deb==${PULP_DEB_VERSION} \
+        pulp-smart-proxy
+
+# Build and install pulp-smart-proxy plugin when installing from source
+#RUN cd /tmp/pulp_smart_proxy && \
+#    pip install . && \
+#    rm -rf /tmp/pulp_smart_proxy
+
+# Uncomment this complex wheel manipulation if you need to override version constraints.
+# Adjust the sed command as the plugin changes.
+#RUN cd /tmp/pulp_smart_proxy && \
+#    pip wheel --no-deps . && \
+#    WHEEL_FILE=$(ls pulp_smart_proxy-*.whl) && \
+#    rm -rf pulp_smart_proxy && \
+#    unzip -o "$WHEEL_FILE" && \
+#    find . -name "*.dist-info" -type d -exec basename {} \; > dist_info_name.txt && \
+#    DIST_INFO=$(cat dist_info_name.txt) && \
+#    sed -i 's/pulpcore<3.100,>=3.49.0/pulpcore<3.110,>=3.49.0/' ${DIST_INFO}/METADATA && \
+#    rm "$WHEEL_FILE" && \
+#    zip -r "$WHEEL_FILE" pulp_smart_proxy* && \
+#    pip install "$WHEEL_FILE" && \
+#    rm -rf /tmp/pulp_smart_proxy
+
+# Verify the plugin is properly installed (uncomment if needed for debugging)
+#RUN python -c "import pulp_smart_proxy; print('Plugin imported successfully')" && \
+#    pip show pulp-smart-proxy && \
+#    echo "Final installed plugin versions:" && \
+#    pip list | grep pulp
+
+# Switch back to pulp user
+#USER pulp
+
+COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
+COPY --chmod=0755 assets/pulp-content /usr/bin/pulp-content
+COPY --chmod=0755 assets/pulp-worker /usr/bin/pulp-worker
+

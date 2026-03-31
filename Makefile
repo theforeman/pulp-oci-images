@@ -1,7 +1,8 @@
-PROJECT=pulp
+PROJECT?=pulp
+VERSION?=nightly
 IMAGE_NAME=quay.io/foreman/${PROJECT}
 
-PROJECT_XY_TAG=nightly
+PROJECT_XY_TAG=${VERSION}
 PROJECT_XYZ_TAG=${PROJECT_XY_TAG} #.8
 
 FOREMAN_XY_TAG=foreman-nightly
@@ -10,7 +11,16 @@ FOREMAN_XYZ_TAG=${FOREMAN_XY_TAG} #.0
 IMAGE_TAGS=${IMAGE_NAME}:${PROJECT_XY_TAG} ${IMAGE_NAME}:${PROJECT_XYZ_TAG} ${IMAGE_NAME}:${FOREMAN_XY_TAG} ${IMAGE_NAME}:${FOREMAN_XYZ_TAG}
 
 build:
-	cd images/${PROJECT} && podman build --file Containerfile --build-arg VERSION=${PROJECT_XY_TAG} --tag ${IMAGE_NAME}:${PROJECT_XYZ_TAG}	.
+	cd images/${PROJECT} && podman build --file Containerfile \
+		--build-arg VERSION=${VERSION} \
+		$(if ${PULPCORE_VERSION},--build-arg PULPCORE_VERSION=${PULPCORE_VERSION}) \
+		$(if ${PULP_ANSIBLE_VERSION},--build-arg PULP_ANSIBLE_VERSION=${PULP_ANSIBLE_VERSION}) \
+		$(if ${PULP_CONTAINER_VERSION},--build-arg PULP_CONTAINER_VERSION=${PULP_CONTAINER_VERSION}) \
+		$(if ${PULP_RPM_VERSION},--build-arg PULP_RPM_VERSION=${PULP_RPM_VERSION}) \
+		$(if ${PULP_OSTREE_VERSION},--build-arg PULP_OSTREE_VERSION=${PULP_OSTREE_VERSION}) \
+		$(if ${PULP_PYTHON_VERSION},--build-arg PULP_PYTHON_VERSION=${PULP_PYTHON_VERSION}) \
+		$(if ${PULP_DEB_VERSION},--build-arg PULP_DEB_VERSION=${PULP_DEB_VERSION}) \
+		--tag ${IMAGE_NAME}:${PROJECT_XYZ_TAG} .
 	$(foreach tag,$(IMAGE_TAGS),\
 		podman tag ${IMAGE_NAME}:${PROJECT_XYZ_TAG} $(tag); \
 	)
