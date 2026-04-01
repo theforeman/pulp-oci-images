@@ -16,14 +16,24 @@ concurrency:
 
 jobs:
   container:
-    name: ${{ matrix.container }}
+    name: ${{ matrix.name }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        container:
-          - pulpcore
+        include:
+          # Production builds
+          - container: pulpcore
+            project: pulp
+            build_args: ""
+          # Development builds
+          - container: pulp-development
+            project: pulp-development
+            build_args: ""
+          - container: pulp-development (unsupported pulp_smart_proxy)
+            project: pulp-development
+            build_args: "PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=true"
     steps:
       - uses: actions/checkout@v7
       - name: Build ${{ matrix.container }} container
-        run: make build
+        run: ${{ matrix.build_args }} PROJECT=${{ matrix.project }} make build
