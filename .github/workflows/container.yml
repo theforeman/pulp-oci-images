@@ -22,11 +22,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Production builds
           - container: pulpcore
             project: pulp
             build_args: ""
-          # Development builds
           - container: pulp-development
             project: pulp-development
             build_args: ""

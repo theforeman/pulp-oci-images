@@ -32,18 +32,18 @@ Development builds install from PyPI and use single version tags.
 ### How to Build
 
 ```bash
-# Build with default pulpcore version (3.105.1)
+# Build with default versions (pulpcore 3.85.x - latest patch)
 PROJECT=pulp-development make build
 
-# Build with Katello 4.20 compatible versions
+# Build with custom versions (example: Katello 4.20 compatible) 
 PROJECT=pulp-development \
-VERSION=3.85.13 \
-PULP_ANSIBLE_VERSION=0.28.5 \
-PULP_CONTAINER_VERSION=2.26.7 \
-PULP_RPM_VERSION=3.32.9 \
-PULP_OSTREE_VERSION=2.5.3 \
-PULP_PYTHON_VERSION=3.19.1 \
-PULP_DEB_VERSION=3.8.1 \
+VERSION=3.85 \
+PULP_ANSIBLE_VERSION=0.28 \
+PULP_CONTAINER_VERSION=2.26 \
+PULP_RPM_VERSION=3.32 \
+PULP_OSTREE_VERSION=2.5 \
+PULP_PYTHON_VERSION=3.19 \
+PULP_DEB_VERSION=3.8 \
 make build
 ```
 
@@ -52,7 +52,7 @@ make build
 For newer pulpcore versions that pulp-smart-proxy doesn't officially support yet:
 ```bash
 PROJECT=pulp-development \
-VERSION=3.105.1 \
+VERSION=3.105 \
 PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=true \
 make build
 ```
@@ -61,13 +61,15 @@ This installs pulp-smart-proxy from source with version constraints relaxed.
 
 ### Notes
 
-- `VERSION` specifies the pulpcore version to install via pip
+- `VERSION` specifies the pulpcore major.minor version (e.g., `3.85`)
+- Automatically installs the latest patch version (e.g., `3.85.x`)
+- Plugin versions use major.minor format and auto-update to latest patch
 - Images are tagged as `quay.io/foreman/pulp-development:VERSION`
 - Base image is automatically selected to match the pulpcore version
 
 ### How to Release
 
 ```bash
-PROJECT=pulp-development VERSION=3.85.13 make push
+PROJECT=pulp-development VERSION=3.85 make push
 ```
 

@@ -1,6 +1,5 @@
 # Production builds (default)
 PROJECT?=pulp
-VERSION?=nightly
 IMAGE_NAME=quay.io/foreman/${PROJECT}
 
 PROJECT_XY_TAG=${VERSION}
@@ -13,6 +12,8 @@ IMAGE_TAGS=${IMAGE_NAME}:${PROJECT_XY_TAG} ${IMAGE_NAME}:${PROJECT_XYZ_TAG} ${IM
 
 # Production build target
 ifeq ($(PROJECT),pulp)
+VERSION?=nightly
+
 build:
 	cd images/${PROJECT} && podman build --file Containerfile --build-arg VERSION=${VERSION} --tag ${IMAGE_NAME}:${PROJECT_XYZ_TAG} .
 	$(foreach tag,$(IMAGE_TAGS),\
@@ -27,7 +28,7 @@ endif
 
 # Development builds
 ifeq ($(PROJECT),pulp-development)
-VERSION?=3.105.1
+VERSION?=3.85
 DEV_IMAGE_NAME=quay.io/foreman/pulp-development
 
 build:
