@@ -28,7 +28,7 @@ endif
 
 # Development builds
 ifeq ($(PROJECT),pulp-development)
-VERSION?=3.85
+VERSION?=3.85.15
 DEV_IMAGE_NAME=quay.io/foreman/pulp-development
 
 build:
