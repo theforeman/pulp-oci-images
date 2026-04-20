@@ -1,0 +1,8 @@
+pulpcore==3.105.1
+pulp-ansible
+pulp-container
+pulp-rpm
+pulp-ostree
+pulp-python
+pulp-deb
+pulp-smart-proxy

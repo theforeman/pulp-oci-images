@@ -1,14 +1,6 @@
-ARG VERSION=3.85.15
-FROM quay.io/pulp/pulp:${VERSION}
+ARG PULPCORE_VERSION=latest
+FROM quay.io/pulp/pulp:${PULPCORE_VERSION}
 
-# Re-declare ARG to make it available after FROM
-ARG VERSION=3.85.15
-ARG PULP_ANSIBLE_VERSION=0.28.6
-ARG PULP_CONTAINER_VERSION=2.26.8
-ARG PULP_RPM_VERSION=3.32.9
-ARG PULP_OSTREE_VERSION=2.5.3
-ARG PULP_PYTHON_VERSION=3.19.1
-ARG PULP_DEB_VERSION=3.8.1
 ARG PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=false
 
 ENV PULP_GUNICORN_TIMEOUT=${PULP_GUNICORN_TIMEOUT:-90}
@@ -19,52 +11,27 @@ ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
 
 RUN dnf install -y git gcc python3-devel sed unzip zip && dnf clean all
 
-# Conditionally clone and patch pulp-smart-proxy for unsupported version compatibility
+# When PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=true, clone and patch pulp-smart-proxy
+# to remove the pulpcore upper version bound, allowing use with newer unsupported pulpcore versions.
 RUN if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
-        echo "Enabling pulp-smart-proxy version constraint workaround..."; \
         git clone -b develop https://github.com/theforeman/pulp_smart_proxy.git /tmp/pulp_smart_proxy && \
-        sed -i 's/pulpcore>=.*,<[0-9.]*/pulpcore>=3.49.0/' /tmp/pulp_smart_proxy/pyproject.toml && \
-        echo "Modified version constraint (removed upper bound):" && \
-        grep pulpcore /tmp/pulp_smart_proxy/pyproject.toml; \
-    else \
-        echo "Using standard pulp-smart-proxy from PyPI..."; \
+        sed -i 's/pulpcore>=.*,<[0-9.]*/pulpcore>=3.49.0/' /tmp/pulp_smart_proxy/pyproject.toml; \
     fi
 
-# Install specific plugin versions
+COPY requirements.txt requirements-custom-pulp-smart-proxy.txt .
+
+# Install plugins from requirements.txt. When using unsupported versions, use
+# requirements-custom-pulp-smart-proxy.txt (which omits pulp-smart-proxy) and install the
+# patched local checkout instead.
 RUN pip install --upgrade pip && \
     if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
-        echo "Installing Pulp plugins without pulp-smart-proxy (will install from source later)..."; \
-        pip install \
-            "pulpcore==${VERSION}" \
-            "pulp-ansible==${PULP_ANSIBLE_VERSION}" \
-            "pulp-container==${PULP_CONTAINER_VERSION}" \
-            "pulp-rpm==${PULP_RPM_VERSION}" \
-            "pulp-ostree==${PULP_OSTREE_VERSION}" \
-            "pulp-python==${PULP_PYTHON_VERSION}" \
-            "pulp-deb==${PULP_DEB_VERSION}" \
-            /tmp/pulp_smart_proxy; \
+        pip install -r requirements-custom-pulp-smart-proxy.txt && \
+        pip install /tmp/pulp_smart_proxy && \
+        rm -rf /tmp/pulp_smart_proxy; \
     else \
-        echo "Installing Pulp plugins including pulp-smart-proxy from PyPI..."; \
-        pip install \
-            "pulpcore==${VERSION}" \
-            "pulp-ansible==${PULP_ANSIBLE_VERSION}" \
-            "pulp-container==${PULP_CONTAINER_VERSION}" \
-            "pulp-rpm==${PULP_RPM_VERSION}" \
-            "pulp-ostree==${PULP_OSTREE_VERSION}" \
-            "pulp-python==${PULP_PYTHON_VERSION}" \
-            "pulp-deb==${PULP_DEB_VERSION}" \
-            pulp-smart-proxy; \
+        pip install -r requirements.txt; \
     fi
-
-# Conditionally build and install pulp-smart-proxy plugin from source when version hack is enabled
-#RUN if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
-#        echo "Installing patched pulp-smart-proxy from source..."; \
-#        cd /tmp/pulp_smart_proxy && \
-#        pip install . && \
-#        rm -rf /tmp/pulp_smart_proxy; \
-#    fi
 
 COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
 COPY --chmod=0755 assets/pulp-content /usr/bin/pulp-content
 COPY --chmod=0755 assets/pulp-worker /usr/bin/pulp-worker
-

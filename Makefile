@@ -28,21 +28,17 @@ endif
 
 # Development builds
 ifeq ($(PROJECT),pulp-development)
-VERSION?=3.85.15
+_REQUIREMENTS_FILE=$(if $(PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS),requirements-custom-pulp-smart-proxy.txt,requirements.txt)
+_PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/$(_REQUIREMENTS_FILE) | cut -d= -f3)
+PULPCORE_VERSION=$(if $(_PINNED_VERSION),$(_PINNED_VERSION),latest)
 DEV_IMAGE_NAME=quay.io/foreman/pulp-development
 
 build:
 	cd images/pulp-development && podman build --file Containerfile \
-		--build-arg VERSION=${VERSION} \
-		$(if ${PULP_ANSIBLE_VERSION},--build-arg PULP_ANSIBLE_VERSION=${PULP_ANSIBLE_VERSION}) \
-		$(if ${PULP_CONTAINER_VERSION},--build-arg PULP_CONTAINER_VERSION=${PULP_CONTAINER_VERSION}) \
-		$(if ${PULP_RPM_VERSION},--build-arg PULP_RPM_VERSION=${PULP_RPM_VERSION}) \
-		$(if ${PULP_OSTREE_VERSION},--build-arg PULP_OSTREE_VERSION=${PULP_OSTREE_VERSION}) \
-		$(if ${PULP_PYTHON_VERSION},--build-arg PULP_PYTHON_VERSION=${PULP_PYTHON_VERSION}) \
-		$(if ${PULP_DEB_VERSION},--build-arg PULP_DEB_VERSION=${PULP_DEB_VERSION}) \
+		--build-arg PULPCORE_VERSION=${PULPCORE_VERSION} \
 		$(if ${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS},--build-arg PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}) \
-		--tag ${DEV_IMAGE_NAME}:${VERSION} .
+		--tag ${DEV_IMAGE_NAME}:${PULPCORE_VERSION} .
 
 push:
-	podman push ${DEV_IMAGE_NAME}:${VERSION}
+	podman push ${DEV_IMAGE_NAME}:${PULPCORE_VERSION}
 endif
