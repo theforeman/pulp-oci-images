@@ -11,22 +11,14 @@ ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
 
 RUN dnf install -y git gcc python3-devel sed unzip zip && dnf clean all
 
-# When PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=true, clone and patch pulp-smart-proxy
-# to remove the pulpcore upper version bound, allowing use with newer unsupported pulpcore versions.
-RUN if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
-        git clone -b develop https://github.com/theforeman/pulp_smart_proxy.git /tmp/pulp_smart_proxy && \
-        sed -i 's/pulpcore>=.*,<[0-9.]*/pulpcore>=3.49.0/' /tmp/pulp_smart_proxy/pyproject.toml; \
-    fi
-
 COPY requirements.txt requirements-custom-pulp-smart-proxy.txt .
 
-# Install plugins from requirements.txt. When using unsupported versions, use
-# requirements-custom-pulp-smart-proxy.txt (which omits pulp-smart-proxy) and install the
-# patched local checkout instead.
-RUN pip install --upgrade pip && \
-    if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
-        pip install -r requirements-custom-pulp-smart-proxy.txt && \
-        pip install /tmp/pulp_smart_proxy && \
+# Install plugins from requirements.txt. When using unsupported versions, clone and patch
+# pulp-smart-proxy to remove the pulpcore version boundaries, then install alongside plugins.
+RUN if [ "${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}" = "true" ]; then \
+        git clone -b develop https://github.com/theforeman/pulp_smart_proxy.git /tmp/pulp_smart_proxy && \
+        sed -i 's/"pulpcore[^"]*"/"pulpcore"/' /tmp/pulp_smart_proxy/pyproject.toml && \
+        pip install -r requirements-custom-pulp-smart-proxy.txt /tmp/pulp_smart_proxy && \
         rm -rf /tmp/pulp_smart_proxy; \
     else \
         pip install -r requirements.txt; \
