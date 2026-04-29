@@ -1,0 +1,110 @@
+---
+name: Integration test (foremanctl)
+
+on:
+  workflow_dispatch:
+    inputs:
+      foremanctl_ref:
+        description: 'foremanctl branch or tag to test against'
+        required: false
+        default: 'master'
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: integration-${{ github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  IMAGE_TAG: nightly
+
+jobs:
+  integration:
+    runs-on: ubuntu-24.04
+    name: foremanctl integration
+    steps:
+      - name: Checkout pulpcore-oci-images
+        uses: actions/checkout@v6
+
+      - name: Build pulp image
+        run: make build PROJECT_XY_TAG=${{ env.IMAGE_TAG }}
+
+      - name: Export images as tarballs
+        run: |
+          podman save -o pulp-image.tar quay.io/foreman/pulp:${{ env.IMAGE_TAG }}
+
+      - name: Checkout foremanctl
+        uses: actions/checkout@v6
+        with:
+          repository: theforeman/foremanctl
+          ref: ${{ github.event.inputs.foremanctl_ref || 'master' }}
+          path: foremanctl
+
+      - name: Prepare images for VM transfer
+        run: |
+          mv pulp-image.tar foremanctl/
+
+      - name: Set container_tag_stream to ${{ env.IMAGE_TAG }}
+        run: |
+          sed -i '/container_tag_stream:/ s/:.*/: "${{ env.IMAGE_TAG }}"/' foremanctl/src/vars/images.yml
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Setup libvirt for Vagrant
+        uses: voxpupuli/setup-vagrant@v0
+
+      - name: Install Ansible
+        run: pip install --upgrade ansible-core
+
+      - name: Setup environment
+        working-directory: foremanctl
+        run: ./setup-environment
+
+      - name: Start VM
+        working-directory: foremanctl
+        run: ./forge vms start --vms "quadlet"
+
+      - name: Install podman in VM
+        working-directory: foremanctl
+        run: vagrant ssh quadlet -- sudo dnf install -y podman
+
+      - name: Load images into VM
+        working-directory: foremanctl
+        run: |
+          vagrant ssh quadlet -- sudo podman load -i /vagrant/pulp-image.tar
+
+      - name: Free disk space
+        run: |
+          rm -f foremanctl/pulp-image.tar
+          podman system prune --all --force
+
+      - name: Configure repositories
+        working-directory: foremanctl
+        run: ./forge setup-repositories
+
+      - name: Run deployment
+        working-directory: foremanctl
+        run: |
+          ./foremanctl deploy --foreman-initial-admin-password=changeme --tuning development --initial-organization "Foreman CI" --initial-location "Internet" --add-feature hammer --add-feature foreman-proxy --add-feature remote-execution
+
+      - name: Run tests
+        working-directory: foremanctl
+        run: |
+          ./forge test --pytest-args="tests/pulp_test.py tests/foreman_api_test.py tests/httpd_test.py tests/foreman_test.py tests/postgresql_test.py tests/redis_test.py"
+
+      - name: Generate sos reports
+        if: ${{ always() }}
+        working-directory: foremanctl
+        run: ./forge sos
+
+      - name: Archive sos reports
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: sosreport-integration
+          path: foremanctl/sos/
