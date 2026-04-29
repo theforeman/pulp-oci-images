@@ -1,7 +1,0 @@
-pulpcore
-pulp-ansible
-pulp-container
-pulp-rpm
-pulp-ostree
-pulp-python
-pulp-deb

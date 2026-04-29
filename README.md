@@ -27,11 +27,17 @@ make push
 
 ## Development
 
-Development builds install pulpcore and plugins from PyPI using `requirements.txt`.
-Only `pulpcore` is pinned by default — pip resolves compatible plugin versions automatically.
+Development builds give you a Pulp server with all the plugins Foreman/Katello needs,
+built from PyPI packages so you can easily test different versions.
 
-The image tag is derived automatically from the `pulpcore` version in `requirements.txt`,
-or `:latest` if unpinned.
+### Prerequisites
+
+- `podman` (or `docker`) installed
+- Clone this repo:
+  ```bash
+  git clone https://github.com/theforeman/pulp-oci-images.git
+  cd pulp-oci-images
+  ```
 
 ### How to Build
 
@@ -39,28 +45,66 @@ or `:latest` if unpinned.
 PROJECT=pulp-development make build
 ```
 
-### Pinning Versions
+This builds a container image tagged `quay.io/foreman/pulp-development:latest` with the
+newest versions of pulpcore and all plugins.
 
-To target a specific pulpcore version, edit the `pulpcore` line in
-`images/pulp-development/requirements.txt`:
+### What's Inside
+
+The image installs these Pulp components from PyPI:
+
+- **pulpcore** — the Pulp platform
+- **pulp-ansible**, **pulp-container**, **pulp-deb**, **pulp-ostree**, **pulp-python**,
+  **pulp-rpm** — content plugins
+- **pulp-smart-proxy** — the Foreman Smart Proxy integration plugin
+
+`pulp-smart-proxy` is modified: during the build it's cloned from GitHub (`develop`
+branch) and patched to remove pulpcore version restrictions, so it always works regardless
+of which pulpcore version you're running.
+
+### PyPI Requirements
+
+Everything is controlled by two files in `images/pulp-development/`:
+
+| File | Purpose | Do I edit it? |
+|---|---|---|
+| `requirements.txt` | Lists **what** to install (package names, no versions) | No — leave it alone |
+| `constraints.txt` | Controls **how** to install (version pins, local paths) | Only if you want to lock versions |
+
+By default `constraints.txt` contains just one line:
 
 ```
+pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
+```
+
+This tells pip to install the locally patched version of pulp_smart_proxy. 
+Since there are no version pins, pip installs the latest compatible version of everything else.
+
+The Makefile reads `constraints.txt` to determine the base image tag.  If there's a
+`pulpcore==X.Y.Z` pin it uses that version, otherwise it defaults to `:latest`.
+
+### Pinning Versions
+
+If you need a specific pulpcore version,
+add a pin to `images/pulp-development/constraints.txt`:
+
+```
+pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
 pulpcore==3.105.1
-pulp-ansible
-pulp-container
-pulp-rpm
-pulp-ostree
-pulp-python
-pulp-deb
-pulp-smart-proxy
+```
+
+Then build normally:
+
+```bash
+PROJECT=pulp-development make build
 ```
 
 pip will resolve the newest plugin versions compatible with the pinned pulpcore. You can
-also pin individual plugins explicitly if you need a specific known-good set — the nightly
-RPM repo ([yum.theforeman.org](https://yum.theforeman.org/pulpcore/nightly/el9/x86_64/))
-is a useful reference for compatible version combinations:
+also pin individual plugins if you need a fully locked set. The nightly RPM repo
+([yum.theforeman.org](https://yum.theforeman.org/pulpcore/nightly/el9/x86_64/)) is a
+useful reference for compatible version combinations:
 
 ```
+pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
 pulpcore==3.105.1
 pulp-ansible==0.29.7
 pulp-container==2.27.6
@@ -68,25 +112,22 @@ pulp-rpm==3.35.2
 pulp-ostree==2.6.0
 pulp-python==3.27.2
 pulp-deb==3.8.1
-pulp-smart-proxy==0.4.0
 ```
+
+> **Important:** Always keep the `pulp-smart-proxy @ file:///tmp/pulp_smart_proxy` line
+> in `constraints.txt`. The build puts the patched plugin at that path.
+
+### Quick Reference
+
+| I want... | What to do |
+|---|---|
+| Latest everything | `PROJECT=pulp-development make build` (no changes needed) |
+| Specific pulpcore | Add `pulpcore==X.Y.Z` to `constraints.txt`, then build |
+| Fully locked versions | Pin all packages in `constraints.txt`, then build |
+| Push to registry | `PROJECT=pulp-development make push` |
 
 ### How to Release
 
 ```bash
 PROJECT=pulp-development make push
 ```
-
-### Newer pulpcore Versions (pulp-smart-proxy compatibility)
-
-If you need a pulpcore version that `pulp-smart-proxy` doesn't yet officially support,
-edit `images/pulp-development/requirements-custom-pulp-smart-proxy.txt` with the versions
-you want (it mirrors `requirements.txt` but without `pulp-smart-proxy`), then build with:
-
-```bash
-PROJECT=pulp-development PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=true make build
-```
-
-This clones `pulp-smart-proxy` from the `develop` branch, removes the pulpcore upper
-version bound from its dependency constraints, and installs that patched version alongside
-the plugins from `requirements-custom-pulp-smart-proxy.txt`.

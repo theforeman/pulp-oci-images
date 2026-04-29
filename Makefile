@@ -28,15 +28,13 @@ endif
 
 # Development builds
 ifeq ($(PROJECT),pulp-development)
-_REQUIREMENTS_FILE=$(if $(PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS),requirements-custom-pulp-smart-proxy.txt,requirements.txt)
-_PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/$(_REQUIREMENTS_FILE) | cut -d= -f3)
+_PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/constraints.txt 2>/dev/null | cut -d= -f3)
 PULPCORE_VERSION=$(if $(_PINNED_VERSION),$(_PINNED_VERSION),latest)
 DEV_IMAGE_NAME=quay.io/foreman/pulp-development
 
 build:
 	cd images/pulp-development && podman build --file Containerfile \
 		--build-arg PULPCORE_VERSION=${PULPCORE_VERSION} \
-		$(if ${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS},--build-arg PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS=${PULP_SMART_PROXY_ALLOW_UNSUPPORTED_VERSIONS}) \
 		--tag ${DEV_IMAGE_NAME}:${PULPCORE_VERSION} .
 
 push:
