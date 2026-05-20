@@ -19,3 +19,8 @@ RUN dnf -y update && \
 COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
 COPY --chmod=0755 assets/pulp-content /usr/bin/pulp-content
 COPY --chmod=0755 assets/pulp-worker /usr/bin/pulp-worker
+
+LABEL url="https://theforeman.org/" \
+      name="foreman/pulp" \
+      description="Pulp content management platform for the Foreman project" \
+      summary="Pulp content management platform"
