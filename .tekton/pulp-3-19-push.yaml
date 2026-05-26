@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/foreman/pulp-stage:{{revision}}
+    value: quay.io/foreman/stage/pulp:{{revision}}
   - name: dockerfile
     value: images/pulp/Containerfile
   - name: path-context
