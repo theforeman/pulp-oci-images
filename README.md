@@ -1,6 +1,7 @@
 # Pulp Container Images
 
 This repository provides Pulp container images for the Foreman project's use case.
+It follows [foremanctl's container builds structure](https://github.com/theforeman/foremanctl/blob/master/docs/developer/container-image-builds.md).
 
 Note that OCI stands for "Open Container Initiative", see [here](https://opencontainers.org/).
 
