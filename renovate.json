@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)Containerfile\\.digest$"],
+      "matchStrings": [
+        "(?<depName>[\\w\\-\\.\\/]+):?(?<currentValue>[\\w\\-\\.]+)?@(?<currentDigest>sha256:[a-f0-9]+)"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
+}

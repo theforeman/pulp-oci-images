@@ -1,4 +1,4 @@
-FROM quay.io/centos/centos@sha256:5447ea37452c3808d076fa292a2a098a47f19327174234795a2bc6a39501bf57
+FROM  quay.io/centos/centos:stream9
 
 ARG VERSION=nightly
 
