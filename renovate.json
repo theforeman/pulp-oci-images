@@ -11,5 +11,11 @@
       ],
       "datasourceTemplate": "docker"
     }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "schedule": ["at any time"]
+    }
   ]
 }
