@@ -16,6 +16,10 @@
     {
       "matchDatasources": ["docker"],
       "schedule": ["at any time"]
+    },
+    {
+      "matchManagers": ["tekton"],
+      "schedule": ["at any time"]
     }
   ]
 }
