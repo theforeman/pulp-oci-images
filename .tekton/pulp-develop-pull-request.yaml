@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
   annotations:
+    pipelinesascode.tekton.dev/task: "github-add-comment:0.3.0"
     build.appstudio.openshift.io/repo: https://github.com/theforeman/pulp-oci-images?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
@@ -462,6 +463,9 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value: 
+         - "pull-request-{{pull_request_number}}"
       runAfter:
       - build-image-index
       taskRef:
@@ -518,6 +522,25 @@ spec:
         operator: in
         values:
         - "false"
+    - name: post-image-tag
+      runAfter:
+      - apply-tags
+      taskRef:
+        name: github-add-comment
+      params:
+      - name: REQUEST_URL
+        value: "{{ repo_url }}/pull/{{ pull_request_number }}"
+      - name: COMMENT_OR_FILE
+        value: |
+          :package: **Build complete!**
+
+          Test this image with tag: `quay.io/foreman/stage/candlepin:pull-request-{{ pull_request_number }}`
+
+          Built from commit: [`{{ revision }}`]({{ repo_url }}/commit/{{ revision }})
+      - name: GITHUB_TOKEN_SECRET_NAME
+        value: "{{ git_auth_secret }}"
+      - name: GITHUB_TOKEN_SECRET_KEY
+        value: "git-provider-token"
     workspaces:
     - name: git-auth
       optional: true
