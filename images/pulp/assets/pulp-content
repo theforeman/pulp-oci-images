@@ -3,4 +3,5 @@
 exec /usr/bin/pulpcore-content \
 			--timeout "${PULP_GUNICORN_TIMEOUT}" \
 			--workers "${PULP_CONTENT_WORKERS}" \
-			--access-logfile -
+			--access-logfile - \
+			--log-level "${PULP_LOG_LEVEL}"
