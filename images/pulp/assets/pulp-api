@@ -6,4 +6,5 @@ exec /usr/bin/pulpcore-api \
 			--max-requests "${PULP_API_WORKERS_MAX_REQUESTS}" \
 			--max-requests-jitter "${PULP_API_WORKERS_MAX_REQUESTS_JITTER}" \
 			--access-logfile - \
-			--access-logformat 'pulp [%({correlation-id}o)s]: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"'
+			--access-logformat 'pulp [%({correlation-id}o)s]: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"' \
+			--log-level "${PULP_LOG_LEVEL}"
