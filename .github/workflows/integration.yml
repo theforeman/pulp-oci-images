@@ -18,7 +18,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMAGE_TAG: nightly
+  CONTAINER_TAG_STREAM: nightly
+  PULP_IMAGE_TAG: foreman-nightly
 
 jobs:
   integration:
@@ -29,11 +30,11 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Build pulp image
-        run: make build PROJECT_XY_TAG=${{ env.IMAGE_TAG }}
+        run: make build
 
       - name: Export images as tarballs
         run: |
-          podman save -o pulp-image.tar quay.io/foreman/pulp:${{ env.IMAGE_TAG }}
+          podman save -o pulp-image.tar quay.io/foreman/pulp:${{ env.PULP_IMAGE_TAG }}
 
       - name: Checkout foremanctl
         uses: actions/checkout@v6
@@ -46,9 +47,9 @@ jobs:
         run: |
           mv pulp-image.tar foremanctl/
 
-      - name: Set container_tag_stream to ${{ env.IMAGE_TAG }}
+      - name: Set container_tag_stream to ${{ env.CONTAINER_TAG_STREAM }}
         run: |
-          sed -i '/container_tag_stream:/ s/:.*/: "${{ env.IMAGE_TAG }}"/' foremanctl/src/vars/images.yml
+          sed -i '/container_tag_stream:/ s/:.*/: "${{ env.CONTAINER_TAG_STREAM }}"/' foremanctl/src/vars/images.yml
 
       - name: Set up Python
         uses: actions/setup-python@v6
