@@ -90,7 +90,7 @@ jobs:
       - name: Run deployment
         working-directory: foremanctl
         run: |
-          ./foremanctl deploy --foreman-initial-admin-password=changeme --tuning development --initial-organization "Foreman CI" --initial-location "Internet" --add-feature hammer --add-feature foreman-proxy --add-feature remote-execution
+          ./foremanctl deploy --initial-admin-password=changeme --tuning development --initial-organization "Foreman CI" --initial-location "Internet" --add-feature hammer --add-feature foreman-proxy --add-feature remote-execution
 
       - name: Run tests
         working-directory: foremanctl
