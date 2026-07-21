@@ -95,7 +95,7 @@ jobs:
       - name: Run tests
         working-directory: foremanctl
         run: |
-          ./forge test --pytest-args="tests/pulp_test.py tests/foreman_api_test.py tests/httpd_test.py tests/foreman_test.py tests/postgresql_test.py tests/redis_test.py"
+          ./forge test --pytest-args="tests/pulp_test.py tests/httpd_test.py tests/feature/foreman/base_test.py tests/feature/katello/api_test.py tests/postgresql_test.py tests/valkey_test.py"
 
       - name: Generate sos reports
         if: ${{ always() }}
