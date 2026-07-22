@@ -28,7 +28,7 @@ endif
 
 # Development builds
 ifeq ($(PROJECT),pulp-development)
-_PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/constraints.txt 2>/dev/null | cut -d= -f3)
+_PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/requirements.txt 2>/dev/null | cut -d= -f3)
 PULPCORE_VERSION=$(if $(_PINNED_VERSION),$(_PINNED_VERSION),latest)
 DEV_IMAGE_NAME=quay.io/foreman/pulp-development
 

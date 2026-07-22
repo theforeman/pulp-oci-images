@@ -63,32 +63,24 @@ of which pulpcore version you're running.
 
 ### PyPI Requirements
 
-Everything is controlled by two files in `images/pulp-development/`:
+The packages to install are listed in `images/pulp-development/requirements.txt`.
+By default pulpcore is unpinned, so pip installs the latest compatible version of
+everything.
 
-| File | Purpose | Do I edit it? |
-|---|---|---|
-| `requirements.txt` | Lists **what** to install (package names, no versions) | No — leave it alone |
-| `constraints.txt` | Controls **how** to install (version pins, local paths) | Only if you want to lock versions |
-
-By default `constraints.txt` contains just one line:
-
-```
-pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
-```
-
-This tells pip to install the locally patched version of pulp_smart_proxy. 
-Since there are no version pins, pip installs the latest compatible version of everything else.
-
-The Makefile reads `constraints.txt` to determine the base image tag.  If there's a
+The Makefile reads `requirements.txt` to determine the base image tag. If there's a
 `pulpcore==X.Y.Z` pin it uses that version, otherwise it defaults to `:latest`.
+
+A separate `constraints.txt` file is used to point `pulp-smart-proxy` at a locally
+patched copy that has its pulpcore version requirement removed. This allows
+pulp-smart-proxy to work with any pulpcore version. You should not need to edit
+`constraints.txt`.
 
 ### Pinning Versions
 
 If you need a specific pulpcore version,
-add a pin to `images/pulp-development/constraints.txt`:
+pin it directly in `images/pulp-development/requirements.txt`:
 
 ```
-pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
 pulpcore==3.105.1
 ```
 
@@ -104,7 +96,6 @@ also pin individual plugins if you need a fully locked set. The nightly RPM repo
 useful reference for compatible version combinations:
 
 ```
-pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
 pulpcore==3.105.1
 pulp-ansible==0.29.7
 pulp-container==2.27.6
@@ -114,16 +105,13 @@ pulp-python==3.27.2
 pulp-deb==3.8.1
 ```
 
-> **Important:** Always keep the `pulp-smart-proxy @ file:///tmp/pulp_smart_proxy` line
-> in `constraints.txt`. The build puts the patched plugin at that path.
-
 ### Quick Reference
 
 | I want... | What to do |
 |---|---|
 | Latest everything | `PROJECT=pulp-development make build` (no changes needed) |
-| Specific pulpcore | Add `pulpcore==X.Y.Z` to `constraints.txt`, then build |
-| Fully locked versions | Pin all packages in `constraints.txt`, then build |
+| Specific pulpcore | Pin `pulpcore==X.Y.Z` in `requirements.txt`, then build |
+| Fully locked versions | Pin all packages in `requirements.txt`, then build |
 | Push to registry | `PROJECT=pulp-development make push` |
 
 ### How to Release

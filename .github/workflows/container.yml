@@ -24,17 +24,13 @@ jobs:
         include:
           - container: pulpcore
             project: pulp
-            constraints: ""
-          - container: pulp-development (latest)
+          - container: pulp-development
             project: pulp-development
-            constraints: ""
-          - container: pulp-development (pinned pulpcore)
-            project: pulp-development
-            constraints: "pulpcore==3.105.1"
+            pulpcore_version: "3.105.1"
     steps:
       - uses: actions/checkout@v7
-      - name: Pin constraints
-        if: matrix.constraints != ''
-        run: echo "${{ matrix.constraints }}" >> images/pulp-development/constraints.txt
+      - name: Pin pulpcore version
+        if: matrix.pulpcore_version != ''
+        run: sed -i "s/^pulpcore$/pulpcore==${{ matrix.pulpcore_version }}/" images/pulp-development/requirements.txt
       - name: Build ${{ matrix.container }} container
         run: PROJECT=${{ matrix.project }} make build

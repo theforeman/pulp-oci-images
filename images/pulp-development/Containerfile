@@ -10,17 +10,16 @@ ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
 RUN dnf install -y git gcc python3-devel sed unzip zip && dnf clean all
 
 # Clone pulp_smart_proxy and remove pulpcore version boundaries so it works
-# with any pulpcore version. The constraints file points pulp-smart-proxy to
-# this local copy.
+# with any pulpcore version. The constraints file redirects the pulp-smart-proxy
+# package name to this local patched copy.
 RUN git clone -b develop https://github.com/theforeman/pulp_smart_proxy.git /tmp/pulp_smart_proxy && \
     sed -i 's/"pulpcore[^"]*"/"pulpcore"/' /tmp/pulp_smart_proxy/pyproject.toml
 
 COPY requirements.txt constraints.txt .
 
 # Install plugins from requirements.txt, constrained by constraints.txt.
-# By default constraints.txt only redirects pulp-smart-proxy to the local
-# patched copy. Users can add version pins (e.g. pulpcore==3.105.1) to
-# constraints.txt to lock specific versions.
+# constraints.txt redirects pulp-smart-proxy to the local patched copy.
+# To pin pulpcore, edit requirements.txt (e.g. pulpcore==3.105.1).
 RUN pip install -r requirements.txt -c constraints.txt && \
     rm -rf /tmp/pulp_smart_proxy
 
