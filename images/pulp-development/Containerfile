@@ -7,13 +7,13 @@ ENV PULP_API_WORKERS_MAX_REQUESTS=${PULP_API_WORKERS_MAX_REQUESTS:-800}
 ENV PULP_API_WORKERS_MAX_REQUESTS_JITTER=${PULP_API_WORKERS_MAX_REQUESTS_JITTER:-100}
 ENV PULP_CONTENT_WORKERS=${PULP_CONTENT_WORKERS:-2}
 
-RUN dnf install -y git gcc python3-devel sed unzip zip && dnf clean all
+RUN dnf install -y git gcc python3.11-devel sed unzip zip && dnf clean all
 
 # Clone pulp_smart_proxy and remove pulpcore version boundaries so it works
 # with any pulpcore version. The constraints file redirects the pulp-smart-proxy
 # package name to this local patched copy.
 RUN git clone -b develop https://github.com/theforeman/pulp_smart_proxy.git /tmp/pulp_smart_proxy && \
-    sed -i 's/"pulpcore[^"]*"/"pulpcore"/' /tmp/pulp_smart_proxy/pyproject.toml
+    sed -i 's/"pulpcore[><=!~][^"]*"/"pulpcore"/' /tmp/pulp_smart_proxy/pyproject.toml
 
 COPY requirements.txt constraints.txt .
 
