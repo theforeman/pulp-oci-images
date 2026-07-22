@@ -21,9 +21,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        container:
-          - pulpcore
+        include:
+          - container: pulpcore
+            project: pulp
+          - container: pulp-development
+            project: pulp-development
+            pulpcore_version: "3.105.1"
     steps:
       - uses: actions/checkout@v7
+      - name: Pin pulpcore version
+        if: matrix.pulpcore_version != ''
+        run: sed -i "s/^pulpcore$/pulpcore==${{ matrix.pulpcore_version }}/" images/pulp-development/requirements.txt
       - name: Build ${{ matrix.container }} container
-        run: make build
+        run: PROJECT=${{ matrix.project }} make build
