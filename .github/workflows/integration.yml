@@ -27,7 +27,7 @@ jobs:
     name: foremanctl integration
     steps:
       - name: Checkout pulpcore-oci-images
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Build pulp image
         run: make build
@@ -37,7 +37,7 @@ jobs:
           podman save -o pulp-image.tar quay.io/foreman/pulp:${{ env.PULP_IMAGE_TAG }}
 
       - name: Checkout foremanctl
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: theforeman/foremanctl
           ref: ${{ github.event.inputs.foremanctl_ref || 'master' }}
