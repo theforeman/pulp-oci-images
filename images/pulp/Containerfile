@@ -1,4 +1,4 @@
-FROM  quay.io/centos/centos:stream9
+FROM  quay.io/centos/centos:stream10
 
 ARG VERSION=nightly
 
@@ -11,7 +11,7 @@ ENV PULP_LOG_LEVEL=${PULP_LOG_LEVEL:-info}
 
 RUN dnf -y update && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
-    https://yum.theforeman.org/pulpcore/${VERSION}/el9/$(uname -m)/pulpcore-release.rpm && \
+    https://yum.theforeman.org/pulpcore/${VERSION}/el10/$(uname -m)/pulpcore-release.rpm && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
     pulpcore \
     pulpcore-plugin\({ansible,container,deb,ostree,rpm,python,smart_proxy}\) && \
