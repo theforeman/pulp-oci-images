@@ -1,1 +1,1 @@
-BASE_IMAGE=quay.io/centos/centos:stream10@sha256:793da3401a7ba4a85e6676ce94c5abc53206941c3609ba0cf2ec2e7f2c3ba09a
+BASE_IMAGE=quay.io/centos/centos:stream10@sha256:b7f85bb8be4c471bc62842156a51bbf224b15243943733bd54e86ba5fd79b1fc
