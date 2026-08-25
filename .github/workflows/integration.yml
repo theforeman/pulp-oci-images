@@ -52,7 +52,7 @@ jobs:
           sed -i '/container_tag_stream:/ s/:.*/: "${{ env.CONTAINER_TAG_STREAM }}"/' foremanctl/src/vars/images.yml
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
