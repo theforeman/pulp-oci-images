@@ -3,4 +3,5 @@
 exec /usr/local/bin/pulpcore-content \
 			--timeout "${PULP_GUNICORN_TIMEOUT}" \
 			--workers "${PULP_CONTENT_WORKERS}" \
-			--access-logfile -
+			--access-logfile - \
+			--control-socket /var/run/pulp-gunicorn.sock
