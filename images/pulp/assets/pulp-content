@@ -5,4 +5,4 @@ exec /usr/bin/pulpcore-content \
 			--workers "${PULP_CONTENT_WORKERS}" \
 			--access-logfile - \
 			--log-level "${PULP_LOG_LEVEL}" \
-			--control-socket /var/run/pulp-gunicorn.sock
+			--no-control-socket
