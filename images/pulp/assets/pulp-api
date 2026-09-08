@@ -8,4 +8,4 @@ exec /usr/bin/pulpcore-api \
 			--access-logfile - \
 			--access-logformat 'pulp [%({correlation-id}o)s]: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"' \
 			--log-level "${PULP_LOG_LEVEL}" \
-			--control-socket /var/run/pulp-gunicorn.sock
+			--no-control-socket
