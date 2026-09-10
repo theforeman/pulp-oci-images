@@ -18,8 +18,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CONTAINER_TAG_STREAM: nightly
-  PULP_IMAGE_TAG: foreman-nightly
+  CONTAINER_TAG_STREAM: "5.0"
+  PULP_IMAGE_TAG: foreman-5.0
 
 jobs:
   integration:
