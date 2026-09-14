@@ -1,10 +1,12 @@
 name: Container build
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
+    paths:
+      - 'images/pulp-development/**'
+      - 'images/pulp-source/**'
+      - '.gitmodules'
+      - '.github/workflows/container.yml'
   workflow_dispatch:
 
 permissions:
@@ -22,13 +24,15 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - container: pulpcore
-            project: pulp
           - container: pulp-development
             project: pulp-development
-            pulpcore_version: "3.105.1"
+            pulpcore_version: "3.117.1"
+          - container: pulp-source
+            project: pulp-source
     steps:
       - uses: actions/checkout@v7
+        with:
+          submodules: recursive
       - name: Pin pulpcore version
         if: matrix.pulpcore_version != ''
         run: sed -i "s/^pulpcore$/pulpcore==${{ matrix.pulpcore_version }}/" images/pulp-development/requirements.txt

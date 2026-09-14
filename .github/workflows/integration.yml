@@ -9,6 +9,9 @@ on:
         required: false
         default: 'master'
   pull_request:
+    paths:
+      - 'images/pulp/**'
+      - '.github/workflows/integration.yml'
 
 permissions:
   contents: read
