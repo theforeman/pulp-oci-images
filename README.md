@@ -25,6 +25,17 @@ VERSION=3.85 make build
 make push
 ```
 
+## Source
+
+The source image installs the versions pinned by the `pulpcore-packaging`
+submodule's `automation/requirements.txt` using pip. Build it with:
+
+```bash
+PROJECT=pulp-source make build
+```
+
+The image is tagged as `quay.io/foreman/pulp:<pulpcore-version>-wheels`.
+
 ## Development
 
 Development builds give you a Pulp server with all the plugins Foreman/Katello needs,

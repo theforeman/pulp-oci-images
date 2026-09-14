@@ -26,6 +26,21 @@ push:
 	)
 endif
 
+# Source builds
+ifeq ($(PROJECT),pulp-source)
+SOURCE_REQUIREMENTS=images/pulp-source/pulpcore-packaging/automation/requirements.txt
+_SOURCE_PULPCORE_VERSION=$(shell sed -n 's/^pulpcore==//p' $(SOURCE_REQUIREMENTS) 2>/dev/null)
+WHEELS_IMAGE_TAG?=$(if $(_SOURCE_PULPCORE_VERSION),$(_SOURCE_PULPCORE_VERSION),latest)-wheels
+WHEELS_IMAGE_NAME=quay.io/foreman/pulp
+
+build:
+	cd images/pulp-source && podman build --file Containerfile \
+		--tag ${WHEELS_IMAGE_NAME}:${WHEELS_IMAGE_TAG} .
+
+push:
+	podman push ${WHEELS_IMAGE_NAME}:${WHEELS_IMAGE_TAG}
+endif
+
 # Development builds
 ifeq ($(PROJECT),pulp-development)
 _PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/requirements.txt 2>/dev/null | cut -d= -f3)
