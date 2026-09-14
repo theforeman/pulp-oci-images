@@ -1,0 +1,4 @@
+[submodule "images/pulp-source/pulpcore-packaging"]
+	path = images/pulp-source/pulpcore-packaging
+	url = https://github.com/theforeman/pulpcore-packaging.git
+	branch = rpm/develop
