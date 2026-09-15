@@ -1,5 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>theforeman/theforeman-rel-eng-konflux//renovate/konflux-tekton"
+  ],
   "customManagers": [
     {
       "customType": "regex",
@@ -10,24 +13,6 @@
         "(?<depName>[\\w\\-\\.\\/]+):?(?<currentValue>[\\w\\-\\.]+)?@(?<currentDigest>sha256:[a-f0-9]+)"
       ],
       "datasourceTemplate": "docker"
-    }
-  ],
-  "packageRules": [
-    {
-      "matchDatasources": ["docker"],
-      "schedule": ["at any time"]
-    },
-    {
-      "matchManagers": ["tekton"],
-      "schedule": ["at any time"]
-    },
-    {
-      "description": "Keep Clair on 0.3.x until Roxctl is available in the cluster",
-      "matchManagers": ["tekton"],
-      "matchPackageNames": [
-        "quay.io/konflux-ci/tekton-catalog/task-clair-scan"
-      ],
-      "allowedVersions": "<0.4.0"
     }
   ]
 }
