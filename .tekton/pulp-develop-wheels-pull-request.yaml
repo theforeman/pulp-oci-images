@@ -6,6 +6,7 @@ metadata:
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
+    pipelinesascode.tekton.dev/task: "github-add-comment:0.3.0"
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
@@ -75,7 +76,7 @@ spec:
         1h, 2d, 3w for hours, days, and weeks, respectively.
       name: image-expires-after
       type: string
-    - default: "false"
+    - default: "true"
       description: Build a source image.
       name: build-source-image
       type: string
@@ -161,6 +162,8 @@ spec:
         value: $(params.git-url)
       - name: revision
         value: $(params.revision)
+      - name: symlinkCheckIgnorePattern
+        value: images/pulp-source/pulpcore-packaging/packages/*
       - name: ociStorage
         value: $(params.output-image).git
       - name: ociArtifactExpiresAfter
@@ -255,7 +258,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah-oci-ta:0.10.5@sha256:5fcf620537b0dece56a9c9a8090ce7592a874da92cc2a5d398abdc2382eb8a3c
+          value: quay.io/foreman/tekton-catalog/task-buildah-oci-ta@sha256:2b5c6df75cf64c59f7725a6515b3d2c260fb487425ccc33bb907d22a350efc55
         - name: kind
           value: task
         resolver: bundles
@@ -483,6 +486,9 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value:
+         - "pull-request-wheels-{{pull_request_number}}"
       runAfter:
       - build-image-index
       taskRef:
@@ -539,6 +545,25 @@ spec:
         operator: in
         values:
         - "false"
+    - name: post-image-tag
+      runAfter:
+      - apply-tags
+      taskRef:
+        name: github-add-comment
+      params:
+      - name: REQUEST_URL
+        value: "{{ repo_url }}/pull/{{ pull_request_number }}"
+      - name: COMMENT_OR_FILE
+        value: |
+          :package: **Build complete!**
+
+          Test this image with tag: `quay.io/foreman/stage/pulp:pull-request-wheels-{{ pull_request_number }}`
+
+          Built from commit: [`{{ revision }}`]({{ repo_url }}/commit/{{ revision }})
+      - name: GITHUB_TOKEN_SECRET_NAME
+        value: "{{ git_auth_secret }}"
+      - name: GITHUB_TOKEN_SECRET_KEY
+        value: "git-provider-token"
     workspaces:
     - name: git-auth
       optional: true

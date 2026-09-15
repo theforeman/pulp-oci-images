@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/foreman/stage/pulp:{{revision}}
+    value: quay.io/foreman/stage/pulp:wheels-{{revision}}
   - name: dockerfile
     value: images/pulp-source/Containerfile
   - name: path-context
@@ -72,7 +72,7 @@ spec:
         1h, 2d, 3w for hours, days, and weeks, respectively.
       name: image-expires-after
       type: string
-    - default: "false"
+    - default: "true"
       description: Build a source image.
       name: build-source-image
       type: string
@@ -158,6 +158,8 @@ spec:
         value: $(params.git-url)
       - name: revision
         value: $(params.revision)
+      - name: symlinkCheckIgnorePattern
+        value: images/pulp-source/pulpcore-packaging/packages/*
       - name: ociStorage
         value: $(params.output-image).git
       - name: ociArtifactExpiresAfter
@@ -252,7 +254,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah-oci-ta:0.10.5@sha256:5fcf620537b0dece56a9c9a8090ce7592a874da92cc2a5d398abdc2382eb8a3c
+          value: quay.io/foreman/tekton-catalog/task-buildah-oci-ta@sha256:2b5c6df75cf64c59f7725a6515b3d2c260fb487425ccc33bb907d22a350efc55
         - name: kind
           value: task
         resolver: bundles
