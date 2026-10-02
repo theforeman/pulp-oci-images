@@ -13,6 +13,7 @@ IMAGE_TAGS=${IMAGE_NAME}:${PROJECT_XY_TAG} ${IMAGE_NAME}:${PROJECT_XYZ_TAG} ${IM
 # Production build target
 ifeq ($(PROJECT),pulp)
 VERSION?=nightly
+VERIFY_IMAGE=${IMAGE_NAME}:${PROJECT_XYZ_TAG}
 
 build:
 	cd images/${PROJECT} && podman build --file Containerfile --build-arg VERSION=${VERSION} --tag ${IMAGE_NAME}:${PROJECT_XYZ_TAG} .
@@ -32,6 +33,7 @@ SOURCE_REQUIREMENTS=images/pulp-source/pulpcore-packaging/automation/requirement
 _SOURCE_PULPCORE_VERSION=$(shell sed -n 's/^pulpcore==//p' $(SOURCE_REQUIREMENTS) 2>/dev/null)
 WHEELS_IMAGE_TAG?=$(if $(_SOURCE_PULPCORE_VERSION),$(_SOURCE_PULPCORE_VERSION),latest)-wheels
 WHEELS_IMAGE_NAME=quay.io/foreman/pulp
+VERIFY_IMAGE=${WHEELS_IMAGE_NAME}:${WHEELS_IMAGE_TAG}
 
 build:
 	cd images/pulp-source && podman build --file Containerfile \
@@ -46,6 +48,7 @@ ifeq ($(PROJECT),pulp-development)
 _PINNED_VERSION=$(shell grep '^pulpcore==' images/pulp-development/requirements.txt 2>/dev/null | cut -d= -f3)
 PULPCORE_VERSION=$(if $(_PINNED_VERSION),$(_PINNED_VERSION),latest)
 DEV_IMAGE_NAME=quay.io/foreman/pulp-development
+VERIFY_IMAGE=${DEV_IMAGE_NAME}:${PULPCORE_VERSION}
 
 build:
 	cd images/pulp-development && podman build --file Containerfile \
@@ -55,3 +58,7 @@ build:
 push:
 	podman push ${DEV_IMAGE_NAME}:${PULPCORE_VERSION}
 endif
+
+verify-storage:
+	podman run --rm --entrypoint python3 ${VERIFY_IMAGE} \
+		-c 'from storages.backends.s3 import S3Storage; import boto3; assert S3Storage and boto3'

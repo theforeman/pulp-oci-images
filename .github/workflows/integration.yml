@@ -35,6 +35,9 @@ jobs:
       - name: Build pulp image
         run: make build
 
+      - name: Verify object storage runtime
+        run: make verify-storage
+
       - name: Export images as tarballs
         run: |
           podman save -o pulp-image.tar quay.io/foreman/pulp:${{ env.PULP_IMAGE_TAG }}
