@@ -35,6 +35,6 @@ jobs:
           submodules: recursive
       - name: Pin pulpcore version
         if: matrix.pulpcore_version != ''
-        run: sed -i "s/^pulpcore$/pulpcore==${{ matrix.pulpcore_version }}/" images/pulp-development/requirements.txt
+        run: sed -i "s/^pulpcore\[s3\]$/pulpcore[s3]==${{ matrix.pulpcore_version }}/" images/pulp-development/requirements.txt
       - name: Build ${{ matrix.container }} container
         run: PROJECT=${{ matrix.project }} make build

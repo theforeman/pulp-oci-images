@@ -1,4 +1,4 @@
-pulpcore
+pulpcore[s3]
 pulp-ansible
 pulp-container
 pulp-deb
