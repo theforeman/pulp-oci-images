@@ -3,6 +3,9 @@
 This repository provides Pulp container images for the Foreman project's use case.
 It follows [foremanctl's container builds structure](https://github.com/theforeman/foremanctl/blob/master/docs/developer/container-image-builds.md).
 
+The production, source and development images include the S3 storage backend.
+Filesystem storage remains the default until it is changed in Pulp's normal settings.
+
 Note that OCI stands for "Open Container Initiative", see [here](https://opencontainers.org/).
 
 ## Production

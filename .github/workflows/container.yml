@@ -38,3 +38,5 @@ jobs:
         run: sed -i "s/^pulpcore$/pulpcore==${{ matrix.pulpcore_version }}/" images/pulp-development/requirements.txt
       - name: Build ${{ matrix.container }} container
         run: PROJECT=${{ matrix.project }} make build
+      - name: Verify object storage runtime
+        run: PROJECT=${{ matrix.project }} make verify-storage
