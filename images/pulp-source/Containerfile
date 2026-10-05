@@ -24,7 +24,7 @@ RUN dnf install 'dnf-command(config-manager)' -y && \
 
 COPY pulpcore-packaging/automation/requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt 'pulpcore[s3]'
 
 COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
 COPY --chmod=0755 assets/pulp-content /usr/bin/pulp-content

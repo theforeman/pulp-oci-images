@@ -3,6 +3,9 @@
 This repository provides Pulp container images for the Foreman project's use case.
 It follows [foremanctl's container builds structure](https://github.com/theforeman/foremanctl/blob/master/docs/developer/container-image-builds.md).
 
+The production, source and development images include the S3 storage backend.
+Filesystem storage remains the default until it is changed in Pulp's normal settings.
+
 Note that OCI stands for "Open Container Initiative", see [here](https://opencontainers.org/).
 
 ## Production
@@ -79,7 +82,7 @@ By default pulpcore is unpinned, so pip installs the latest compatible version o
 everything.
 
 The Makefile reads `requirements.txt` to determine the base image tag. If there's a
-`pulpcore==X.Y.Z` pin it uses that version, otherwise it defaults to `:latest`.
+`pulpcore[s3]==X.Y.Z` pin it uses that version, otherwise it defaults to `:latest`.
 
 A separate `constraints.txt` file is used to point `pulp-smart-proxy` at a locally
 patched copy that has its pulpcore version requirement removed. This allows
@@ -92,7 +95,7 @@ If you need a specific pulpcore version,
 pin it directly in `images/pulp-development/requirements.txt`:
 
 ```
-pulpcore==3.105.1
+pulpcore[s3]==3.105.1
 ```
 
 Then build normally:
@@ -107,7 +110,7 @@ also pin individual plugins if you need a fully locked set. The nightly RPM repo
 useful reference for compatible version combinations:
 
 ```
-pulpcore==3.105.1
+pulpcore[s3]==3.105.1
 pulp-ansible==0.29.7
 pulp-container==2.27.6
 pulp-rpm==3.35.2
@@ -121,7 +124,7 @@ pulp-deb==3.8.1
 | I want... | What to do |
 |---|---|
 | Latest everything | `PROJECT=pulp-development make build` (no changes needed) |
-| Specific pulpcore | Pin `pulpcore==X.Y.Z` in `requirements.txt`, then build |
+| Specific pulpcore | Pin `pulpcore[s3]==X.Y.Z` in `requirements.txt`, then build |
 | Fully locked versions | Pin all packages in `requirements.txt`, then build |
 | Push to registry | `PROJECT=pulp-development make push` |
 

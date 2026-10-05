@@ -19,7 +19,7 @@ COPY requirements.txt constraints.txt .
 
 # Install plugins from requirements.txt, constrained by constraints.txt.
 # constraints.txt redirects pulp-smart-proxy to the local patched copy.
-# To pin pulpcore, edit requirements.txt (e.g. pulpcore==3.105.1).
+# To pin pulpcore, edit requirements.txt (e.g. pulpcore[s3]==3.105.1).
 RUN pip install -r requirements.txt -c constraints.txt && \
     rm -rf /tmp/pulp_smart_proxy
 
