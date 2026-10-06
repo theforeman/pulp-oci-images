@@ -1,6 +1,7 @@
 FROM  quay.io/centos/centos:stream10
 
 ARG VERSION=3.105
+ARG USE_HERMETO_REPOS=false
 
 ENV PULP_GUNICORN_TIMEOUT=${PULP_GUNICORN_TIMEOUT:-90}
 ENV PULP_API_WORKERS=${PULP_API_WORKERS:-2}
@@ -18,9 +19,16 @@ RUN groupadd --system --gid 700 pulp && \
     --shell /sbin/nologin \
     pulp
 
-RUN dnf -y update && \
-    dnf -y --nodocs --setopt install_weak_deps=False install \
-    https://yum.theforeman.org/pulpcore/${VERSION}/el10/$(uname -m)/pulpcore-release.rpm && \
+COPY RPM-GPG-KEY-pulpcore /etc/pki/rpm-gpg/RPM-GPG-KEY-pulpcore
+
+RUN rpmkeys --import \
+        /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial-SHA256 \
+        /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512 \
+        /etc/pki/rpm-gpg/RPM-GPG-KEY-pulpcore && \
+    if [ "${USE_HERMETO_REPOS}" != "true" ]; then \
+        dnf -y --nodocs --setopt install_weak_deps=False install \
+        https://yum.theforeman.org/pulpcore/${VERSION}/el10/$(uname -m)/pulpcore-release.rpm; \
+    fi && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
     pulpcore \
     pulpcore-plugin\({ansible,container,deb,ostree,rpm,python,smart_proxy}\) && \

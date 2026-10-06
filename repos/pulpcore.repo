@@ -1,0 +1,17 @@
+[pulpcore]
+name=Pulpcore 3.105 for EL 10 - $basearch
+baseurl=https://yum.theforeman.org/pulpcore/3.105/el10/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pulpcore
+repo_gpgcheck=0
+metadata_expire=6h
+
+[pulpcore-source]
+name=Pulpcore 3.105 for EL 10 - Source
+baseurl=https://yum.theforeman.org/pulpcore/3.105/el10/source/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-pulpcore
+repo_gpgcheck=0
+metadata_expire=6h

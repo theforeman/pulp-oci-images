@@ -28,6 +28,12 @@ spec:
     value: images/pulp/Containerfile
   - name: path-context
     value: images/pulp
+  - name: hermetic
+    value: "true"
+  - name: build-args
+    value: [USE_HERMETO_REPOS=true]
+  - name: prefetch-input
+    value: '[{"type":"rpm","path":"images/pulp"}]'
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
