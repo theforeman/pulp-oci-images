@@ -10,6 +10,9 @@ on:
 permissions:
   contents: read
 
+env:
+  VERSION: "3.105"
+
 concurrency:
   group: ${{ github.ref_name }}-${{ github.workflow }}
   cancel-in-progress: true
