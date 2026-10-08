@@ -35,6 +35,12 @@ jobs:
       - name: Build pulp image
         run: make build
 
+      - name: Verify PostgreSQL driver runtime
+        run: |
+          podman run --rm --entrypoint python3 \
+            quay.io/foreman/pulp:${{ env.PULP_IMAGE_TAG }} \
+            -c 'import psycopg'
+
       - name: Export images as tarballs
         run: |
           podman save -o pulp-image.tar quay.io/foreman/pulp:${{ env.PULP_IMAGE_TAG }}
