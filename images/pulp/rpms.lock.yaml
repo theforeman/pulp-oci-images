@@ -466,20 +466,20 @@ arches:
     name: openldap
     evr: 2.6.13-1.el10
     sourcerpm: openldap-2.6.13-1.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-9.9p1-32.el10.x86_64.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-9.9p1-33.el10.x86_64.rpm
     repoid: baseos
-    size: 362560
-    checksum: sha256:972fed127f7bc0261db42da72cfc046086b36ffdec966cfcfb3513f268852a98
+    size: 362682
+    checksum: sha256:4ddcf1eedbee29bc0f5f9b0279f659c0178c3f2710a7d026f3793ac67611418e
     name: openssh
-    evr: 9.9p1-32.el10
-    sourcerpm: openssh-9.9p1-32.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-clients-9.9p1-32.el10.x86_64.rpm
+    evr: 9.9p1-33.el10
+    sourcerpm: openssh-9.9p1-33.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-clients-9.9p1-33.el10.x86_64.rpm
     repoid: baseos
-    size: 787212
-    checksum: sha256:13ea53732b460b24fe28eda06f24f8fae2556aeed5e76cf45a6a75328c9e4faa
+    size: 787498
+    checksum: sha256:13fcb8c753765df21490831bcc5832deeb76089011622b077712dca7bbebd086
     name: openssh-clients
-    evr: 9.9p1-32.el10
-    sourcerpm: openssh-9.9p1-32.el10.src.rpm
+    evr: 9.9p1-33.el10
+    sourcerpm: openssh-9.9p1-33.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ostree-2026.4-1.el10.x86_64.rpm
     repoid: baseos
     size: 303045
@@ -2093,12 +2093,12 @@ arches:
     checksum: sha256:ffe4f013c1b87ac54545752b7a13ab40ca4d1ccb025516b5c3b7f39e046c7aaa
     name: openldap
     evr: 2.6.13-1.el10
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/openssh-9.9p1-32.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/openssh-9.9p1-33.el10.src.rpm
     repoid: baseos-source
-    size: 2419675
-    checksum: sha256:34a5201099ecc34177613e2a64d4bd787b6baa151076736cb1b6ead5b00a805e
+    size: 2423856
+    checksum: sha256:90a73a2b14c2ef82ff63f815c51fceb4cc6cd7c11bdb86013335d002ce942cc9
     name: openssh
-    evr: 9.9p1-32.el10
+    evr: 9.9p1-33.el10
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/ostree-2026.4-1.el10.src.rpm
     repoid: baseos-source
     size: 2198033
