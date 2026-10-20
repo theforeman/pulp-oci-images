@@ -4,20 +4,20 @@ lockfileVendor: redhat
 arches:
 - arch: x86_64
   packages:
-  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/ansible-core-2.16.19-2.el10.noarch.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/ansible-core-2.16.19-3.el10.noarch.rpm
     repoid: appstream
-    size: 3040450
-    checksum: sha256:edc19dce243f7d47e5e55c4f19953ca8e8f15f6a5eb4b6fc0e055d22241b3585
+    size: 3040824
+    checksum: sha256:f7014cf33689983a7666b3fd7b71368766444601e8856d884de49b1746b40c2a
     name: ansible-core
-    evr: 1:2.16.19-2.el10
-    sourcerpm: ansible-core-2.16.19-2.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/ansible-test-2.16.19-2.el10.noarch.rpm
+    evr: 1:2.16.19-3.el10
+    sourcerpm: ansible-core-2.16.19-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/ansible-test-2.16.19-3.el10.noarch.rpm
     repoid: appstream
-    size: 1095077
-    checksum: sha256:2e80dc76fe54d148854a0dd5c6985ef7e3511ae0f466f30c681d14d07552db1d
+    size: 1095551
+    checksum: sha256:7910237c2c5b37ece12cb4d8559b2a63f6c499cdab9feb92294a0bc5e53e77f2
     name: ansible-test
-    evr: 1:2.16.19-2.el10
-    sourcerpm: ansible-core-2.16.19-2.el10.src.rpm
+    evr: 1:2.16.19-3.el10
+    sourcerpm: ansible-core-2.16.19-3.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cairo-1.18.2-3.el10.x86_64.rpm
     repoid: appstream
     size: 732527
@@ -207,20 +207,20 @@ arches:
     name: default-fonts-core-sans
     evr: 4.1-3.el10
     sourcerpm: langpacks-4.1-3.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-1.02.215-3.el10.x86_64.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-1.02.217-1.el10.x86_64.rpm
     repoid: baseos
-    size: 151428
-    checksum: sha256:835543fc199922f375f04679dc7ea45eb80eade8f939757db228e9cdf8e2dd3a
+    size: 152209
+    checksum: sha256:d68e4237966de76c62e141e93d1e643a92f2300b7241667a8cbd867db0ee2051
     name: device-mapper
-    evr: 10:1.02.215-3.el10
-    sourcerpm: lvm2-2.03.41-3.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-libs-1.02.215-3.el10.x86_64.rpm
+    evr: 10:1.02.217-1.el10
+    sourcerpm: lvm2-2.03.43-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-libs-1.02.217-1.el10.x86_64.rpm
     repoid: baseos
-    size: 198118
-    checksum: sha256:6dbae56deac7c5f365ec63b8f58b5d4db30216ea9782e77b4c1df302360873eb
+    size: 201573
+    checksum: sha256:3ff5b8c7b4235d6e1dcad93e039b4705c59ec33b8955bc313bdff79e7cf2838e
     name: device-mapper-libs
-    evr: 10:1.02.215-3.el10
-    sourcerpm: lvm2-2.03.41-3.el10.src.rpm
+    evr: 10:1.02.217-1.el10
+    sourcerpm: lvm2-2.03.43-1.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dracut-107-11.el10.x86_64.rpm
     repoid: baseos
     size: 491640
@@ -1769,12 +1769,12 @@ arches:
     evr: 4.1.0-3.el10
     sourcerpm: python3.12-zipp-4.1.0-3.el10.src.rpm
   source:
-  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/ansible-core-2.16.19-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/ansible-core-2.16.19-3.el10.src.rpm
     repoid: appstream-source
-    size: 5402559
-    checksum: sha256:0d225a46555423cf4c4a25f787dff2b1c733818b7093769af03a4527180bc36b
+    size: 5409319
+    checksum: sha256:98a8ecaaf1d79f9210cb151327e423cfe9651df9af1db5358164d3a22bf588c6
     name: ansible-core
-    evr: 1:2.16.19-2.el10
+    evr: 1:2.16.19-3.el10
   - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/cairo-1.18.2-3.el10.src.rpm
     repoid: appstream-source
     size: 32616609
@@ -2069,12 +2069,12 @@ arches:
     checksum: sha256:706aa6cc9541cbb55616c039a5ec37a2518821473960612485f407f3704f4c66
     name: libsolv
     evr: 0.7.33-7.el10
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/lvm2-2.03.41-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/lvm2-2.03.43-1.el10.src.rpm
     repoid: baseos-source
-    size: 3322064
-    checksum: sha256:9766729c7b1d0f82236cb7220f97ed7dfd0fb4179bcafb71e643eabacf6782ea
+    size: 3513242
+    checksum: sha256:4bc770e1abc461618af7ee5657e0452b1ecf36e67f25a6cf70c66dc482081d04
     name: lvm2
-    evr: 10:2.03.41-3.el10
+    evr: 10:2.03.43-1.el10
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/mailcap-2.1.54-8.el10.src.rpm
     repoid: baseos-source
     size: 53670
