@@ -578,13 +578,13 @@ arches:
     name: redhat-text-vf-fonts
     evr: 4.1.0-1.el10
     sourcerpm: redhat-fonts-4.1.0-1.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-plugin-syslog-4.19.1.1-25.el10.x86_64.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-plugin-syslog-4.19.1.1-28.el10.x86_64.rpm
     repoid: baseos
-    size: 18232
-    checksum: sha256:b7245944d2d1c8e847f32dff0795d2d87c6c65fbb6904352dd091dace495bab3
+    size: 18207
+    checksum: sha256:5c78a7f3dd3b20306f9060045e0bfa8d1e7e3bb763751ce63b04d093bbfc5553
     name: rpm-plugin-syslog
-    evr: 4.19.1.1-25.el10
-    sourcerpm: rpm-4.19.1.1-25.el10.src.rpm
+    evr: 4.19.1.1-28.el10
+    sourcerpm: rpm-4.19.1.1-28.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/subscription-manager-rhsm-certificates-20220623-6.el10.noarch.rpm
     repoid: baseos
     size: 21390
@@ -592,27 +592,27 @@ arches:
     name: subscription-manager-rhsm-certificates
     evr: 20220623-6.el10
     sourcerpm: subscription-manager-rhsm-certificates-20220623-6.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-257-34.el10.x86_64.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-257-35.el10.x86_64.rpm
     repoid: baseos
-    size: 6082158
-    checksum: sha256:ad069e2548015564c8ceaaaada4cdab9e275d82cc2d0c0b4013500f04e883a17
+    size: 6083032
+    checksum: sha256:1ccc2b40ec4a86f03098558438e67827e1f1630914094cf8a7e6e0098e9308e9
     name: systemd
-    evr: 257-34.el10
-    sourcerpm: systemd-257-34.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-pam-257-34.el10.x86_64.rpm
+    evr: 257-35.el10
+    sourcerpm: systemd-257-35.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-pam-257-35.el10.x86_64.rpm
     repoid: baseos
-    size: 343117
-    checksum: sha256:2171d91c183e89861556d70bc4fd120ec94123ca8b5e40fab6cb46bf594fdd47
+    size: 343419
+    checksum: sha256:d0e84e8620beba4146c946187d648ff22a4a393bb614de5fb3d993c520c05e44
     name: systemd-pam
-    evr: 257-34.el10
-    sourcerpm: systemd-257-34.el10.src.rpm
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-udev-257-34.el10.x86_64.rpm
+    evr: 257-35.el10
+    sourcerpm: systemd-257-35.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-udev-257-35.el10.x86_64.rpm
     repoid: baseos
-    size: 2444106
-    checksum: sha256:745280eda0e1151f53a5f72bfd71847668aa4f47295229b9ac472e143c17265b
+    size: 2443363
+    checksum: sha256:e2f1cd9ca254c76b5d3b7da543dde89cba5cd73d0080b461051c495a6acc4305
     name: systemd-udev
-    evr: 257-34.el10
-    sourcerpm: systemd-257-34.el10.src.rpm
+    evr: 257-35.el10
+    sourcerpm: systemd-257-35.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tpm2-tools-5.7-6.el10.x86_64.rpm
     repoid: baseos
     size: 874821
@@ -788,13 +788,13 @@ arches:
     name: python3.12-bracex
     evr: 3.0.1-1.el10
     sourcerpm: python3.12-bracex-3.0.1-1.el10.src.rpm
-  - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-brotli-1.2.0-2.el10.x86_64.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-brotli-1.2.1-1.el10.x86_64.rpm
     repoid: pulpcore
-    size: 368244
-    checksum: sha256:6e2f826c9db605bbe28fe3ddb38cd6fb8efa331876c1a88d83cea4421324faa5
+    size: 368258
+    checksum: sha256:0387c253c444f4bd04b049b9ddebb07b29cc01f0f1634778f4cccbb74eefad9b
     name: python3.12-brotli
-    evr: 1.2.0-2.el10
-    sourcerpm: python3.12-brotli-1.2.0-2.el10.src.rpm
+    evr: 1.2.1-1.el10
+    sourcerpm: python3.12-brotli-1.2.1-1.el10.src.rpm
   - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-certifi-2026.7.22-1.el10.noarch.rpm
     repoid: pulpcore
     size: 16163
@@ -872,13 +872,13 @@ arches:
     name: python3.12-diff-match-patch
     evr: 20241021-3.el10
     sourcerpm: python3.12-diff-match-patch-20241021-3.el10.src.rpm
-  - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-django-4.2.30-2.el10.noarch.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-django-4.2.30-3.el10.noarch.rpm
     repoid: pulpcore
-    size: 5855729
-    checksum: sha256:0379080a7846f27cbbc9d34d55db0184b69df9c5a4037b74947def0fde7d11f7
+    size: 5858014
+    checksum: sha256:5a5f21a84c5f0999952b156353f84c58d1e56d12243cfb4e823229b3ffeb0459
     name: python3.12-django
-    evr: 4.2.30-2.el10
-    sourcerpm: python3.12-django-4.2.30-2.el10.src.rpm
+    evr: 4.2.30-3.el10
+    sourcerpm: python3.12-django-4.2.30-3.el10.src.rpm
   - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-django-filter-25.1-2.el10.noarch.rpm
     repoid: pulpcore
     size: 114127
@@ -1369,13 +1369,13 @@ arches:
     name: python3.12-pulp-python
     evr: 3.27.6-1.el10
     sourcerpm: python3.12-pulp-python-3.27.6-1.el10.src.rpm
-  - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-pulp-rpm-3.35.3-3.el10.noarch.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-pulp-rpm-3.35.4-1.el10.noarch.rpm
     repoid: pulpcore
-    size: 635528
-    checksum: sha256:3db26e910b1658da397e48624240461f033bc1dbc7e1c1567693384da5ca0bae
+    size: 667999
+    checksum: sha256:8c00d1a3f7f91d6a81d1f4c64213b1b5fdc972f5d0ffde2d11e11e94fe87c126
     name: python3.12-pulp-rpm
-    evr: 3.35.3-3.el10
-    sourcerpm: python3.12-pulp-rpm-3.35.3-3.el10.src.rpm
+    evr: 3.35.4-1.el10
+    sourcerpm: python3.12-pulp-rpm-3.35.4-1.el10.src.rpm
   - url: https://yum.theforeman.org/pulpcore/3.105/el10/x86_64/python3.12-pulp-smart-proxy-0.4.0-2.el10.noarch.rpm
     repoid: pulpcore
     size: 27982
@@ -2165,12 +2165,12 @@ arches:
     checksum: sha256:60e3772d3a99350e2e015752ad428e53a8b6d1775a9fe07aebd3a05b9ab0f575
     name: redhat-fonts
     evr: 4.1.0-1.el10
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/rpm-4.19.1.1-25.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/rpm-4.19.1.1-28.el10.src.rpm
     repoid: baseos-source
-    size: 6053564
-    checksum: sha256:cf0b52bc4e2439e7eabe28ba5d63be0404640191648b1ae21df0eceeb45b6a21
+    size: 6072638
+    checksum: sha256:aae17f49a2d7421d90173386671e7167c8eccbb5e3f9b31da1ac4f3a95d639b8
     name: rpm
-    evr: 4.19.1.1-25.el10
+    evr: 4.19.1.1-28.el10
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/subscription-manager-1.30.16-1.el10.src.rpm
     repoid: baseos-source
     size: 2354688
@@ -2183,12 +2183,12 @@ arches:
     checksum: sha256:b0f3243a0e5161edaf5ff2b43da109f56f6fc78474015ef1c0a00c363511d8f7
     name: subscription-manager-rhsm-certificates
     evr: 20220623-6.el10
-  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/systemd-257-34.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/systemd-257-35.el10.src.rpm
     repoid: baseos-source
-    size: 20756505
-    checksum: sha256:b85667d0693461a505c4f37a06d73ade2d013c6b112ad7fcc9dd2e7107c1ae6b
+    size: 20785419
+    checksum: sha256:4d3b74c5ca1f1a0b21db334f004169f44e13d57b6e99123072c71b29339868cc
     name: systemd
-    evr: 257-34.el10
+    evr: 257-35.el10
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/tpm2-tools-5.7-6.el10.src.rpm
     repoid: baseos-source
     size: 1534805
@@ -2339,12 +2339,12 @@ arches:
     checksum: sha256:0316ef3c7ccb3cf7a180a4c093e014f1950ca6fec2c53477bea86cca8d655c78
     name: python3.12-bracex
     evr: 3.0.1-1.el10
-  - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-brotli-1.2.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-brotli-1.2.1-1.el10.src.rpm
     repoid: pulpcore-source
-    size: 7320874
-    checksum: sha256:6e1be0ec13dc1dd4f5a4805d4adcfec4be2c4dfd3ff793d6384fbc355beda46c
+    size: 7321893
+    checksum: sha256:ca445a3befcf2febcd5c60d33871fae3d073b26d6ffb446392b2b5a06e8b4583
     name: python3.12-brotli
-    evr: 1.2.0-2.el10
+    evr: 1.2.1-1.el10
   - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-certifi-2026.7.22-1.el10.src.rpm
     repoid: pulpcore-source
     size: 160555
@@ -2405,12 +2405,12 @@ arches:
     checksum: sha256:4c99b3d70879635097cde2ff36dbe8963f324cbc367a31cec8c6092dcb79c21c
     name: python3.12-diff-match-patch
     evr: 20241021-3.el10
-  - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-django-4.2.30-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-django-4.2.30-3.el10.src.rpm
     repoid: pulpcore-source
-    size: 10468672
-    checksum: sha256:72828e5797ecf2557be488c2a5db68bacae127f1423db1466788467fbca69545
+    size: 10486573
+    checksum: sha256:0af11b02d1f03eca7e75c2030e3cce4be074d1424d142f17d5ca663f1955eb8a
     name: python3.12-django
-    evr: 4.2.30-2.el10
+    evr: 4.2.30-3.el10
   - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-django-filter-25.1-2.el10.src.rpm
     repoid: pulpcore-source
     size: 160887
@@ -2825,12 +2825,12 @@ arches:
     checksum: sha256:c7f129e711073db2ed3e40acb3688f14ac00cbc08da76a232c03096ff0f2fbe2
     name: python3.12-pulp-python
     evr: 3.27.6-1.el10
-  - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-pulp-rpm-3.35.3-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-pulp-rpm-3.35.4-1.el10.src.rpm
     repoid: pulpcore-source
-    size: 311020
-    checksum: sha256:a83650461a5aee293d1363e46fc0769dae2505fa5a48044c98540cae6e480594
+    size: 324253
+    checksum: sha256:558ffdfaa1112638aa5092d1754221b64db76ce2b91063d30605ba63ba06063e
     name: python3.12-pulp-rpm
-    evr: 3.35.3-3.el10
+    evr: 3.35.4-1.el10
   - url: https://yum.theforeman.org/pulpcore/3.105/el10/source/python3.12-pulp-smart-proxy-0.4.0-2.el10.src.rpm
     repoid: pulpcore-source
     size: 29898
