@@ -22,8 +22,10 @@ RUN dnf -y update && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
     https://yum.theforeman.org/pulpcore/${VERSION}/el10/$(uname -m)/pulpcore-release.rpm && \
     dnf -y --nodocs --setopt install_weak_deps=False install \
+    libpq \
     pulpcore \
     pulpcore-plugin\({ansible,container,deb,ostree,rpm,python,smart_proxy}\) && \
+    python3 -c 'import psycopg' && \
     dnf clean all
 
 COPY --chmod=0755 assets/pulp-api /usr/bin/pulp-api
