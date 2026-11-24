@@ -1,0 +1,18 @@
+context:
+  containerfile: Containerfile
+contentOrigin:
+  repofiles:
+    - ../../repos/centos.repo
+    - ../../repos/pulpcore.repo
+packages:
+  - pulpcore
+  - pulpcore-plugin(ansible)
+  - pulpcore-plugin(container)
+  - pulpcore-plugin(deb)
+  - pulpcore-plugin(ostree)
+  - pulpcore-plugin(rpm)
+  - pulpcore-plugin(python)
+  - pulpcore-plugin(smart_proxy)
+arches:
+  - x86_64
+installWeakDeps: false

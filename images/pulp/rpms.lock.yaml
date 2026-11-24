@@ -1,0 +1,3041 @@
+---
+lockfileVersion: 1
+lockfileVendor: redhat
+arches:
+- arch: x86_64
+  packages:
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/ansible-core-2.16.20-1.el10.noarch.rpm
+    repoid: appstream
+    size: 3053531
+    checksum: sha256:2f831c902c73da7232a4c4d6c653f91bfbbe243643c39c74a7919ea950d3edef
+    name: ansible-core
+    evr: 1:2.16.20-1.el10
+    sourcerpm: ansible-core-2.16.20-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/ansible-test-2.16.20-1.el10.noarch.rpm
+    repoid: appstream
+    size: 1095282
+    checksum: sha256:18ec235389532365f487f377287b7dbbdcfce3d3f209a2c900f3ae8921933eef
+    name: ansible-test
+    evr: 1:2.16.20-1.el10
+    sourcerpm: ansible-core-2.16.20-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cairo-1.18.2-3.el10.x86_64.rpm
+    repoid: appstream
+    size: 732527
+    checksum: sha256:5b10563c67096ecb7e8d191826616e45a1c2dc0612ed5fc0795ab48a7fef5146
+    name: cairo
+    evr: 1.18.2-3.el10
+    sourcerpm: cairo-1.18.2-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cairo-gobject-1.18.2-3.el10.x86_64.rpm
+    repoid: appstream
+    size: 16375
+    checksum: sha256:901553c87721827ccf31d5b2e80baa9e2fc784266104e89b65b0246a1ab016b8
+    name: cairo-gobject
+    evr: 1.18.2-3.el10
+    sourcerpm: cairo-1.18.2-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/fontconfig-2.15.0-7.el10.x86_64.rpm
+    repoid: appstream
+    size: 286868
+    checksum: sha256:8c4ab9aa9328fe404316a14b402517e9f7925f0ca5793f63976abf620a5e4580
+    name: fontconfig
+    evr: 2.15.0-7.el10
+    sourcerpm: fontconfig-2.15.0-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/git-core-2.52.0-1.el10.x86_64.rpm
+    repoid: appstream
+    size: 5399241
+    checksum: sha256:b25bdf6ad11c400fa7b0c75979a1bc96d56e8c64bca0bf045ede2c6f1cc79457
+    name: git-core
+    evr: 2.52.0-1.el10
+    sourcerpm: git-2.52.0-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libX11-1.8.13-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 666158
+    checksum: sha256:581f85cea75b7621752245d2cf3709e93140375dcf466eab040269098d0bb72f
+    name: libX11
+    evr: 1.8.13-2.el10
+    sourcerpm: libX11-1.8.13-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libX11-common-1.8.13-2.el10.noarch.rpm
+    repoid: appstream
+    size: 202452
+    checksum: sha256:32b63510077cac1a1e3127d0086607272101a051b025edf959fb42c2b6a6f156
+    name: libX11-common
+    evr: 1.8.13-2.el10
+    sourcerpm: libX11-1.8.13-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libXau-1.0.11-8.el10.x86_64.rpm
+    repoid: appstream
+    size: 33509
+    checksum: sha256:d2867d28226143e7a0f747b0a405fac39bd45e1c8cd7b090f5a036f0825038e2
+    name: libXau
+    evr: 1.0.11-8.el10
+    sourcerpm: libXau-1.0.11-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libXext-1.3.6-3.el10.x86_64.rpm
+    repoid: appstream
+    size: 40980
+    checksum: sha256:d72215f0d9b0d8f59e1770b7c9051e98a257d7fba63b4faa4fdf4e9670dd6d78
+    name: libXext
+    evr: 1.3.6-3.el10
+    sourcerpm: libXext-1.3.6-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libXrender-0.9.11-10.el10.x86_64.rpm
+    repoid: appstream
+    size: 27673
+    checksum: sha256:213c9d3322da61c85cc84002b8a2f7ea94d464c89c9359fd7e5b4c2a997790ad
+    name: libXrender
+    evr: 0.9.11-10.el10
+    sourcerpm: libXrender-0.9.11-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libjpeg-turbo-3.0.2-4.el10.x86_64.rpm
+    repoid: appstream
+    size: 258329
+    checksum: sha256:f9b3883addd584a19cd3e1c76d4df368d3395a222f6672b999890bc2bacf9b78
+    name: libjpeg-turbo
+    evr: 3.0.2-4.el10
+    sourcerpm: libjpeg-turbo-3.0.2-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxcb-1.17.0-3.el10.x86_64.rpm
+    repoid: appstream
+    size: 261020
+    checksum: sha256:458eb425c05df216484d1ad6954d9a449919026d0aca8b276da05e9d96dafd84
+    name: libxcb
+    evr: 1.17.0-3.el10
+    sourcerpm: libxcb-1.17.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxslt-1.1.39-10.el10.x86_64.rpm
+    repoid: appstream
+    size: 194059
+    checksum: sha256:46f179e253d2f4e04340c120e1d00f8e4b5fa3095a1e96f1ecd61cb5b3e3d4a8
+    name: libxslt
+    evr: 1.1.39-10.el10
+    sourcerpm: libxslt-1.1.39-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/pixman-0.43.4-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 293013
+    checksum: sha256:c91d0077a917e843a009c69b63793de4b8d2f9a81414f63e319ac31bbf6a08cb
+    name: pixman
+    evr: 0.43.4-2.el10
+    sourcerpm: pixman-0.43.4-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python3-lxml-5.2.1-4.el10.x86_64.rpm
+    repoid: appstream
+    size: 1442260
+    checksum: sha256:3776cbef286817c31d64104c197517cf19249dc4975a4b895cc2007c074da0a3
+    name: python3-lxml
+    evr: 5.2.1-4.el10
+    sourcerpm: python-lxml-5.2.1-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python3-resolvelib-1.0.1-6.el10.noarch.rpm
+    repoid: appstream
+    size: 45789
+    checksum: sha256:da7eb15aadafd11efc46dbe729b44f53421ae81cbf000f1e1d3dd10854749f56
+    name: python3-resolvelib
+    evr: 1.0.1-6.el10
+    sourcerpm: python-resolvelib-1.0.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python3-solv-0.7.33-7.el10.x86_64.rpm
+    repoid: appstream
+    size: 135400
+    checksum: sha256:6da93a2dc40f158f5f423424da39c9de1d7c0d754447d07a47fda102a432f4c1
+    name: python3-solv
+    evr: 0.7.33-7.el10
+    sourcerpm: libsolv-0.7.33-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/xml-common-0.6.3-65.el10.noarch.rpm
+    repoid: appstream
+    size: 32925
+    checksum: sha256:e825290296c333ba7f9a877ff63b1c47afb7b0352212336e5ff7feeef1e4652f
+    name: xml-common
+    evr: 0.6.3-65.el10
+    sourcerpm: sgml-common-0.6.3-65.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/composefs-1.0.8-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 62841
+    checksum: sha256:6b0e338405403903332fca8581d0f25ce2a215761d50679b9966625c1964c870
+    name: composefs
+    evr: 1.0.8-1.el10
+    sourcerpm: composefs-1.0.8-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/composefs-libs-1.0.8-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 55277
+    checksum: sha256:3d71842201750a6860a6f96c2fe6510a37baf52a21405c88cc88e0df2451cc85
+    name: composefs-libs
+    evr: 1.0.8-1.el10
+    sourcerpm: composefs-1.0.8-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cpio-2.15-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 298898
+    checksum: sha256:c9d78552f56c77b0f047123dfb1cf85a958fe7ad276f67e95eaedbe2d80d56b3
+    name: cpio
+    evr: 2.15-3.el10
+    sourcerpm: cpio-2.15-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cryptsetup-libs-2.8.6-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 594665
+    checksum: sha256:a82c9f962cdb0cd7c054e405723a9f56b7e05c4bdeb777da130ec463f641461c
+    name: cryptsetup-libs
+    evr: 2.8.6-2.el10
+    sourcerpm: cryptsetup-2.8.6-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cyrus-sasl-lib-2.1.28-27.el10.x86_64.rpm
+    repoid: baseos
+    size: 108494
+    checksum: sha256:ea78a83980b03f3709266f5e4c96b41699fe8d5f7003fb9503c3a7529c6ca46a
+    name: cyrus-sasl-lib
+    evr: 2.1.28-27.el10
+    sourcerpm: cyrus-sasl-2.1.28-27.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dbus-1.14.10-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 3201
+    checksum: sha256:019154fd71f6a8d9ad1f66de4e91e55ac02abdbe3553b6e3ec0ed42fc3dba557
+    name: dbus
+    evr: 1:1.14.10-6.el10
+    sourcerpm: dbus-1.14.10-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dbus-broker-36-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 177456
+    checksum: sha256:c60a8e71fe0ada8f9f69cf0d3ed80e484d71d21163836fdb82655be13544d91b
+    name: dbus-broker
+    evr: 36-5.el10
+    sourcerpm: dbus-broker-36-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dbus-common-1.14.10-6.el10.noarch.rpm
+    repoid: baseos
+    size: 13775
+    checksum: sha256:46da64dfece403446ed8d674cfd0bccd979b2311069ac4facc3125847bf12bd9
+    name: dbus-common
+    evr: 1:1.14.10-6.el10
+    sourcerpm: dbus-1.14.10-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/default-fonts-core-sans-4.1-3.el10.noarch.rpm
+    repoid: baseos
+    size: 30238
+    checksum: sha256:3414f1f85f951894331d554ca53920ce360c05054ce52a95e08a6cf0a5c6bc9a
+    name: default-fonts-core-sans
+    evr: 4.1-3.el10
+    sourcerpm: langpacks-4.1-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-1.02.217-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 152209
+    checksum: sha256:d68e4237966de76c62e141e93d1e643a92f2300b7241667a8cbd867db0ee2051
+    name: device-mapper
+    evr: 10:1.02.217-1.el10
+    sourcerpm: lvm2-2.03.43-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-libs-1.02.217-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 201573
+    checksum: sha256:3ff5b8c7b4235d6e1dcad93e039b4705c59ec33b8955bc313bdff79e7cf2838e
+    name: device-mapper-libs
+    evr: 10:1.02.217-1.el10
+    sourcerpm: lvm2-2.03.43-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dracut-107-11.el10.x86_64.rpm
+    repoid: baseos
+    size: 491640
+    checksum: sha256:0e2bbc1aebcb00a25eb6ab21de47520c6b3967d0c9a406e7da7e74f0ed4b50fc
+    name: dracut
+    evr: 107-11.el10
+    sourcerpm: dracut-107-11.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/fonts-filesystem-2.0.5-18.el10.noarch.rpm
+    repoid: baseos
+    size: 9017
+    checksum: sha256:47aad570f097e1f4fc9250b80ffa4f7e4cabc20e740476c86160105d5d164a54
+    name: fonts-filesystem
+    evr: 1:2.0.5-18.el10
+    sourcerpm: fonts-rpm-macros-2.0.5-18.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/freetype-2.13.2-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 419254
+    checksum: sha256:94f7f1b3aa1e03012beaf6739fd11cd9723e29485395f0ac0f21baf603cabdad
+    name: freetype
+    evr: 2.13.2-8.el10
+    sourcerpm: freetype-2.13.2-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/fuse-libs-2.9.9-25.el10.x86_64.rpm
+    repoid: baseos
+    size: 101332
+    checksum: sha256:a8b094d60b9a7f83a84d8c7b0cdeed565be044dc2ecd170965b2c55ee4fa40f7
+    name: fuse-libs
+    evr: 2.9.9-25.el10
+    sourcerpm: fuse-2.9.9-25.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gnupg2-2.4.5-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 2842028
+    checksum: sha256:b91831f705df214ca8fb10a5d9d649e13453445a6e7b59758ff646f6b1dbc72c
+    name: gnupg2
+    evr: 2.4.5-5.el10
+    sourcerpm: gnupg2-2.4.5-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gobject-introspection-1.79.1-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 110019
+    checksum: sha256:5568b6dc55df70312b37674cf01cb3502178c62c5242a4a0cbd3e104c35ddb59
+    name: gobject-introspection
+    evr: 1.79.1-7.el10
+    sourcerpm: gobject-introspection-1.79.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/google-noto-fonts-common-20240401-5.el10.noarch.rpm
+    repoid: baseos
+    size: 18510
+    checksum: sha256:3d27ec0f7202b2aaa4a983c38ec657515859e1887a771904667dc377f93654c9
+    name: google-noto-fonts-common
+    evr: 20240401-5.el10
+    sourcerpm: google-noto-fonts-20240401-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/google-noto-sans-vf-fonts-20240401-5.el10.noarch.rpm
+    repoid: baseos
+    size: 608533
+    checksum: sha256:e621392fa989b7a1ce4f92b53f57109acf3986215dbe0ddbc6a387493962e23c
+    name: google-noto-sans-vf-fonts
+    evr: 20240401-5.el10
+    sourcerpm: google-noto-fonts-20240401-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gpgme-1.23.2-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 224250
+    checksum: sha256:e7633adeb20a8fca833b363e16dd0fe01fd4729e43fa0beacde751e79d112d05
+    name: gpgme
+    evr: 1.23.2-6.el10
+    sourcerpm: gpgme-1.23.2-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/graphite2-1.3.14-17.el10.x86_64.rpm
+    repoid: baseos
+    size: 98363
+    checksum: sha256:fe68efd9d2414658b07117770441980ddcdb18eafa5285d19963b09fada9c279
+    name: graphite2
+    evr: 1.3.14-17.el10
+    sourcerpm: graphite2-1.3.14-17.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/harfbuzz-8.4.0-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 1015624
+    checksum: sha256:f9dcc00070b66770e782d9e4f73467d70a4d9a3b357d901669bb3b60a82d1570
+    name: harfbuzz
+    evr: 8.4.0-6.el10
+    sourcerpm: harfbuzz-8.4.0-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kbd-2.6.4-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 438162
+    checksum: sha256:b8cc084bad0a1cef112a9f31d2fe258bbf460ca3d4899d3b078ea7db99001c01
+    name: kbd
+    evr: 2.6.4-8.el10
+    sourcerpm: kbd-2.6.4-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kbd-legacy-2.6.4-8.el10.noarch.rpm
+    repoid: baseos
+    size: 604875
+    checksum: sha256:6690962b6f2b938cef32b6759b07a84cab5c557ae1f999f4d084827a6c2721e0
+    name: kbd-legacy
+    evr: 2.6.4-8.el10
+    sourcerpm: kbd-2.6.4-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kbd-misc-2.6.4-8.el10.noarch.rpm
+    repoid: baseos
+    size: 1772266
+    checksum: sha256:36afe2b8926b4085770cb22c0005bf9e9db109bdab5ba07e870cc340fcacea4f
+    name: kbd-misc
+    evr: 2.6.4-8.el10
+    sourcerpm: kbd-2.6.4-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kmod-31-14.el10.x86_64.rpm
+    repoid: baseos
+    size: 139587
+    checksum: sha256:b7a6db4aeb68bd305008a3150ef643305a4151513f588c9b47aa2716ac51b23e
+    name: kmod
+    evr: 31-14.el10
+    sourcerpm: kmod-31-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kmod-libs-31-14.el10.x86_64.rpm
+    repoid: baseos
+    size: 70863
+    checksum: sha256:18fec953cb196a871342741189e41af82ba1afa619632f2ee26d22b7d4f98b7c
+    name: kmod-libs
+    evr: 31-14.el10
+    sourcerpm: kmod-31-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/less-661-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 195697
+    checksum: sha256:1cf4afdf660772f65668cc702722facd7ed79d849150e14cab623cffd4167516
+    name: less
+    evr: 661-3.el10
+    sourcerpm: less-661-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libassuan-2.5.6-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 70437
+    checksum: sha256:5cb1eff4efadf906bb8060bb41c205bf77eabe73142599053ae892ee7d85e9c0
+    name: libassuan
+    evr: 2.5.6-6.el10
+    sourcerpm: libassuan-2.5.6-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libbrotli-1.1.0-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 352510
+    checksum: sha256:80a484f48d64bbecd91c3e9c5635fb29b4e0188fbc4344ceed52afebdcda139c
+    name: libbrotli
+    evr: 1.1.0-9.el10
+    sourcerpm: brotli-1.1.0-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libcbor-0.11.0-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 34953
+    checksum: sha256:49a800e8569ac3e22fbe1b3595683f9934cbeabc6fd03c1a224b97441af7d3ab
+    name: libcbor
+    evr: 0.11.0-3.el10
+    sourcerpm: libcbor-0.11.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libedit-3.1-52.20230828cvs.el10.x86_64.rpm
+    repoid: baseos
+    size: 108282
+    checksum: sha256:49f4225770973669f10c2657e9a0a9c2f9ab8ab54e63412a23d111457d43c4af
+    name: libedit
+    evr: 3.1-52.20230828cvs.el10
+    sourcerpm: libedit-3.1-52.20230828cvs.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libevent-2.1.13-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 266836
+    checksum: sha256:7777403e2f41ede258477a99e35e972c7b9167bce334e2901981b15f4261da69
+    name: libevent
+    evr: 2.1.13-1.el10
+    sourcerpm: libevent-2.1.13-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libfido2-1.14.0-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 100605
+    checksum: sha256:5652d77a1394ba80ece520e817832224a03b693d172b7b32587d0fc502419bdd
+    name: libfido2
+    evr: 1.14.0-7.el10
+    sourcerpm: libfido2-1.14.0-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libgcrypt-1.11.0-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 600121
+    checksum: sha256:53d46313b1566f2ce977add8fbd4bc08f6a74e2ae684549b3315fea3ee73b1e2
+    name: libgcrypt
+    evr: 1.11.0-7.el10
+    sourcerpm: libgcrypt-1.11.0-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libgpg-error-1.50-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 242041
+    checksum: sha256:b7d74c79f82abf581fdb5b9fbd0b3792640c26780652036be284347b7b339fff
+    name: libgpg-error
+    evr: 1.50-2.el10
+    sourcerpm: libgpg-error-1.50-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libkcapi-1.5.1-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 46478
+    checksum: sha256:ae5e4464edb931d548870cbcbb79b3773efd5253d9f38ab2db417d5c48616242
+    name: libkcapi
+    evr: 1.5.1-1.el10
+    sourcerpm: libkcapi-1.5.1-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libkcapi-hasher-1.5.1-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 24245
+    checksum: sha256:93e76d17e352adff70d77e4ec2949950514e1c41b6f9991802b9264655c9bae2
+    name: libkcapi-hasher
+    evr: 1.5.1-1.el10
+    sourcerpm: libkcapi-1.5.1-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libkcapi-hmaccalc-1.5.1-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 7854
+    checksum: sha256:5cf9a6b7e5856fa78d55646936ed357200239a3ef9754c04ff48885da171726d
+    name: libkcapi-hmaccalc
+    evr: 1.5.1-1.el10
+    sourcerpm: libkcapi-1.5.1-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libksba-1.6.7-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 163116
+    checksum: sha256:2bfa8330ad9c63eaecd2bd1d0989625e812d853a85c505cb759a2d1c06750607
+    name: libksba
+    evr: 1.6.7-2.el10
+    sourcerpm: libksba-1.6.7-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpng-1.6.40-13.el10.x86_64.rpm
+    repoid: baseos
+    size: 122607
+    checksum: sha256:423c631be6dc2149783917b27c9f4afad7346aa25a9c37944b8a16ca8abc3b96
+    name: libpng
+    evr: 2:1.6.40-13.el10
+    sourcerpm: libpng-1.6.40-13.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpq-16.11-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 260305
+    checksum: sha256:f9df0863da9ef14d70aa558ed3e0a235577d434ab094dac01b60d853d6d7e0ee
+    name: libpq
+    evr: 16.11-3.el10
+    sourcerpm: libpq-16.11-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libseccomp-2.5.6-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 72894
+    checksum: sha256:654051862cc301ed43501ab36b687ed5adeb3ca57689f54a80bf760ad9686e54
+    name: libseccomp
+    evr: 2.5.6-1.el10
+    sourcerpm: libseccomp-2.5.6-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/mailcap-2.1.54-8.el10.noarch.rpm
+    repoid: baseos
+    size: 36103
+    checksum: sha256:7cc12da2feacaa10faf8445d51ee2ebff684f41c0e745e4a9c40e8883b1d5d1c
+    name: mailcap
+    evr: 2.1.54-8.el10
+    sourcerpm: mailcap-2.1.54-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/npth-1.6-21.el10.x86_64.rpm
+    repoid: baseos
+    size: 26253
+    checksum: sha256:9d5de697dd346d3eeac85008ab93fbfce90ea49342418402959eda90829578d0
+    name: npth
+    evr: 1.6-21.el10
+    sourcerpm: npth-1.6-21.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openldap-2.6.13-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 246250
+    checksum: sha256:668bf98af411e595330006c5eb8834cfe0fd8b11e90525d0f72709b0c200e224
+    name: openldap
+    evr: 2.6.13-1.el10
+    sourcerpm: openldap-2.6.13-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-9.9p1-34.el10.x86_64.rpm
+    repoid: baseos
+    size: 363030
+    checksum: sha256:f647afcfc4b90b3fc474d7e3f1ba272dcfaa9961bfaed01d7ffe5a404c52f046
+    name: openssh
+    evr: 9.9p1-34.el10
+    sourcerpm: openssh-9.9p1-34.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-clients-9.9p1-34.el10.x86_64.rpm
+    repoid: baseos
+    size: 788302
+    checksum: sha256:bb66ccd2b4f3fabada887e5af1d9c656601d0feaa13d3fdf2f3062b9a5555a32
+    name: openssh-clients
+    evr: 9.9p1-34.el10
+    sourcerpm: openssh-9.9p1-34.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ostree-2026.4-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 303045
+    checksum: sha256:67a585e8878729d76f6aa37bb8dce63dcbb410431d8649d7d37a2d249ede3385
+    name: ostree
+    evr: 2026.4-1.el10
+    sourcerpm: ostree-2026.4-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ostree-libs-2026.4-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 512797
+    checksum: sha256:8cc6a4c8a8c5bc26e6ffd5845777478c194ed6149a50d1b30b60a32089e42c00
+    name: ostree-libs
+    evr: 2026.4-1.el10
+    sourcerpm: ostree-2026.4-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/procps-ng-4.0.4-13.el10.x86_64.rpm
+    repoid: baseos
+    size: 382847
+    checksum: sha256:bd91d403871fc30eb969117d61f2be75255bdd218fe33567c8aa0c9d505ddff1
+    name: procps-ng
+    evr: 4.0.4-13.el10
+    sourcerpm: procps-ng-4.0.4-13.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-attrs-23.2.0-7.el10.noarch.rpm
+    repoid: baseos
+    size: 128478
+    checksum: sha256:db65f2b7315133b23a5b5ca2bba987d9ca7036038857fc1b3cb6ebf7a8c0739f
+    name: python3-attrs
+    evr: 23.2.0-7.el10
+    sourcerpm: python-attrs-23.2.0-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-distro-1.9.0-5.el10.noarch.rpm
+    repoid: baseos
+    size: 48911
+    checksum: sha256:27a9a36b6c0032b9e9dce3c10b4e7d4a28e772b9d9004273e21b43d0c162dd1b
+    name: python3-distro
+    evr: 1.9.0-5.el10
+    sourcerpm: python-distro-1.9.0-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-jsonschema-4.19.1-7.el10.noarch.rpm
+    repoid: baseos
+    size: 211048
+    checksum: sha256:b00b389f70b05f7d7e91fbcbd2bdb15e6de674a848e8e402e1c178238f21f579
+    name: python3-jsonschema
+    evr: 4.19.1-7.el10
+    sourcerpm: python-jsonschema-4.19.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-jsonschema-specifications-2023.11.2-6.el10.noarch.rpm
+    repoid: baseos
+    size: 29335
+    checksum: sha256:fd22c223552228850c374b90cf8a2879f011df6dd25df3c46b4531b33eacaf53
+    name: python3-jsonschema-specifications
+    evr: 2023.11.2-6.el10
+    sourcerpm: python-jsonschema-specifications-2023.11.2-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-referencing-0.31.1-6.el10.noarch.rpm
+    repoid: baseos
+    size: 84084
+    checksum: sha256:63579275b40e3ecbc75f3180105067d2ef8d3f89252c1533c39c4db83022923b
+    name: python3-referencing
+    evr: 0.31.1-6.el10
+    sourcerpm: python-referencing-0.31.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-rpds-py-0.17.1-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 305291
+    checksum: sha256:5b59ca74f739fd55e1b56784a422b57f54fe24cd8723380cbc2e34425d524b0e
+    name: python3-rpds-py
+    evr: 0.17.1-6.el10
+    sourcerpm: python-rpds-py-0.17.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-setuptools-69.0.3-12.el10.noarch.rpm
+    repoid: baseos
+    size: 1658243
+    checksum: sha256:a89d8c55cbd8f833599ca853341b7bd698f70b966590c5dc2b2d160fc3d98f67
+    name: python3-setuptools
+    evr: 69.0.3-12.el10
+    sourcerpm: python-setuptools-69.0.3-12.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/redhat-text-vf-fonts-4.1.0-1.el10.noarch.rpm
+    repoid: baseos
+    size: 362745
+    checksum: sha256:7dff55961b8f58c117c7508bac6447f3ac249a5edc875bd6962faafed5c9eb3d
+    name: redhat-text-vf-fonts
+    evr: 4.1.0-1.el10
+    sourcerpm: redhat-fonts-4.1.0-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-plugin-syslog-4.19.1.1-29.el10.x86_64.rpm
+    repoid: baseos
+    size: 18006
+    checksum: sha256:60217a7a419534005fef8f5db6c5023954ab3ca0e21db836b457c9d0f43284aa
+    name: rpm-plugin-syslog
+    evr: 4.19.1.1-29.el10
+    sourcerpm: rpm-4.19.1.1-29.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-257-35.el10.x86_64.rpm
+    repoid: baseos
+    size: 6083032
+    checksum: sha256:1ccc2b40ec4a86f03098558438e67827e1f1630914094cf8a7e6e0098e9308e9
+    name: systemd
+    evr: 257-35.el10
+    sourcerpm: systemd-257-35.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-pam-257-35.el10.x86_64.rpm
+    repoid: baseos
+    size: 343419
+    checksum: sha256:d0e84e8620beba4146c946187d648ff22a4a393bb614de5fb3d993c520c05e44
+    name: systemd-pam
+    evr: 257-35.el10
+    sourcerpm: systemd-257-35.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-udev-257-35.el10.x86_64.rpm
+    repoid: baseos
+    size: 2443363
+    checksum: sha256:e2f1cd9ca254c76b5d3b7da543dde89cba5cd73d0080b461051c495a6acc4305
+    name: systemd-udev
+    evr: 257-35.el10
+    sourcerpm: systemd-257-35.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tpm2-tools-5.7-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 874821
+    checksum: sha256:07823ef8a6b46769741271587613f3f18f207e75fef33993ea6188ff8b9adf01
+    name: tpm2-tools
+    evr: 5.7-6.el10
+    sourcerpm: tpm2-tools-5.7-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tpm2-tss-fapi-4.1.3-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 357773
+    checksum: sha256:488677eb91d2b76695476fe99ae6baef4042f193f7150e7def02b226457158eb
+    name: tpm2-tss-fapi
+    evr: 4.1.3-6.el10
+    sourcerpm: tpm2-tss-4.1.3-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/xz-5.6.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 491253
+    checksum: sha256:c59c3c4346ee2b4063f4959bd88a33ba12d30e26dbefd88c12299a7823525394
+    name: xz
+    evr: 1:5.6.2-5.el10
+    sourcerpm: xz-5.6.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/zstd-1.5.5-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 475257
+    checksum: sha256:4ef415b98ddbe28f836b86699f4cec6002817ea20fb47499d3c6bb0814db6d4b
+    name: zstd
+    evr: 1.5.5-9.el10
+    sourcerpm: zstd-1.5.5-9.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/ansible-lint-6.22.2-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 424630
+    checksum: sha256:e011b96d3e221ed1ae8fdeb16e3584a077ec548d81b04a382d524ad7f7a64ac8
+    name: ansible-lint
+    evr: 6.22.2-2.el10
+    sourcerpm: ansible-lint-6.22.2-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/createrepo_c-libs-1.2.6-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 106867
+    checksum: sha256:3da5c7f96e1df6016fb9cdb3b0b2607aedc133acd4f955f6de91249d44060a4e
+    name: createrepo_c-libs
+    evr: 1.2.6-1.el10
+    sourcerpm: createrepo_c-1.2.6-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-aiofiles-25.1.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 33865
+    checksum: sha256:689666590722094eca3f01edfccc63080647ea18a5ce6f3d53825282f07ca610
+    name: python3.12-aiofiles
+    evr: 25.1.0-2.el10
+    sourcerpm: python3.12-aiofiles-25.1.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-aiohappyeyeballs-2.7.1-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 32696
+    checksum: sha256:eed148349006bfae62bb3ae9e0beb065407b9bda272044f7b1f04119792b03f1
+    name: python3.12-aiohappyeyeballs
+    evr: 2.7.1-2.el10
+    sourcerpm: python3.12-aiohappyeyeballs-2.7.1-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-aiohttp-3.14.5-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 836014
+    checksum: sha256:2ddf08cf59b6e87e474ec297e6e50ed8be5ba32e2b96f06b940236a004b93a4a
+    name: python3.12-aiohttp
+    evr: 3.14.5-1.el10
+    sourcerpm: python3.12-aiohttp-3.14.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-aiohttp-socks-0.12.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 26039
+    checksum: sha256:83974118f3db88ad4beece4a2c0740010a4b9591f3d488afdea35019fe54af31
+    name: python3.12-aiohttp-socks
+    evr: 0.12.0-1.el10
+    sourcerpm: python3.12-aiohttp-socks-0.12.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-aiohttp-xmlrpc-1.5.0-8.el10.noarch.rpm
+    repoid: pulpcore
+    size: 32485
+    checksum: sha256:6b0c55037f17bed34cc8c9093aa703279beb74ef17429181157d1df1f8772eaf
+    name: python3.12-aiohttp-xmlrpc
+    evr: 1.5.0-8.el10
+    sourcerpm: python3.12-aiohttp-xmlrpc-1.5.0-8.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-aiosignal-1.4.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 17619
+    checksum: sha256:a619ff4728368bad53f1135a96d999121af5c891291bf5aa2e260f7412d76854
+    name: python3.12-aiosignal
+    evr: 1.4.0-2.el10
+    sourcerpm: python3.12-aiosignal-1.4.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-annotated-types-0.8.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 28315
+    checksum: sha256:3e7b8cd0c0615a8c1c8239bfaa7fbfedb1f866555962915cd216df7f15e3422c
+    name: python3.12-annotated-types
+    evr: 0.8.0-1.el10
+    sourcerpm: python3.12-annotated-types-0.8.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-ansible-builder-3.0.0-4.el10.noarch.rpm
+    repoid: pulpcore
+    size: 76099
+    checksum: sha256:572d800fb168edea31d815c25a24b7f97a8c3fc7d46e67abc7418351bc95fe43
+    name: python3.12-ansible-builder
+    evr: 3.0.0-4.el10
+    sourcerpm: python3.12-ansible-builder-3.0.0-4.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-ansible-compat-4.1.11-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 57206
+    checksum: sha256:c4fd55a138af06b28376a9b54ceb933aa94435e381cbe46a4078460c6503d241
+    name: python3.12-ansible-compat
+    evr: 4.1.11-3.el10
+    sourcerpm: python3.12-ansible-compat-4.1.11-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-asgiref-3.13.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 62811
+    checksum: sha256:527c678cfd59507e10a16197cde1fefbae8dc97a4b3484631cdc24d3a220a8e1
+    name: python3.12-asgiref
+    evr: 3.13.0-1.el10
+    sourcerpm: python3.12-asgiref-3.13.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-asyncio-throttle-1.0.2-9.el10.noarch.rpm
+    repoid: pulpcore
+    size: 13771
+    checksum: sha256:9c342e2529a604561a347ef004b736b529203859b2208ced23fa43249eab9ee5
+    name: python3.12-asyncio-throttle
+    evr: 1.0.2-9.el10
+    sourcerpm: python3.12-asyncio-throttle-1.0.2-9.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-backoff-2.2.1-7.el10.noarch.rpm
+    repoid: pulpcore
+    size: 33246
+    checksum: sha256:704c2cf8a1d2d4bdee6cb84f2f04a0883e1f3e306318b937373884d07e3a4bd3
+    name: python3.12-backoff
+    evr: 2.2.1-7.el10
+    sourcerpm: python3.12-backoff-2.2.1-7.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-bandersnatch-6.6.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 260397
+    checksum: sha256:66695c53f0eb8aee665bb44e7b04bd09d3541e3af6565df0355ff90e11f5bee5
+    name: python3.12-bandersnatch
+    evr: 6.6.0-2.el10
+    sourcerpm: python3.12-bandersnatch-6.6.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-beautifulsoup4-4.15.0-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 200034
+    checksum: sha256:39c819c9fa7b35a42c66d4e1e37afd3009e4dbba7b703cf88b6de9dcd35582fb
+    name: python3.12-beautifulsoup4
+    evr: 4.15.0-3.el10
+    sourcerpm: python3.12-beautifulsoup4-4.15.0-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-bindep-2.14.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 59841
+    checksum: sha256:5a1ae92cc4366377c3ebe4a628dfc523de3fc37c42062859da0019c20c84c6c4
+    name: python3.12-bindep
+    evr: 2.14.0-2.el10
+    sourcerpm: python3.12-bindep-2.14.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-black-24.10.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 401519
+    checksum: sha256:98f86f3279624d59d6b5de07d706b33a45cf6e24bad5bc47a05dfd1aaf6fdcff
+    name: python3.12-black
+    evr: 24.10.0-2.el10
+    sourcerpm: python3.12-black-24.10.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-bracex-3.2.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 35373
+    checksum: sha256:b30bee0e8a50ca39321f03031221c6c7f0d1a2479efdc015ab83fde17b0fcda8
+    name: python3.12-bracex
+    evr: 3.2.2-1.el10
+    sourcerpm: python3.12-bracex-3.2.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-certifi-2026.10.23-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 16278
+    checksum: sha256:c21cf73bf9c5bbc400b27ab4db16288af26c08ca269d2557b55a9b0a104991c7
+    name: python3.12-certifi
+    evr: 2026.10.23-1.el10
+    sourcerpm: python3.12-certifi-2026.10.23-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-cffi-2.1.1-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 309695
+    checksum: sha256:d282d7a29764218cc430aee5016597371f85b08bb62a2727ec28261ab82d8d45
+    name: python3.12-cffi
+    evr: 2.1.1-1.el10
+    sourcerpm: python3.12-cffi-2.1.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-chardet-5.2.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 275597
+    checksum: sha256:9ab93920afa80669aa8c7071f67983d73d8d3945a16a8cb57f2f20990ed5f019
+    name: python3.12-chardet
+    evr: 5.2.0-2.el10
+    sourcerpm: python3.12-chardet-5.2.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-charset-normalizer-3.5.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 130774
+    checksum: sha256:57c637583fff1e01c6182f847ffb85115038bbcd0f79a382144ae6ccf090a6e6
+    name: python3.12-charset-normalizer
+    evr: 3.5.2-1.el10
+    sourcerpm: python3.12-charset-normalizer-3.5.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-click-8.5.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 255371
+    checksum: sha256:d04e239a2320c7690f93f72d1002a0b08b9fd914b0bd4f06669c627beee40d38
+    name: python3.12-click
+    evr: 8.5.1-1.el10
+    sourcerpm: python3.12-click-8.5.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-createrepo_c-1.2.6-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 68390
+    checksum: sha256:fc467d5ba45272b65d4385a67634e8d4d677dfcbdfa5f8c3d9c8d6290a8b85b9
+    name: python3.12-createrepo_c
+    evr: 1.2.6-1.el10
+    sourcerpm: createrepo_c-1.2.6-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-cryptography-50.0.2-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 1691344
+    checksum: sha256:a5a020ba353322db0f07a77b7354462bdacbb1f5fceca6bceaa3d7d2c04be254
+    name: python3.12-cryptography
+    evr: 50.0.2-1.el10
+    sourcerpm: python3.12-cryptography-50.0.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-debian-0.1.49-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 255028
+    checksum: sha256:23ce50c642bda3c387039a229a75cc40ca85976507b32fe7406ed27a7ce0ccbd
+    name: python3.12-debian
+    evr: 0.1.49-3.el10
+    sourcerpm: python3.12-debian-0.1.49-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-defusedxml-0.7.1-9.el10.noarch.rpm
+    repoid: pulpcore
+    size: 54523
+    checksum: sha256:2d08814dc5542c7df4cd5a175cbb3af1eb531f1ad3f4cba8fa024bf2e7b664ce
+    name: python3.12-defusedxml
+    evr: 0.7.1-9.el10
+    sourcerpm: python3.12-defusedxml-0.7.1-9.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-diff-match-patch-20241021-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 80451
+    checksum: sha256:e88cc8144d8f7a0f73a946631ec494946642ac265b4b2b5c4d32b98e639ce049
+    name: python3.12-diff-match-patch
+    evr: 20241021-3.el10
+    sourcerpm: python3.12-diff-match-patch-20241021-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-django-5.2.19-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 6111083
+    checksum: sha256:65865184febfb4f2952353f58a81084e64e98dae0d84e58afad811049b853014
+    name: python3.12-django
+    evr: 5.2.19-1.el10
+    sourcerpm: python3.12-django-5.2.19-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-django-filter-26.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 114603
+    checksum: sha256:56d539ebaf3df2b4df34b28ce1ff960bd587adc2d295b8e947c7748cd3f80068
+    name: python3.12-django-filter
+    evr: 26.1-1.el10
+    sourcerpm: python3.12-django-filter-26.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-django-guid-3.6.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 40574
+    checksum: sha256:c321372bfe9db163021bae7661abe0f61c0d5eab7aa64c7a212b2037febc65c0
+    name: python3.12-django-guid
+    evr: 3.6.1-1.el10
+    sourcerpm: python3.12-django-guid-3.6.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-django-import-export-4.4.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 136772
+    checksum: sha256:ac75fb2feca7200a14fdca4c9c30f837c988bd1c6668919a4a58e92b92018173
+    name: python3.12-django-import-export
+    evr: 4.4.5-1.el10
+    sourcerpm: python3.12-django-import-export-4.4.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-django-lifecycle-1.3.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 43784
+    checksum: sha256:02994febfc1777e50e367ddc82b5b0b49e72f92ee1ace248554f334bd07b27a1
+    name: python3.12-django-lifecycle
+    evr: 1.3.0-1.el10
+    sourcerpm: python3.12-django-lifecycle-1.3.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-django-readonly-field-1.1.2-7.el10.noarch.rpm
+    repoid: pulpcore
+    size: 17397
+    checksum: sha256:a4a1eda7df54b912ff52c9d2854e99c8887ae2152d2f08be679552afceef2636
+    name: python3.12-django-readonly-field
+    evr: 1.1.2-7.el10
+    sourcerpm: python3.12-django-readonly-field-1.1.2-7.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-djangorestframework-3.18.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 933715
+    checksum: sha256:1a0226d73108b13c86303e44c3d2c006fa58480813fbf7042c5518db063ed340
+    name: python3.12-djangorestframework
+    evr: 3.18.3-1.el10
+    sourcerpm: python3.12-djangorestframework-3.18.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-djangorestframework-queryfields-1.1.0-4.el10.noarch.rpm
+    repoid: pulpcore
+    size: 14001
+    checksum: sha256:43121c4a5d0325d29097cae4019188ac109b40a783498f368286f25b18c3380e
+    name: python3.12-djangorestframework-queryfields
+    evr: 1.1.0-4.el10
+    sourcerpm: python3.12-djangorestframework-queryfields-1.1.0-4.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-dnspython-2.9.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 631201
+    checksum: sha256:593cc4fdcc6e786ab6981bea2256f6ed032ea9d9476e6941909cc5bb00f48cfc
+    name: python3.12-dnspython
+    evr: 2.9.2-1.el10
+    sourcerpm: python3.12-dnspython-2.9.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-drf-access-policy-1.5.0-4.el10.noarch.rpm
+    repoid: pulpcore
+    size: 32374
+    checksum: sha256:d654ba5e73e35a643d50f84b58eec27fe040ba7ad3bcaf306e07864bf94b6237
+    name: python3.12-drf-access-policy
+    evr: 1.5.0-4.el10
+    sourcerpm: python3.12-drf-access-policy-1.5.0-4.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-drf-nested-routers-0.95.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 40420
+    checksum: sha256:9bfbf79493e18e45075e56167cba4873a6ade622e547a80b929401aeb1611a36
+    name: python3.12-drf-nested-routers
+    evr: 0.95.3-1.el10
+    sourcerpm: python3.12-drf-nested-routers-0.95.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-drf-spectacular-0.29.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 219788
+    checksum: sha256:750c1d508663c2f1ffb47ed4eef959a8ad4fe471d2d4840fc7de79ec850e41a6
+    name: python3.12-drf-spectacular
+    evr: 0.29.0-2.el10
+    sourcerpm: python3.12-drf-spectacular-0.29.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-dynaconf-3.3.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 708493
+    checksum: sha256:65f21f77fe569245c0cf40a90eaa3c7bfb2240f52d205755299e3fe5da892047
+    name: python3.12-dynaconf
+    evr: 3.3.5-1.el10
+    sourcerpm: python3.12-dynaconf-3.3.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-email-validator-2.3.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 59749
+    checksum: sha256:6a925aa96553415da33de5f7a33df67c58b52d92819515278b41bce5cf3a8c62
+    name: python3.12-email-validator
+    evr: 2.3.0-2.el10
+    sourcerpm: python3.12-email-validator-2.3.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-et-xmlfile-2.0.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 30965
+    checksum: sha256:7afc735e92b96785166315fe72661800b80c57dae912b0ec54dcb5386f72c9a9
+    name: python3.12-et-xmlfile
+    evr: 2.0.0-2.el10
+    sourcerpm: python3.12-et-xmlfile-2.0.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-filelock-4.2.10-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 327779
+    checksum: sha256:3339e178af5820f1b74038d05c7ac0718a0be55c4e045ef9e2a446bc8b628735
+    name: python3.12-filelock
+    evr: 4.2.10-1.el10
+    sourcerpm: python3.12-filelock-4.2.10-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-flake8-6.1.0-5.el10.noarch.rpm
+    repoid: pulpcore
+    size: 131318
+    checksum: sha256:0424e32d22e04cc2f9b6aaada30fbcc108f20bf3077a60a60f069eba7dbfeee5
+    name: python3.12-flake8
+    evr: 6.1.0-5.el10
+    sourcerpm: python3.12-flake8-6.1.0-5.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-frozenlist-1.8.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 22804
+    checksum: sha256:a8d2bd5e3f6c0cea78339493ff1ae4a432efbfa4868c7bfa1f22e90e33a3daca
+    name: python3.12-frozenlist
+    evr: 1.8.0-2.el10
+    sourcerpm: python3.12-frozenlist-1.8.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-galaxy-importer-0.4.43-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 124949
+    checksum: sha256:4f186988f25fb10b56a617690b691c1056d134af92bf4a008e170ee4a409389d
+    name: python3.12-galaxy-importer
+    evr: 0.4.43-1.el10
+    sourcerpm: python3.12-galaxy-importer-0.4.43-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-gitdb-4.0.12-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 131920
+    checksum: sha256:ea80826d3b02699623dd7f5aeac25f0fa9709c8a8b4f015aadb5e9901684e0b2
+    name: python3.12-gitdb
+    evr: 4.0.12-3.el10
+    sourcerpm: python3.12-gitdb-4.0.12-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-gitpython-3.2.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 431346
+    checksum: sha256:8bab3aea24c19986409bda67081238ee1673498cc38f2bffc3c50438105a6928
+    name: python3.12-gitpython
+    evr: 3.2.1-1.el10
+    sourcerpm: python3.12-gitpython-3.2.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-googleapis-common-protos-1.76.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 201813
+    checksum: sha256:5a16496eb05b62cc485501496a0438d48413a213588be899dbd548f0652a73ff
+    name: python3.12-googleapis-common-protos
+    evr: 1.76.0-1.el10
+    sourcerpm: python3.12-googleapis-common-protos-1.76.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-gunicorn-26.2.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 452002
+    checksum: sha256:19f0ca2611533a9d8e3aa481266bb8781517304c9098bc900dc027a1fc016094
+    name: python3.12-gunicorn
+    evr: 26.2.0-1.el10
+    sourcerpm: python3.12-gunicorn-26.2.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-humanfriendly-10.0-10.el10.noarch.rpm
+    repoid: pulpcore
+    size: 160531
+    checksum: sha256:212303c23ac2db8b6638a37a2d662f3fcf05196162b1ffee1575cb8a954cabe5
+    name: python3.12-humanfriendly
+    evr: 10.0-10.el10
+    sourcerpm: python3.12-humanfriendly-10.0-10.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-id-1.6.1-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 28446
+    checksum: sha256:239753dd23af17898e817839f5aa4b8588cfb87abbc58e76da2918ac92c4656f
+    name: python3.12-id
+    evr: 1.6.1-2.el10
+    sourcerpm: python3.12-id-1.6.1-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-idna-3.20-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 102478
+    checksum: sha256:f1586eeb9555e896bb7b2a2063d37066105d7764d4bad5419d40088ee811afc2
+    name: python3.12-idna
+    evr: 3.20-1.el10
+    sourcerpm: python3.12-idna-3.20-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-importlib-metadata-10.1.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 70766
+    checksum: sha256:ccf89efe7f8405c11b63c72724e40fb7b4188fccadc204500e72cd559180998a
+    name: python3.12-importlib-metadata
+    evr: 10.1.0-1.el10
+    sourcerpm: python3.12-importlib-metadata-10.1.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-importlib-resources-6.4.5-4.el10.noarch.rpm
+    repoid: pulpcore
+    size: 90299
+    checksum: sha256:7da47c7961fbab7acf17b7ceec52f65406bceca24951d596cbed9f2515df6f84
+    name: python3.12-importlib-resources
+    evr: 6.4.5-4.el10
+    sourcerpm: python3.12-importlib-resources-6.4.5-4.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-inflection-0.5.1-9.el10.noarch.rpm
+    repoid: pulpcore
+    size: 18391
+    checksum: sha256:97cdea78c7a261e95b8a76af01d6b60ae2652bba805dc29855a01ef14287064e
+    name: python3.12-inflection
+    evr: 0.5.1-9.el10
+    sourcerpm: python3.12-inflection-0.5.1-9.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-jinja2-3.1.6-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 314441
+    checksum: sha256:79beebaf22a78630395d1929754abac22e0edc4898bb7757e16faafd182e19e3
+    name: python3.12-jinja2
+    evr: 3.1.6-2.el10
+    sourcerpm: python3.12-jinja2-3.1.6-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-jq-1.12.0-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 369572
+    checksum: sha256:9dff338ab4ba36a5f4cb84c01d35e69e876a8f85fcc3196777b6ac4b4d5857f9
+    name: python3.12-jq
+    evr: 1.12.0-1.el10
+    sourcerpm: python3.12-jq-1.12.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-json_stream-2.5.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 83176
+    checksum: sha256:860b91c0e0e0b84cadcadf38e8af82351158e089a604b56d8836b781d4d16250
+    name: python3.12-json_stream
+    evr: 2.5.1-1.el10
+    sourcerpm: python3.12-json_stream-2.5.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-json_stream_rs_tokenizer-0.5.4-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 28256
+    checksum: sha256:58370a4db36b54b5b5c92eaee4c3698b3e73aa7c0dc29d4ce8913ae523aca312
+    name: python3.12-json_stream_rs_tokenizer
+    evr: 0.5.4-1.el10
+    sourcerpm: python3.12-json_stream_rs_tokenizer-0.5.4-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-mailbits-0.2.1-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 27434
+    checksum: sha256:bd998a0e5468be0b935c81c5f532cee1e4ee0980ff36f2280294e6127534710c
+    name: python3.12-mailbits
+    evr: 0.2.1-3.el10
+    sourcerpm: python3.12-mailbits-0.2.1-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-markdown-3.11.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 211585
+    checksum: sha256:732abab69022827cde227d68732d6e644842cc351af33e9db59ea883dfdd29bc
+    name: python3.12-markdown
+    evr: 3.11.3-1.el10
+    sourcerpm: python3.12-markdown-3.11.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-markdown-it-py-2.2.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 159708
+    checksum: sha256:bcfcccc3e62a63c4185b5d8cce807838e978a245c4d11260b4491e7f093cac17
+    name: python3.12-markdown-it-py
+    evr: 2.2.0-2.el10
+    sourcerpm: python3.12-markdown-it-py-2.2.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-markuppy-1.18-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 25495
+    checksum: sha256:a7d51b459fe711b982c184625f2e3f2d70359ea0fcb267a32d118db025ab84a2
+    name: python3.12-markuppy
+    evr: 1.18-2.el10
+    sourcerpm: python3.12-markuppy-1.18-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-markupsafe-3.0.4-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 29158
+    checksum: sha256:224f0c96bccaaa8c33a348ab43522545b97530a02b72463a8028e3d832b13634
+    name: python3.12-markupsafe
+    evr: 3.0.4-1.el10
+    sourcerpm: python3.12-markupsafe-3.0.4-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-mccabe-0.7.0-6.el10.noarch.rpm
+    repoid: pulpcore
+    size: 22388
+    checksum: sha256:965ca2508da86401eac6cd93c2bb65b45f308e1525ecba16bdd6a15df3d847a5
+    name: python3.12-mccabe
+    evr: 0.7.0-6.el10
+    sourcerpm: python3.12-mccabe-0.7.0-6.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-mdurl-0.1.2-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 25173
+    checksum: sha256:53d58917a423ab1432e926b20b7c3983f09f0e0eb949af5d92eb5f2d5c7025ec
+    name: python3.12-mdurl
+    evr: 0.1.2-3.el10
+    sourcerpm: python3.12-mdurl-0.1.2-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-multidict-6.7.1-2.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 84875
+    checksum: sha256:0b935d9333b120d6241427ad073183e4e3a55a0667119163e89e3390fcf18f3d
+    name: python3.12-multidict
+    evr: 6.7.1-2.el10
+    sourcerpm: python3.12-multidict-6.7.1-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-mypy-extensions-1.2.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 17501
+    checksum: sha256:25fd39f7813acc5cdc311222e6f288fce8a2dc325bcbea656a10cbc1cc88c7a5
+    name: python3.12-mypy-extensions
+    evr: 1.2.0-1.el10
+    sourcerpm: python3.12-mypy-extensions-1.2.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-nh3-0.3.7-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 696863
+    checksum: sha256:ce6665ca6d7c57e69f704e8c0bd08dff325eb068c0138300f244204dc2abf78b
+    name: python3.12-nh3
+    evr: 0.3.7-1.el10
+    sourcerpm: python3.12-nh3-0.3.7-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-odfpy-1.4.1-12.el10.noarch.rpm
+    repoid: pulpcore
+    size: 280466
+    checksum: sha256:27888a5fb7caf6f1751b1c3d913d6abf3fbaec36ec8d6ed230d61698cd527b60
+    name: python3.12-odfpy
+    evr: 1.4.1-12.el10
+    sourcerpm: python3.12-odfpy-1.4.1-12.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-openpyxl-3.1.5-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 521057
+    checksum: sha256:a01565694ca487d7505fb8ce82f8c67bb19cbca62743b705fef30fd4f01fc3d2
+    name: python3.12-openpyxl
+    evr: 3.1.5-3.el10
+    sourcerpm: python3.12-openpyxl-3.1.5-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_api-1.45.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 114900
+    checksum: sha256:53158470b6e22308feaa5a59e20ab4998646809607629f5c6c813ab691062d86
+    name: python3.12-opentelemetry_api
+    evr: 1.45.2-1.el10
+    sourcerpm: python3.12-opentelemetry_api-1.45.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_exporter_http_transport+requests-0.66b2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 8525
+    checksum: sha256:f35ca153945f21ac6ef4953e7ea2a4bfec145c849ea1acf3f070ab1445ef7bea
+    name: python3.12-opentelemetry_exporter_http_transport+requests
+    evr: 0.66b2-1.el10
+    sourcerpm: python3.12-opentelemetry_exporter_http_transport-0.66b2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_exporter_http_transport-0.66b2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 25857
+    checksum: sha256:78a6fde6c431f9156543d8a5164c523cc8b763d48d6c5c7bfed1e903da6aec64
+    name: python3.12-opentelemetry_exporter_http_transport
+    evr: 0.66b2-1.el10
+    sourcerpm: python3.12-opentelemetry_exporter_http_transport-0.66b2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_exporter_otlp_common-0.66b2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 30342
+    checksum: sha256:58b4e022147f3c864a7136287fa9c895e212c8dbf8a8b2b22f6e1c2094259e75
+    name: python3.12-opentelemetry_exporter_otlp_common
+    evr: 0.66b2-1.el10
+    sourcerpm: python3.12-opentelemetry_exporter_otlp_common-0.66b2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_exporter_otlp_proto_common-1.45.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 36924
+    checksum: sha256:6d9106ef915bc6dca7ab2e04e4dc5105efa13110ea5c0b6838996d6aed37e1b8
+    name: python3.12-opentelemetry_exporter_otlp_proto_common
+    evr: 1.45.2-1.el10
+    sourcerpm: python3.12-opentelemetry_exporter_otlp_proto_common-1.45.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_exporter_otlp_proto_http-1.45.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 43599
+    checksum: sha256:cc27c58b943b02e30968be5ad5fca790ac76e63830028dd854d311297521e2b7
+    name: python3.12-opentelemetry_exporter_otlp_proto_http
+    evr: 1.45.2-1.el10
+    sourcerpm: python3.12-opentelemetry_exporter_otlp_proto_http-1.45.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_proto-1.45.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 76893
+    checksum: sha256:2fcc2ced4b0f2f61a3fec8aca8ad30ca53b1dec59e55ea6c0aee70ee27be653e
+    name: python3.12-opentelemetry_proto
+    evr: 1.45.2-1.el10
+    sourcerpm: python3.12-opentelemetry_proto-1.45.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_sdk-1.45.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 267863
+    checksum: sha256:450a9b5bf4b544e662701d99384b4f1edeb677a506989f458674c2f1311b2d1c
+    name: python3.12-opentelemetry_sdk
+    evr: 1.45.2-1.el10
+    sourcerpm: python3.12-opentelemetry_sdk-1.45.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-opentelemetry_semantic_conventions-0.66b2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 249402
+    checksum: sha256:34a05347e09deaf818da915938d399fd18800c9f3fc850ddad219dd48fd7f3f5
+    name: python3.12-opentelemetry_semantic_conventions
+    evr: 0.66b2-1.el10
+    sourcerpm: python3.12-opentelemetry_semantic_conventions-0.66b2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-packaging-26.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 255015
+    checksum: sha256:fb18547d2ea48e9d3cdb782522eb2b5b4b12782a13eb664609364d01ae7075bb
+    name: python3.12-packaging
+    evr: 26.3-1.el10
+    sourcerpm: python3.12-packaging-26.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-parsley-1.3-8.el10.noarch.rpm
+    repoid: pulpcore
+    size: 219985
+    checksum: sha256:a1e1e724dc9de503783565c5a03b7315c2bc6946f6a4249baf0786638221aca8
+    name: python3.12-parsley
+    evr: 1.3-8.el10
+    sourcerpm: python3.12-parsley-1.3-8.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pathspec-1.1.1-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 92784
+    checksum: sha256:992ebd2abc453e03874b5d3025177009032bae976eb93c2588b9446a3e75e3b6
+    name: python3.12-pathspec
+    evr: 1.1.1-2.el10
+    sourcerpm: python3.12-pathspec-1.1.1-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pbr-7.1.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 195017
+    checksum: sha256:4e7af0af6d455f07faf401e8c8e9bc564bc916c9f9708a98f747d382250e5346
+    name: python3.12-pbr
+    evr: 7.1.3-1.el10
+    sourcerpm: python3.12-pbr-7.1.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pillow-13.0.0-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 908566
+    checksum: sha256:069ce2ddee0f7565577e1a5181c14f7089bb85747d68223b018a179f682e1239
+    name: python3.12-pillow
+    evr: 13.0.0-1.el10
+    sourcerpm: python3.12-pillow-13.0.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pkginfo-1.12.1.2-4.el10.noarch.rpm
+    repoid: pulpcore
+    size: 81102
+    checksum: sha256:ded9e9c8a36b050cb9c187338ed9d46d61867a64874460b1a82e8840f5074b05
+    name: python3.12-pkginfo
+    evr: 1.12.1.2-4.el10
+    sourcerpm: python3.12-pkginfo-1.12.1.2-4.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-platformdirs-4.14.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 77101
+    checksum: sha256:674cb046c16844acdf8b26633b9103f0de42bc94f47ce9d04e1a0fbff88732cd
+    name: python3.12-platformdirs
+    evr: 4.14.5-1.el10
+    sourcerpm: python3.12-platformdirs-4.14.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-productmd-1.33-10.el10.noarch.rpm
+    repoid: pulpcore
+    size: 92767
+    checksum: sha256:5ea40467c15913ee7e7b8eed3e9ce94d338aa62cf9b05d452f1bb44c7c24b3d3
+    name: python3.12-productmd
+    evr: 1.33-10.el10
+    sourcerpm: python3.12-productmd-1.33-10.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-propcache-0.5.4-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 56988
+    checksum: sha256:36bda2911da63d4faef4bdfb2180e309bac926191bb930fb59e9624169c6eeaf
+    name: python3.12-propcache
+    evr: 0.5.4-1.el10
+    sourcerpm: python3.12-propcache-0.5.4-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-protobuf-7.36.2-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 505593
+    checksum: sha256:0f689b82dd28c060343106ce761b7ba716a92b5ab1d35f58d4cbd5cd3e25f639
+    name: python3.12-protobuf
+    evr: 7.36.2-1.el10
+    sourcerpm: python3.12-protobuf-7.36.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-psycopg-3.3.8-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 441875
+    checksum: sha256:91cb02974089207c20cb7a31650b46f7a68df932c2688ee02764d4e191f85d6a
+    name: python3.12-psycopg
+    evr: 3.3.8-1.el10
+    sourcerpm: python3.12-psycopg-3.3.8-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-psycopg_c-3.3.8-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 772659
+    checksum: sha256:874bd4dc0ebfe9ae869fb0341bca15e9bd9793c630739e2af5aa267eb0b552a7
+    name: python3.12-psycopg_c
+    evr: 3.3.8-1.el10
+    sourcerpm: python3.12-psycopg_c-3.3.8-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-ansible-0.30.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 430439
+    checksum: sha256:603bedfa6bc2671403a59e716129fe619d364fad83726f675eecd09e55a60303
+    name: python3.12-pulp-ansible
+    evr: 1:0.30.3-1.el10
+    sourcerpm: python3.12-pulp-ansible-0.30.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-container-2.29.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 476542
+    checksum: sha256:3bd7d77749c20fdbd16255735d9f1be42a48b1d859636ab3d26f9eaa03173b95
+    name: python3.12-pulp-container
+    evr: 2.29.3-1.el10
+    sourcerpm: python3.12-pulp-container-2.29.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-deb-3.11.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 668039
+    checksum: sha256:aa7bd046e9846807ccf00bc67c2234c153a1c14a9937f9cfcb9f170f24353c08
+    name: python3.12-pulp-deb
+    evr: 3.11.1-1.el10
+    sourcerpm: python3.12-pulp-deb-3.11.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-glue-0.41.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 140166
+    checksum: sha256:2373a1ca0d146b0355ebc0d128555b21cc151106addd25b693dc38452edb4617
+    name: python3.12-pulp-glue
+    evr: 0.41.1-1.el10
+    sourcerpm: python3.12-pulp-glue-0.41.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-ostree-2.6.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 115380
+    checksum: sha256:917ff359cce5dc2f1959c48a0176b4cf76b059403e8630463d356738aa47adbe
+    name: python3.12-pulp-ostree
+    evr: 2.6.1-1.el10
+    sourcerpm: python3.12-pulp-ostree-2.6.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-python-3.36.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 311918
+    checksum: sha256:dc6ddc39496443a84a329271dde9c9efd0eaecdf05583254b98d5b3c79b13d22
+    name: python3.12-pulp-python
+    evr: 3.36.5-1.el10
+    sourcerpm: python3.12-pulp-python-3.36.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-rpm-3.39.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 749027
+    checksum: sha256:d16cdea983fe54dad071aed0533f005ddbd993b7bccf30670a3b89fe6f07aaa9
+    name: python3.12-pulp-rpm
+    evr: 3.39.5-1.el10
+    sourcerpm: python3.12-pulp-rpm-3.39.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulp-smart-proxy-0.6.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 28152
+    checksum: sha256:eccf438212cc500a9a39bdc0772fdb58a9246c77de93fc922b465ed2c898ffe9
+    name: python3.12-pulp-smart-proxy
+    evr: 0.6.0-1.el10
+    sourcerpm: python3.12-pulp-smart-proxy-0.6.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pulpcore-3.118.7-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 1679867
+    checksum: sha256:704b20591543387e647d8cefa7d42fe88f5ce20013f2aaefe3c73445befbbe8a
+    name: python3.12-pulpcore
+    evr: 3.118.7-1.el10
+    sourcerpm: python3.12-pulpcore-3.118.7-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyOpenSSL-26.4.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 112754
+    checksum: sha256:e362db097b91e83b8c8cd25fd1e416f509ad5cb77a9a9e6262dc536679fe7a4e
+    name: python3.12-pyOpenSSL
+    evr: 26.4.0-1.el10
+    sourcerpm: python3.12-pyOpenSSL-26.4.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyasn1-0.6.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 180248
+    checksum: sha256:74fc7a881d0cc89422be60173cb919823b624c66bddf6125a5a5d33cf7cc9c5d
+    name: python3.12-pyasn1
+    evr: 0.6.5-1.el10
+    sourcerpm: python3.12-pyasn1-0.6.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pycairo-1.29.2-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 129084
+    checksum: sha256:f6636a6d41988ff818052f5514a1637cf44e30cfd7cd25fc9aafbe89096f2988
+    name: python3.12-pycairo
+    evr: 1.29.2-1.el10
+    sourcerpm: python3.12-pycairo-1.29.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pycodestyle-2.11.1-4.el10.noarch.rpm
+    repoid: pulpcore
+    size: 75225
+    checksum: sha256:c85c5ae71caf4105656218fe6df08a66d0d13d0618e6027e59e62e2ce3c89d3d
+    name: python3.12-pycodestyle
+    evr: 2.11.1-4.el10
+    sourcerpm: python3.12-pycodestyle-2.11.1-4.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pycparser-3.12-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 144698
+    checksum: sha256:a3bbb15468914be4c00ba32c25f5c988db99aeec1d9493bebe275bde635b441b
+    name: python3.12-pycparser
+    evr: 3.12-1.el10
+    sourcerpm: python3.12-pycparser-3.12-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pydantic+email-2.14.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 9261
+    checksum: sha256:d04fca74f03959bf60552d791f697b2c2ee63b779d83e36836a3dd5542c22635
+    name: python3.12-pydantic+email
+    evr: 2.14.3-1.el10
+    sourcerpm: python3.12-pydantic-2.14.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pydantic-2.14.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 907330
+    checksum: sha256:a11a60818fdf1a3b10e22b94328ebb88c315297715ed3fbf7d0a7eaa463daa6e
+    name: python3.12-pydantic
+    evr: 2.14.3-1.el10
+    sourcerpm: python3.12-pydantic-2.14.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pydantic-core-2.50.4-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 1940295
+    checksum: sha256:dbba3f64e024428cc2cf73037d9a39c4591418f7e25370c6ee7b703813d81cef
+    name: python3.12-pydantic-core
+    evr: 2.50.4-1.el10
+    sourcerpm: python3.12-pydantic-core-2.50.4-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyflakes-3.1.0-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 154509
+    checksum: sha256:418ad291449ab5626221da8c2ef5cefadb15d58e67b101b7934ec98ee3d74f09
+    name: python3.12-pyflakes
+    evr: 3.1.0-3.el10
+    sourcerpm: python3.12-pyflakes-3.1.0-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pygments-2.21.0-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 2069717
+    checksum: sha256:4dae1aade3bb825c0d89b3b43c62632665be2e4415bfcc95084e7e6f1c28072f
+    name: python3.12-pygments
+    evr: 2.21.0-1.el10
+    sourcerpm: python3.12-pygments-2.21.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pygobject-3.50.2-2.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 355585
+    checksum: sha256:d15644c4be27f77245e662fb17bf368d791d920a4defe2202f3ec76fe51228e1
+    name: python3.12-pygobject
+    evr: 1:3.50.2-2.el10
+    sourcerpm: python3.12-pygobject-3.50.2-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pygtrie-2.6.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 58327
+    checksum: sha256:b97009bc6d1115c3362df32ee3d423764b9257f625693162a309c3574c57897e
+    name: python3.12-pygtrie
+    evr: 2.6.2-1.el10
+    sourcerpm: python3.12-pygtrie-2.6.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyjwt+crypto-2.15.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 8597
+    checksum: sha256:4ba8a22df3848aad15ac3e60c947d77c84a02367e7c4575e4fd36e7ce9ce82f8
+    name: python3.12-pyjwt+crypto
+    evr: 2.15.1-1.el10
+    sourcerpm: python3.12-pyjwt-2.15.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyjwt-2.15.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 78159
+    checksum: sha256:c9bc1e218f121b000673463c896f4d92bdf5be548db810d562bfd42050a61be5
+    name: python3.12-pyjwt
+    evr: 2.15.1-1.el10
+    sourcerpm: python3.12-pyjwt-2.15.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyparsing-3.3.3-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 253304
+    checksum: sha256:aa4157c89cbf36abe3bdb5e480515f80587b5bbf92996d9c49ff3f5e1e62fafe
+    name: python3.12-pyparsing
+    evr: 3.3.3-1.el10
+    sourcerpm: python3.12-pyparsing-3.3.3-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pypi-attestations-0.0.28-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 49543
+    checksum: sha256:65e9aa98a935ffb30bf94172f062bc3042193d6044899632073b9170abe8a85a
+    name: python3.12-pypi-attestations
+    evr: 0.0.28-2.el10
+    sourcerpm: python3.12-pypi-attestations-0.0.28-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pypi-simple-1.8.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 56632
+    checksum: sha256:b1ea4bab2893268e5878810fe9aa60781875ee84700acf258e549ef0dda648a0
+    name: python3.12-pypi-simple
+    evr: 1.8.0-2.el10
+    sourcerpm: python3.12-pypi-simple-1.8.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pysequoia-0.1.36-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 2317376
+    checksum: sha256:9f3ace70c9165d545dc9a8208e2f2c139cd9db62c2f547e6091db434225d50c8
+    name: python3.12-pysequoia
+    evr: 0.1.36-1.el10
+    sourcerpm: python3.12-pysequoia-0.1.36-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-pyyaml-6.0.3-2.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 122470
+    checksum: sha256:9bd5210002e71adf08e36cc5ad140f56bf9f6cf7afcc8f8f53d056fa2f9a3592
+    name: python3.12-pyyaml
+    evr: 6.0.3-2.el10
+    sourcerpm: python3.12-pyyaml-6.0.3-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-redis-8.1.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 1026086
+    checksum: sha256:e698e4f6f9e003b61606b9bd15e9868ed7ed5914e2b6699171545686482495bb
+    name: python3.12-redis
+    evr: 8.1.0-1.el10
+    sourcerpm: python3.12-redis-8.1.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-requests-2.33.1-3.el10.noarch.rpm
+    repoid: pulpcore
+    size: 129030
+    checksum: sha256:d4c3a3963eb3e3484f35b8a5c0032038bb6b5327eed870848669de0739c1401c
+    name: python3.12-requests
+    evr: 2.33.1-3.el10
+    sourcerpm: python3.12-requests-2.33.1-3.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-requirements-parser-0.2.0-9.el10.noarch.rpm
+    repoid: pulpcore
+    size: 21811
+    checksum: sha256:b8cacacdee09f27b76cc60b1404538aaae7aaed39ec76dc648d9eb3bcd3bc94d
+    name: python3.12-requirements-parser
+    evr: 0.2.0-9.el10
+    sourcerpm: python3.12-requirements-parser-0.2.0-9.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-rfc3161-client-1.0.9-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 470088
+    checksum: sha256:889e6434daadf9d7d130899105ee9b9881b3119e36e56b3bff32fafda09c2d5b
+    name: python3.12-rfc3161-client
+    evr: 1.0.9-1.el10
+    sourcerpm: python3.12-rfc3161-client-1.0.9-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-rfc3986-2.0.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 59539
+    checksum: sha256:ca723f2a92b817b2fbfff9b4670d9ee42e30d5533146488f6aac642a32979688
+    name: python3.12-rfc3986
+    evr: 2.0.0-2.el10
+    sourcerpm: python3.12-rfc3986-2.0.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-rfc8785-0.1.4-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 20913
+    checksum: sha256:92c2070ed129ad86a95bcd89a21ddeb3ce59d468140223ff22194fda080b1f5b
+    name: python3.12-rfc8785
+    evr: 0.1.4-2.el10
+    sourcerpm: python3.12-rfc8785-0.1.4-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-rich-15.0.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 583565
+    checksum: sha256:32333e3287760e4f3a1e7c3b91acd163cd347e4d7b75bbce69a11c49577eb695
+    name: python3.12-rich
+    evr: 15.0.0-2.el10
+    sourcerpm: python3.12-rich-15.0.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-rpm-rs-0.30.2-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 1964523
+    checksum: sha256:f61ea4f01d3f4b52851ce15bb2800ef820b261a60e25d181a520b888c213d38a
+    name: python3.12-rpm-rs
+    evr: 0.30.2-1.el10
+    sourcerpm: python3.12-rpm-rs-0.30.2-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-rpmrepo-metadata-0.9.1-1.el10.x86_64.rpm
+    repoid: pulpcore
+    size: 1111273
+    checksum: sha256:a0056b5ef3b02af94666fa350e437694faa2b6bda1b610733f09ad7a3c3c7073
+    name: python3.12-rpmrepo-metadata
+    evr: 0.9.1-1.el10
+    sourcerpm: python3.12-rpmrepo-metadata-0.9.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-ruamel-yaml-0.19.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 290554
+    checksum: sha256:647041480d116ed6cc305ed8e234f6df8c3b8adcbfc26bccdb126c993ca471ed
+    name: python3.12-ruamel-yaml
+    evr: 0.19.1-1.el10
+    sourcerpm: python3.12-ruamel-yaml-0.19.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-securesystemslib-1.6.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 843949
+    checksum: sha256:865952a89ee0c01ef16fe746c2a0a605de809fd981ba376a0ddaa45cb43f34d8
+    name: python3.12-securesystemslib
+    evr: 1.6.0-1.el10
+    sourcerpm: python3.12-securesystemslib-1.6.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-semantic-version-2.10.0-7.el10.noarch.rpm
+    repoid: pulpcore
+    size: 44804
+    checksum: sha256:c8d236947fba6929ee1fa8d0e1f92ea5cfe1929612a388f0b22ac68c4c986128
+    name: python3.12-semantic-version
+    evr: 2.10.0-7.el10
+    sourcerpm: python3.12-semantic-version-2.10.0-7.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-sigstore-4.5.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 184372
+    checksum: sha256:46b97d02a7c9065e2eff574c39e7ddd5faad2a75580c00b06359bb302452df2a
+    name: python3.12-sigstore
+    evr: 4.5.1-1.el10
+    sourcerpm: python3.12-sigstore-4.5.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-sigstore-models-0.0.6-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 33606
+    checksum: sha256:c5c0046d594d7f1446350dda3c88ffb0bb96dd85183a08452c9aad6a6a22e8bf
+    name: python3.12-sigstore-models
+    evr: 0.0.6-2.el10
+    sourcerpm: python3.12-sigstore-models-0.0.6-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-sigstore-rekor-types-0.0.18-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 32899
+    checksum: sha256:16a36ca1bc186aea6ea78868011bee24aa643e8f1c83226b0c6b8f4c6a23560e
+    name: python3.12-sigstore-rekor-types
+    evr: 0.0.18-2.el10
+    sourcerpm: python3.12-sigstore-rekor-types-0.0.18-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-smmap-5.0.3-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 56074
+    checksum: sha256:39bcc9863c78bf720431007f88617b2960f09d0e1a412a7b9309371d21bb0086
+    name: python3.12-smmap
+    evr: 5.0.3-2.el10
+    sourcerpm: python3.12-smmap-5.0.3-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-socks+asyncio-3.2.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 9029
+    checksum: sha256:edb61f954f1f8d07e4379ec757bae3a8ee0055689a1dc605d0b98dc386aabe1c
+    name: python3.12-socks+asyncio
+    evr: 3.2.0-1.el10
+    sourcerpm: python3.12-socks-3.2.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-socks-3.2.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 98140
+    checksum: sha256:969e1e92dc4b9f7b30b35172f4c39551b54935a53ec6807eaada4c59e4375f42
+    name: python3.12-socks
+    evr: 3.2.0-1.el10
+    sourcerpm: python3.12-socks-3.2.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-soupsieve-4.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 122362
+    checksum: sha256:5eb1f36aab6c55ccefb63b90b8f35dd8467474534a0bcb73e979fba0040ec717
+    name: python3.12-soupsieve
+    evr: 4.1-1.el10
+    sourcerpm: python3.12-soupsieve-4.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-sqlparse-0.6.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 116542
+    checksum: sha256:34b3e5019b5e7f1f1a2808d95297315d8d426189756f5770222bda097cb6acf0
+    name: python3.12-sqlparse
+    evr: 0.6.1-1.el10
+    sourcerpm: python3.12-sqlparse-0.6.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-subprocess-tee-0.4.2-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 16530
+    checksum: sha256:1db19e8b06b03ef35307a235ffacfd325d23d43fcdd37f891c415e3eba247fe5
+    name: python3.12-subprocess-tee
+    evr: 0.4.2-2.el10
+    sourcerpm: python3.12-subprocess-tee-0.4.2-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-tablib-3.10.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 113273
+    checksum: sha256:a99f0d0d18fd071b9050ee2054db6bb3ba9fe52f9dae97f18bff6cbeec87e99e
+    name: python3.12-tablib
+    evr: 3.10.0-1.el10
+    sourcerpm: python3.12-tablib-3.10.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-tuf-7.0.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 107351
+    checksum: sha256:42cd488dd4d5f9fe3627c9c2a83f86e326127e75ab4459bf10804de7407dd486
+    name: python3.12-tuf
+    evr: 7.0.1-1.el10
+    sourcerpm: python3.12-tuf-7.0.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-typing-extensions-4.16.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 98673
+    checksum: sha256:49207b6393bb35e4049b3e3f4687880a584dabaa19299c1a4b6f42e0bb2444f4
+    name: python3.12-typing-extensions
+    evr: 4.16.0-2.el10
+    sourcerpm: python3.12-typing-extensions-4.16.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-typing-inspection-0.4.5-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 31480
+    checksum: sha256:7e7a3e783707011f328e9c539ef79d28880bfe2f5779ffdaa060e63f6ed8ca4a
+    name: python3.12-typing-inspection
+    evr: 0.4.5-1.el10
+    sourcerpm: python3.12-typing-inspection-0.4.5-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-uritemplate-4.2.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 37561
+    checksum: sha256:968ebde209fa9308cb24cea159baf7a51b4614d384c1805f8bc6222d1578d759
+    name: python3.12-uritemplate
+    evr: 4.2.0-2.el10
+    sourcerpm: python3.12-uritemplate-4.2.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-url-normalize-3.0.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 39320
+    checksum: sha256:98dfa3a0c6c1013a0d3699eb3d6127327439285a28a644a71d77769d78ee38e8
+    name: python3.12-url-normalize
+    evr: 3.0.1-1.el10
+    sourcerpm: python3.12-url-normalize-3.0.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-urllib3-2.8.0-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 255713
+    checksum: sha256:7460b4cfcc6d11a08f19286761168e8960d5982ce0bb57a7ecb72a346caa10f7
+    name: python3.12-urllib3
+    evr: 2.8.0-1.el10
+    sourcerpm: python3.12-urllib3-2.8.0-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-uuid6-2025.0.1-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 18559
+    checksum: sha256:916a2e10772bdf23e8abdd313ad2eec6f0768eb48374fbbc5e7a477ab753e190
+    name: python3.12-uuid6
+    evr: 2025.0.1-2.el10
+    sourcerpm: python3.12-uuid6-2025.0.1-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-wcmatch-12.0.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 122922
+    checksum: sha256:f682b20f2c74638ce188e8db1000c8b68b1a9a12397ae16d58535307ff2e0ec2
+    name: python3.12-wcmatch
+    evr: 12.0.1-1.el10
+    sourcerpm: python3.12-wcmatch-12.0.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-whitenoise-6.12.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 54200
+    checksum: sha256:dfdf23375fe062d2dfa08a93ecced044f89ef242a28ebcbcc39d56d473a0a7a9
+    name: python3.12-whitenoise
+    evr: 6.12.0-2.el10
+    sourcerpm: python3.12-whitenoise-6.12.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-yamllint-1.38.0-2.el10.noarch.rpm
+    repoid: pulpcore
+    size: 101911
+    checksum: sha256:6a41eef94649c527cbc2dacb59fc49f1b32f97377e5ae78147e0d20aa4aa95ef
+    name: python3.12-yamllint
+    evr: 1.38.0-2.el10
+    sourcerpm: python3.12-yamllint-1.38.0-2.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-yarl-1.25.1-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 98722
+    checksum: sha256:d7597d7ca84665d3423e7d8dac931830440536006e6451d0b9195883dfe17444
+    name: python3.12-yarl
+    evr: 1.25.1-1.el10
+    sourcerpm: python3.12-yarl-1.25.1-1.el10.src.rpm
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/x86_64/python3.12-zipp-4.1.2-1.el10.noarch.rpm
+    repoid: pulpcore
+    size: 31660
+    checksum: sha256:be48b39ab4f5c2e1b8ae55934a053fc790335c1ecb7e9bf68d7c2be07562c75c
+    name: python3.12-zipp
+    evr: 4.1.2-1.el10
+    sourcerpm: python3.12-zipp-4.1.2-1.el10.src.rpm
+  source:
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/ansible-core-2.16.20-1.el10.src.rpm
+    repoid: appstream-source
+    size: 5427542
+    checksum: sha256:0b0fd75393dc5bf3896828eba0be7a8387fe8a2d1c558e432cdf50adea00aa77
+    name: ansible-core
+    evr: 1:2.16.20-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/cairo-1.18.2-3.el10.src.rpm
+    repoid: appstream-source
+    size: 32616609
+    checksum: sha256:11b7866aeedaf1d45fc3d84ced64ce58bb767a575a80f02f1959a3a9c348a07d
+    name: cairo
+    evr: 1.18.2-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/fontconfig-2.15.0-7.el10.src.rpm
+    repoid: appstream-source
+    size: 1525930
+    checksum: sha256:fb534b96905df2f4fe97a0860d632cbed6f45dedf87d83d687d307ead995c7f5
+    name: fontconfig
+    evr: 2.15.0-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/git-2.52.0-1.el10.src.rpm
+    repoid: appstream-source
+    size: 8043004
+    checksum: sha256:10857094deafb07bdb9b387217c15d7112703cd8fa5b2bb523829cc1f4f0b1ab
+    name: git
+    evr: 2.52.0-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libX11-1.8.13-2.el10.src.rpm
+    repoid: appstream-source
+    size: 1835784
+    checksum: sha256:92dcd5a42055a64a4ba4040d5c94e091f56a7f5611d6a7b2a497994755f805a7
+    name: libX11
+    evr: 1.8.13-2.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libXau-1.0.11-8.el10.src.rpm
+    repoid: appstream-source
+    size: 303776
+    checksum: sha256:5ebf327b48c3557ab42b971cc25466c3c068b8ce3cb0e7fe64d59095c87643e1
+    name: libXau
+    evr: 1.0.11-8.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libXext-1.3.6-3.el10.src.rpm
+    repoid: appstream-source
+    size: 372563
+    checksum: sha256:0fa7f2968f14870f19a3a3af60526ab44a5d8a4708d69a8700d7e30eff540ad7
+    name: libXext
+    evr: 1.3.6-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libXrender-0.9.11-10.el10.src.rpm
+    repoid: appstream-source
+    size: 333368
+    checksum: sha256:08e40c9f05a83d0258f1f12955953a1682c417238d5db404638c1a04355a87b8
+    name: libXrender
+    evr: 0.9.11-10.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libjpeg-turbo-3.0.2-4.el10.src.rpm
+    repoid: appstream-source
+    size: 2866807
+    checksum: sha256:bcf18e5e8af6172c8381aa6194a43b6f4949fa718696b65a3aa2839918e08ccc
+    name: libjpeg-turbo
+    evr: 3.0.2-4.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libxcb-1.17.0-3.el10.src.rpm
+    repoid: appstream-source
+    size: 483738
+    checksum: sha256:ce734fa954de14134b47e43aeab55cfb7e1fe837b8989be1a82f6c0d466b4423
+    name: libxcb
+    evr: 1.17.0-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/libxslt-1.1.39-10.el10.src.rpm
+    repoid: appstream-source
+    size: 1629820
+    checksum: sha256:d340676aaef332a3c3f6fafc2fda4dd3d9e27ca30aba0eb9302544b31b9e7733
+    name: libxslt
+    evr: 1.1.39-10.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/pixman-0.43.4-2.el10.src.rpm
+    repoid: appstream-source
+    size: 661872
+    checksum: sha256:0130ceefecd28dd9c0c7a432f1c7782c5cf7a60c98b3611d5fbdbd443dd0d573
+    name: pixman
+    evr: 0.43.4-2.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/python-lxml-5.2.1-4.el10.src.rpm
+    repoid: appstream-source
+    size: 3857222
+    checksum: sha256:f7296f96f8922cc462718333049c307c70bd2be834836835975197f47513a5fd
+    name: python-lxml
+    evr: 5.2.1-4.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/python-resolvelib-1.0.1-6.el10.src.rpm
+    repoid: appstream-source
+    size: 769584
+    checksum: sha256:ea9d5d39625caf0a7e0be837b2291df4e93c91f8d36bac62bb8ce5ce7238cf2e
+    name: python-resolvelib
+    evr: 1.0.1-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/source/tree/Packages/sgml-common-0.6.3-65.el10.src.rpm
+    repoid: appstream-source
+    size: 130813
+    checksum: sha256:69b148ac3a0b2eb3ff30a62fa806d044d0ea739d4426ef10386ce1f41963e019
+    name: sgml-common
+    evr: 0.6.3-65.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/brotli-1.1.0-9.el10.src.rpm
+    repoid: baseos-source
+    size: 546511
+    checksum: sha256:a3fb1c76fbf395d3c8953825aaf2865192ed5b73fe05606629587621be1a500b
+    name: brotli
+    evr: 1.1.0-9.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/composefs-1.0.8-1.el10.src.rpm
+    repoid: baseos-source
+    size: 8973941
+    checksum: sha256:dfdbcc38bfbce5453226034fa5731e55ffecd53ca382b4be467c0da5e8549078
+    name: composefs
+    evr: 1.0.8-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/cpio-2.15-3.el10.src.rpm
+    repoid: baseos-source
+    size: 1703910
+    checksum: sha256:96837feb58d4b2d416c342c0a8126b7da69f174ce3577a281d0e6660a8639c86
+    name: cpio
+    evr: 2.15-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/cryptsetup-2.8.6-2.el10.src.rpm
+    repoid: baseos-source
+    size: 11977389
+    checksum: sha256:e25c181cec3f5bddad5fe7ef720d31f28442e1ee69722eb9691fd4f10e49e491
+    name: cryptsetup
+    evr: 2.8.6-2.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/cyrus-sasl-2.1.28-27.el10.src.rpm
+    repoid: baseos-source
+    size: 3986456
+    checksum: sha256:7e38b200c063c7722112c0cfa3ff223fe84bf094ba38bee048aee00d692a7ea3
+    name: cyrus-sasl
+    evr: 2.1.28-27.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/dbus-1.14.10-6.el10.src.rpm
+    repoid: baseos-source
+    size: 1478421
+    checksum: sha256:f473dd625ade3467288e2cf4890cc70cbb26f132fe7f2f3f853c4488efcb5868
+    name: dbus
+    evr: 1:1.14.10-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/dbus-broker-36-5.el10.src.rpm
+    repoid: baseos-source
+    size: 297478
+    checksum: sha256:176ddb70bad3570eb42bbd16bce549975ac0ef4849c9e95aa5d728c1d4cda9db
+    name: dbus-broker
+    evr: 36-5.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/dracut-107-11.el10.src.rpm
+    repoid: baseos-source
+    size: 724910
+    checksum: sha256:daacae130e9f0d1d9c79491d065a561494ad30b625965f9dcc26f162a73ec71b
+    name: dracut
+    evr: 107-11.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/fonts-rpm-macros-2.0.5-18.el10.src.rpm
+    repoid: baseos-source
+    size: 62442
+    checksum: sha256:b2a295ba89c202bd6693716ebe49b6ba71d6888600b7eb9c1ab1b86a42e0b778
+    name: fonts-rpm-macros
+    evr: 1:2.0.5-18.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/freetype-2.13.2-8.el10.src.rpm
+    repoid: baseos-source
+    size: 5092141
+    checksum: sha256:8c4c744f54216aa3b30f08f5679db0b482ea42a9c298962025c6e59b72974b9d
+    name: freetype
+    evr: 2.13.2-8.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/fuse-2.9.9-25.el10.src.rpm
+    repoid: baseos-source
+    size: 1856938
+    checksum: sha256:408073000e703b121201827c016a6f3b71e9a8ca3184953356c3fd52ab584742
+    name: fuse
+    evr: 2.9.9-25.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/gnupg2-2.4.5-5.el10.src.rpm
+    repoid: baseos-source
+    size: 7974852
+    checksum: sha256:240cbdc4bc60c14e69d3afb44a6d42751568902ebf5dcf5e2b7394137c50b55b
+    name: gnupg2
+    evr: 2.4.5-5.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/gobject-introspection-1.79.1-7.el10.src.rpm
+    repoid: baseos-source
+    size: 1080484
+    checksum: sha256:9f0cfb9ba398b1299966131d4aea0e8438dbefe834627e8eca9a1765673a918c
+    name: gobject-introspection
+    evr: 1.79.1-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/google-noto-fonts-20240401-5.el10.src.rpm
+    repoid: baseos-source
+    size: 1060337406
+    checksum: sha256:13aa548e3ca5917b2caf2db23c9e97e08986c3823dbb5bbe28ebe62a52cc4872
+    name: google-noto-fonts
+    evr: 20240401-5.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/gpgme-1.23.2-6.el10.src.rpm
+    repoid: baseos-source
+    size: 1896306
+    checksum: sha256:bbeff86786787bf2ccc0bee103405c544892af70b10e01900fcd788f5b47973d
+    name: gpgme
+    evr: 1.23.2-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/graphite2-1.3.14-17.el10.src.rpm
+    repoid: baseos-source
+    size: 6324704
+    checksum: sha256:360ad700c2aed4f0e53c10fc14ca04d8d16ef0b0108ba636088f37b41a464216
+    name: graphite2
+    evr: 1.3.14-17.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/harfbuzz-8.4.0-6.el10.src.rpm
+    repoid: baseos-source
+    size: 19293166
+    checksum: sha256:77af4f54bf9c215c1701113feedcb1fb7fc625f98a9566897619cb2fdd3a2ebc
+    name: harfbuzz
+    evr: 8.4.0-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/kbd-2.6.4-8.el10.src.rpm
+    repoid: baseos-source
+    size: 1588121
+    checksum: sha256:67ffc7befb27f15a1937d64b96302d77068a8a8775ce2b2ec405ed4354d7833a
+    name: kbd
+    evr: 2.6.4-8.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/kmod-31-14.el10.src.rpm
+    repoid: baseos-source
+    size: 625687
+    checksum: sha256:8ee319d42bb5b097d247bebf2690bae1ae4d0ca8eb75ad71bb3175a278ae0a3c
+    name: kmod
+    evr: 31-14.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/langpacks-4.1-3.el10.src.rpm
+    repoid: baseos-source
+    size: 108220
+    checksum: sha256:80d3dfb287ab858786cac758d618228fc16563cb4366d22df60fde85d3441681
+    name: langpacks
+    evr: 4.1-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/less-661-3.el10.src.rpm
+    repoid: baseos-source
+    size: 626593
+    checksum: sha256:1289f7e085488e741fec675279f5c162e397807253b704b2f243c84f0668f81e
+    name: less
+    evr: 661-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libassuan-2.5.6-6.el10.src.rpm
+    repoid: baseos-source
+    size: 608353
+    checksum: sha256:89b7c2046a2e54360015ed1d227fceac07a220b4f3a0e02c5a63918da28cf97f
+    name: libassuan
+    evr: 2.5.6-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libcbor-0.11.0-3.el10.src.rpm
+    repoid: baseos-source
+    size: 310461
+    checksum: sha256:84089047aeb12cd4598d44d4e1ec043b0460aa2909b22a87aaa345cb3ccec34d
+    name: libcbor
+    evr: 0.11.0-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libedit-3.1-52.20230828cvs.el10.src.rpm
+    repoid: baseos-source
+    size: 565153
+    checksum: sha256:5e03d000b7dde831f69fac3fabcae9e1748ddd8f328a267a226a1cdfe26dbe00
+    name: libedit
+    evr: 3.1-52.20230828cvs.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libevent-2.1.13-1.el10.src.rpm
+    repoid: baseos-source
+    size: 1167982
+    checksum: sha256:98dc9484b4aa40c00a7471c506afb2e008d0cf5aa2b94f80dae2e851f29a69a7
+    name: libevent
+    evr: 2.1.13-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libfido2-1.14.0-7.el10.src.rpm
+    repoid: baseos-source
+    size: 902377
+    checksum: sha256:c29b2270d8e7fb9e9ad9c5967378b52e231950294e96f4ae34261f35743de53a
+    name: libfido2
+    evr: 1.14.0-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libgcrypt-1.11.0-7.el10.src.rpm
+    repoid: baseos-source
+    size: 4276091
+    checksum: sha256:161189f0a82d874b0f32e2cf29daf46dd1140d5a6e6800541741a5bf580367aa
+    name: libgcrypt
+    evr: 1.11.0-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libgpg-error-1.50-2.el10.src.rpm
+    repoid: baseos-source
+    size: 1122588
+    checksum: sha256:5ccae9c61c4579589259db4b7b1db5c48002ffc6b95cab0df4980deac576c373
+    name: libgpg-error
+    evr: 1.50-2.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libkcapi-1.5.1-1.el10.src.rpm
+    repoid: baseos-source
+    size: 385763
+    checksum: sha256:54965a5d69e7168eeea594e900449189e23b6003f2009b2581bf9039ef803df3
+    name: libkcapi
+    evr: 1.5.1-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libksba-1.6.7-2.el10.src.rpm
+    repoid: baseos-source
+    size: 742243
+    checksum: sha256:403d7a7127a8e1f3825e6886c566b26b57c181014a1fa44a47b56c78360a8df7
+    name: libksba
+    evr: 1.6.7-2.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libpng-1.6.40-13.el10.src.rpm
+    repoid: baseos-source
+    size: 1589357
+    checksum: sha256:36bc8cc038978efc46506d69d02661b46021b91af97f4dfa69c6ea57e3ce6e1e
+    name: libpng
+    evr: 2:1.6.40-13.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libpq-16.11-3.el10.src.rpm
+    repoid: baseos-source
+    size: 24924508
+    checksum: sha256:91abaca0170c3be864479409fbda35b1401a59debca5d5e008d8fdb614fca34a
+    name: libpq
+    evr: 16.11-3.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libseccomp-2.5.6-1.el10.src.rpm
+    repoid: baseos-source
+    size: 659452
+    checksum: sha256:52c36d39c29cf81465b0c5d38331b78ccfcc80ed134d5c33c7d3fcf0d9a09bb3
+    name: libseccomp
+    evr: 2.5.6-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/libsolv-0.7.33-7.el10.src.rpm
+    repoid: baseos-source
+    size: 846012
+    checksum: sha256:706aa6cc9541cbb55616c039a5ec37a2518821473960612485f407f3704f4c66
+    name: libsolv
+    evr: 0.7.33-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/lvm2-2.03.43-1.el10.src.rpm
+    repoid: baseos-source
+    size: 3513242
+    checksum: sha256:4bc770e1abc461618af7ee5657e0452b1ecf36e67f25a6cf70c66dc482081d04
+    name: lvm2
+    evr: 10:2.03.43-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/mailcap-2.1.54-8.el10.src.rpm
+    repoid: baseos-source
+    size: 53670
+    checksum: sha256:9b375a09c836085a23edeceb0dc0bb5c0c8266e740e2cc934fae3b1c3445fbad
+    name: mailcap
+    evr: 2.1.54-8.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/npth-1.6-21.el10.src.rpm
+    repoid: baseos-source
+    size: 328670
+    checksum: sha256:77ad6a77f108690f1c1e2f60fe74534c4b43a880a1bdcb43d61a136123ee5bcb
+    name: npth
+    evr: 1.6-21.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/openldap-2.6.13-1.el10.src.rpm
+    repoid: baseos-source
+    size: 6653206
+    checksum: sha256:ffe4f013c1b87ac54545752b7a13ab40ca4d1ccb025516b5c3b7f39e046c7aaa
+    name: openldap
+    evr: 2.6.13-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/openssh-9.9p1-34.el10.src.rpm
+    repoid: baseos-source
+    size: 2443317
+    checksum: sha256:f97568dfaa464ba50c0207de0c2d6be9ac6239ec2f28ce0fdcc40899c9b4a499
+    name: openssh
+    evr: 9.9p1-34.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/ostree-2026.4-1.el10.src.rpm
+    repoid: baseos-source
+    size: 2198033
+    checksum: sha256:ac261a05b099b70d1c46bad132e50c127c1a1feca441febc9dbf4750acee5c15
+    name: ostree
+    evr: 2026.4-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/procps-ng-4.0.4-13.el10.src.rpm
+    repoid: baseos-source
+    size: 1453679
+    checksum: sha256:085d449a6af005db9be99ac7c4502992492fc07a601a51aa49ab65a6e80c5057
+    name: procps-ng
+    evr: 4.0.4-13.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-attrs-23.2.0-7.el10.src.rpm
+    repoid: baseos-source
+    size: 811418
+    checksum: sha256:36650de5eaa93ea682fe379d47f1b80b698f6b19dd69d346816d5b880eb2b3eb
+    name: python-attrs
+    evr: 23.2.0-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-distro-1.9.0-5.el10.src.rpm
+    repoid: baseos-source
+    size: 84809
+    checksum: sha256:ed90d701d1c774eea5ff1e6d61f287885c8a68f07cfcb26c8da03c0527117d0b
+    name: python-distro
+    evr: 1.9.0-5.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-jsonschema-4.19.1-7.el10.src.rpm
+    repoid: baseos-source
+    size: 351611
+    checksum: sha256:f8cdfa7aabb3de6db5d7b3a2a81a625785af215bb13348d8e1830a504d39dc7f
+    name: python-jsonschema
+    evr: 4.19.1-7.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-jsonschema-specifications-2023.11.2-6.el10.src.rpm
+    repoid: baseos-source
+    size: 37457
+    checksum: sha256:91d805266ae71065d5f29f65f9b0ce1f05c3bc0a2260ac0063adf021a18a1a4f
+    name: python-jsonschema-specifications
+    evr: 2023.11.2-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-referencing-0.31.1-6.el10.src.rpm
+    repoid: baseos-source
+    size: 77286
+    checksum: sha256:99417ab2db182c0380f3edcdc8ff0a3e61028b27275e342c2556bdbbd155cbdd
+    name: python-referencing
+    evr: 0.31.1-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-rpds-py-0.17.1-6.el10.src.rpm
+    repoid: baseos-source
+    size: 1353538
+    checksum: sha256:319ea2a5beebfc769587cd0a510fdc24b42ea1636ef3561c0f28ca584b7ed200
+    name: python-rpds-py
+    evr: 0.17.1-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/python-setuptools-69.0.3-12.el10.src.rpm
+    repoid: baseos-source
+    size: 2295884
+    checksum: sha256:b3ebce130dc42384819eb9cec200c9b50d4f7184de5b6a5027eacebed630cfc4
+    name: python-setuptools
+    evr: 69.0.3-12.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/redhat-fonts-4.1.0-1.el10.src.rpm
+    repoid: baseos-source
+    size: 5575422
+    checksum: sha256:60e3772d3a99350e2e015752ad428e53a8b6d1775a9fe07aebd3a05b9ab0f575
+    name: redhat-fonts
+    evr: 4.1.0-1.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/rpm-4.19.1.1-29.el10.src.rpm
+    repoid: baseos-source
+    size: 6074695
+    checksum: sha256:23f7ede379296099af9424c00ecd573ec2ffb0ed000f4b27585dc3bae399005d
+    name: rpm
+    evr: 4.19.1.1-29.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/systemd-257-35.el10.src.rpm
+    repoid: baseos-source
+    size: 20785419
+    checksum: sha256:4d3b74c5ca1f1a0b21db334f004169f44e13d57b6e99123072c71b29339868cc
+    name: systemd
+    evr: 257-35.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/tpm2-tools-5.7-6.el10.src.rpm
+    repoid: baseos-source
+    size: 1534805
+    checksum: sha256:5c74f7582bd191411cae119421504b178c5f725450c3c89b02bc4c87c309a70e
+    name: tpm2-tools
+    evr: 5.7-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/tpm2-tss-4.1.3-6.el10.src.rpm
+    repoid: baseos-source
+    size: 1966407
+    checksum: sha256:a95cf4d0ca18feb3b49738bfc523ce1822c69f9308194315890e37c3442ada11
+    name: tpm2-tss
+    evr: 4.1.3-6.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/xz-5.6.2-5.el10.src.rpm
+    repoid: baseos-source
+    size: 2401366
+    checksum: sha256:339ef17a7e76298163866552e894d9202866dc2f50489645eeb7d3b6a39f8d2d
+    name: xz
+    evr: 1:5.6.2-5.el10
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/source/tree/Packages/zstd-1.5.5-9.el10.src.rpm
+    repoid: baseos-source
+    size: 2391286
+    checksum: sha256:3dcbb2f8a57f327c0c8df34dea43c5586dc73fb5442a996192d315b3f676d96e
+    name: zstd
+    evr: 1.5.5-9.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/ansible-lint-6.22.2-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 527199
+    checksum: sha256:5f668101f38a99ca6028b74b85f7e6b12f5b443701bdbd189df1d23c1ba908ba
+    name: ansible-lint
+    evr: 6.22.2-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/createrepo_c-1.2.6-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 665593
+    checksum: sha256:f59d949fa8cc037b925fb5934f10537de15c10274f5f0e4ecc66eb11a30de718
+    name: createrepo_c
+    evr: 1.2.6-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-aiofiles-25.1.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 63059
+    checksum: sha256:3cb729d94a51d2686457856b3b4cd6d2128952e43f14d2556c72b2cc11e549f3
+    name: python3.12-aiofiles
+    evr: 25.1.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-aiohappyeyeballs-2.7.1-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 41099
+    checksum: sha256:97bdac2328c8d560ea00d8dd75db9ed789cf4fa896b6ad0642809ddf36ab98b6
+    name: python3.12-aiohappyeyeballs
+    evr: 2.7.1-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-aiohttp-3.14.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 8101356
+    checksum: sha256:196b65425f3d88344ce2ae59ccabb6b6173f889edc725bdcc2c6ccc374f12cac
+    name: python3.12-aiohttp
+    evr: 3.14.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-aiohttp-socks-0.12.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 29758
+    checksum: sha256:14b4d2320a43f14875a8a11639e77afd47a434711c14aa7e7b38ea2d4ce4c508
+    name: python3.12-aiohttp-socks
+    evr: 0.12.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-aiohttp-xmlrpc-1.5.0-8.el10.src.rpm
+    repoid: pulpcore-source
+    size: 20884
+    checksum: sha256:3d9b5f3422610fccf24cc741496d0ce10bca683fcf7c92c758f504603529c200
+    name: python3.12-aiohttp-xmlrpc
+    evr: 1.5.0-8.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-aiosignal-1.4.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 35856
+    checksum: sha256:dd76752eb1d33e621c216733e71ca4af5322dac4e69f653219a047745731ebf1
+    name: python3.12-aiosignal
+    evr: 1.4.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-annotated-types-0.8.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 30823
+    checksum: sha256:19fca7ef4f9ddaff4deeb09a2d649ae75586a091d6ac7a0fe19b7e549b61fd69
+    name: python3.12-annotated-types
+    evr: 0.8.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-ansible-builder-3.0.0-4.el10.src.rpm
+    repoid: pulpcore-source
+    size: 105608
+    checksum: sha256:1ab7490e31409d191a4b5ed7739d8c273f8b922ebe475e18d0c1c87a5e8f5788
+    name: python3.12-ansible-builder
+    evr: 3.0.0-4.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-ansible-compat-4.1.11-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 88974
+    checksum: sha256:13d20b246878137284fec39cbce09c0cdab10f96df8902ef18c01bd76f452dcc
+    name: python3.12-ansible-compat
+    evr: 4.1.11-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-asgiref-3.13.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 64192
+    checksum: sha256:5e29466d03969a87e2fa2f9764fdc32625b3d6b126e620dfc0dfb9172e14d7a0
+    name: python3.12-asgiref
+    evr: 3.13.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-asyncio-throttle-1.0.2-9.el10.src.rpm
+    repoid: pulpcore-source
+    size: 14147
+    checksum: sha256:fcf959c9ddf7db492e30a853d1c5bc9b12922879e41385986fbcf258c1bcc442
+    name: python3.12-asyncio-throttle
+    evr: 1.0.2-9.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-backoff-2.2.1-7.el10.src.rpm
+    repoid: pulpcore-source
+    size: 27517
+    checksum: sha256:7ce3b3986ed32125702cdc9a04893b590b40363ed6b158685c4fe2e06537b40a
+    name: python3.12-backoff
+    evr: 2.2.1-7.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-bandersnatch-6.6.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 108105
+    checksum: sha256:2bae5a47b073c6bcd3dc3bf7856572866d8499bd9746c6cb4a7989b8e6a6dfca
+    name: python3.12-bandersnatch
+    evr: 6.6.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-beautifulsoup4-4.15.0-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 650296
+    checksum: sha256:c497e919f24092f78fc821458b8d8d895d5ca787b36a2bc051973c4ce1567cd1
+    name: python3.12-beautifulsoup4
+    evr: 4.15.0-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-bindep-2.14.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 56057
+    checksum: sha256:25b1a9f202ef7cff4a996b7debdbe9e2aef8c5a3f7f683f2d9e21b4ba769eb96
+    name: python3.12-bindep
+    evr: 2.14.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-black-24.10.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 661777
+    checksum: sha256:82dfd8f2036be24a3b404f568514896120b2abc6ac16b2dd638b136a8e340693
+    name: python3.12-black
+    evr: 24.10.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-bracex-3.2.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 52071
+    checksum: sha256:4765808d95dd151bf124714bb2149c0e6600d76398fb8a65115c0b25f9830ed2
+    name: python3.12-bracex
+    evr: 3.2.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-certifi-2026.10.23-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 158917
+    checksum: sha256:e990031648637bc00d8131d7a5f457e067d397821c21a4f53b88a2893549a696
+    name: python3.12-certifi
+    evr: 2026.10.23-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-cffi-2.1.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 544478
+    checksum: sha256:d8c872832f7996907074a4c89e649ca57d5218aa1a51eaf68e868da2da0f55b0
+    name: python3.12-cffi
+    evr: 2.1.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-chardet-5.2.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 2077011
+    checksum: sha256:403bd8e28e3b924a3a2ddb7df74e15a56281c28a7da9c9114ad67dfcf0d08600
+    name: python3.12-chardet
+    evr: 5.2.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-charset-normalizer-3.5.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 185620
+    checksum: sha256:cdf6fe990485942746eb8a764572b134767204938d96f5907e59293868bde870
+    name: python3.12-charset-normalizer
+    evr: 3.5.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-click-8.5.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 417237
+    checksum: sha256:731dd0ed8e32990cfebe0af4b14af103fecd61273453d4487798dedf2aab74ca
+    name: python3.12-click
+    evr: 8.5.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-cryptography-50.0.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 5159363
+    checksum: sha256:e44763846675825b0fca3a320711861401d2626cc69bb7f8ac86deb1d9c7dd7f
+    name: python3.12-cryptography
+    evr: 50.0.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-debian-0.1.49-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 133281
+    checksum: sha256:6dd9106214194e2c1300999b1182ba9375f554e216ad3b7dbd80f8afb6e47436
+    name: python3.12-debian
+    evr: 0.1.49-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-defusedxml-0.7.1-9.el10.src.rpm
+    repoid: pulpcore-source
+    size: 85517
+    checksum: sha256:5d8c4d58e1419d899db49b77289339d1b657924e41b032b8edcf67151f12eb3e
+    name: python3.12-defusedxml
+    evr: 0.7.1-9.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-diff-match-patch-20241021-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 56612
+    checksum: sha256:9f80c4f73db940e8b5c3ae690699676ce44a4559558895e0a6a5c21c97c376b9
+    name: python3.12-diff-match-patch
+    evr: 20241021-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-django-5.2.19-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 10969643
+    checksum: sha256:096a8243b68d2c24ff5a2b76703e7a7b4e5b19838584ff02ab526bdc0af15cdb
+    name: python3.12-django
+    evr: 5.2.19-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-django-filter-26.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 162289
+    checksum: sha256:e38f0bfc91e407637aa76ad5148434042a0b587b24efcf8609829697ed0cf5a8
+    name: python3.12-django-filter
+    evr: 26.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-django-guid-3.6.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 31611
+    checksum: sha256:bc8d5057907b2279ee31a822ce43e85515c43c45995fe35ac0ea7e80c937dc16
+    name: python3.12-django-guid
+    evr: 3.6.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-django-import-export-4.4.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 2276854
+    checksum: sha256:71f1f46bdf847628bf6acd4ecfbd8283f157a2502b1ac4ac1de144b36237f55c
+    name: python3.12-django-import-export
+    evr: 4.4.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-django-lifecycle-1.3.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 24978
+    checksum: sha256:43ed7903a3bae05a66f6a3e962fb928334e2ef691f37fc4b640f6a47bb3a6081
+    name: python3.12-django-lifecycle
+    evr: 1.3.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-django-readonly-field-1.1.2-7.el10.src.rpm
+    repoid: pulpcore-source
+    size: 32637
+    checksum: sha256:5f731bed6058cb1eac2bf14475fcd9951ff19092c41078c3ef806e2e59db5a0b
+    name: python3.12-django-readonly-field
+    evr: 1.1.2-7.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-djangorestframework-3.18.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 941916
+    checksum: sha256:2f65fa22c76e2662265cf8ed2befa53e64cd324bc5ef3d2c01b4c120b3a647b7
+    name: python3.12-djangorestframework
+    evr: 3.18.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-djangorestframework-queryfields-1.1.0-4.el10.src.rpm
+    repoid: pulpcore-source
+    size: 17246
+    checksum: sha256:1310813cf5d196ca744994527d8bf7cc0d24bffcf74a74791984341bd2d3942e
+    name: python3.12-djangorestframework-queryfields
+    evr: 1.1.0-4.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-dnspython-2.9.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 472100
+    checksum: sha256:9e227876b09500fee2f348da32641f10e520c56787fce0fe143fb0b2d8d71ced
+    name: python3.12-dnspython
+    evr: 2.9.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-drf-access-policy-1.5.0-4.el10.src.rpm
+    repoid: pulpcore-source
+    size: 21570
+    checksum: sha256:8511d01dd544ae9a72d743b33836b0c47becb6055c056f6aa194d7729e85c6e5
+    name: python3.12-drf-access-policy
+    evr: 1.5.0-4.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-drf-nested-routers-0.95.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 41194
+    checksum: sha256:da94ae06647d93feff98e77eecfe04c1e94ef89fde61bb5dec99ba12d2454380
+    name: python3.12-drf-nested-routers
+    evr: 0.95.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-drf-spectacular-0.29.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 261470
+    checksum: sha256:93c95d4275f1091ca24e0ad580e0977f39f10065414c0d5e4024fe866262eee8
+    name: python3.12-drf-spectacular
+    evr: 0.29.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-dynaconf-3.3.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 352263
+    checksum: sha256:58d6f1f1889d0e1b8422eb5032ca5763cd73dadf9070fd78eba5e97b4105d58b
+    name: python3.12-dynaconf
+    evr: 3.3.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-email-validator-2.3.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 66266
+    checksum: sha256:dc4145e833de16a473f7ee01a78aa62bfe3ca24ac3346d8d0a50015ab6d05f37
+    name: python3.12-email-validator
+    evr: 2.3.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-et-xmlfile-2.0.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 27713
+    checksum: sha256:3c612d39363c5316dd41ebe6b348ab74fe47f6ac3aa3859cbb636937c55046ca
+    name: python3.12-et-xmlfile
+    evr: 2.0.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-filelock-4.2.10-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 692662
+    checksum: sha256:5d1d75a27807ee3b8a03d35d58507641e6aa5cb4d8cfc5839e6ecbefb729a53b
+    name: python3.12-filelock
+    evr: 4.2.10-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-flake8-6.1.0-5.el10.src.rpm
+    repoid: pulpcore-source
+    size: 60875
+    checksum: sha256:926803ef4fb5924bc9988caf55ce93ffc063eaaaa1865b90e2f0cff077ffb0ec
+    name: python3.12-flake8
+    evr: 6.1.0-5.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-frozenlist-1.8.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 63914
+    checksum: sha256:e6929977ba31068cf65012e97cea8f427c374ba3d5ae44e4f122672b3706b121
+    name: python3.12-frozenlist
+    evr: 1.8.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-galaxy-importer-0.4.43-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 67256
+    checksum: sha256:f686c917ba8b78e4d67217d0dcee802ba5a9493bb227341dd4bfe7dac488ca27
+    name: python3.12-galaxy-importer
+    evr: 0.4.43-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-gitdb-4.0.12-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 405422
+    checksum: sha256:8b3cfa44e50595b0211dd5ed09be7ef739503aa3878c65cee63e2c64f9510422
+    name: python3.12-gitdb
+    evr: 4.0.12-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-gitpython-3.2.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 255325
+    checksum: sha256:d15555ff890dcbaafe0c9a12f3b0ff2b972533e7dc08b553f4959156ca091d72
+    name: python3.12-gitpython
+    evr: 3.2.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-googleapis-common-protos-1.76.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 176596
+    checksum: sha256:0c39223b24d0d0d774a4b18f7903232ccbca5e78d518594cb37385e8ca4c40fd
+    name: python3.12-googleapis-common-protos
+    evr: 1.76.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-gunicorn-26.2.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 803530
+    checksum: sha256:525de8c6fad733e2cdd8656b21634ae1bb4124fb407c03e0ea8735c62695f30e
+    name: python3.12-gunicorn
+    evr: 26.2.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-humanfriendly-10.0-10.el10.src.rpm
+    repoid: pulpcore-source
+    size: 371755
+    checksum: sha256:f5228f0ee11a82117bb802cbd646608b2eb00b194e776650d937de5329ba1fbb
+    name: python3.12-humanfriendly
+    evr: 10.0-10.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-id-1.6.1-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 32447
+    checksum: sha256:91628de305ddfa00bbdc2b672f9f7c3e5c85a2575a534f4dc77b5e4068f85508
+    name: python3.12-id
+    evr: 1.6.1-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-idna-3.20-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 222636
+    checksum: sha256:68642dba2713e5b841962e41b38e731cf46783c977f2b06755f242b2f85f8a8c
+    name: python3.12-idna
+    evr: 3.20-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-importlib-metadata-10.1.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 86725
+    checksum: sha256:15875bff5eeb485ee171ca1906b06261b087decca0e1a18f5e023f4b3a3a8301
+    name: python3.12-importlib-metadata
+    evr: 10.1.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-importlib-resources-6.4.5-4.el10.src.rpm
+    repoid: pulpcore-source
+    size: 60692
+    checksum: sha256:9b19c828f870c83a36bd43c740e23c07f584a767fd38cc1f853d8095582e4178
+    name: python3.12-importlib-resources
+    evr: 6.4.5-4.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-inflection-0.5.1-9.el10.src.rpm
+    repoid: pulpcore-source
+    size: 25665
+    checksum: sha256:f9424c2486855835ae93ed7881da49625bb149e5b4afca8b48d254dab97de4f1
+    name: python3.12-inflection
+    evr: 0.5.1-9.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-jinja2-3.1.6-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 262069
+    checksum: sha256:0d3498982054f8a8f648ea53effb5cac5945cdcd4c056971f17f98c47bbebf48
+    name: python3.12-jinja2
+    evr: 3.1.6-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-jq-1.12.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 1977374
+    checksum: sha256:8a166c89655063b52fccce3055436de7ec24e4e89a960ec0637528d861f74e9b
+    name: python3.12-jq
+    evr: 1.12.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-json_stream-2.5.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 53785
+    checksum: sha256:124d798247978675aacc8a2faef6ca8fb915c0bf8db1859502fd834ae37da1ee
+    name: python3.12-json_stream
+    evr: 2.5.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-json_stream_rs_tokenizer-0.5.4-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 64745
+    checksum: sha256:fec446c71b67a158965e5bb3bd435280dd414ecafd58ea8720a959f4478e7b87
+    name: python3.12-json_stream_rs_tokenizer
+    evr: 0.5.4-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-mailbits-0.2.1-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 50020
+    checksum: sha256:933b4a4399d080d128efa39ecff1da5a0e890612583bdc28406f448ea0d5dd1a
+    name: python3.12-mailbits
+    evr: 0.2.1-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-markdown-3.11.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 497094
+    checksum: sha256:d844684f5321706d7617d1f362a9ca07b63d323f33d7b59fd5e8a3eedf08c967
+    name: python3.12-markdown
+    evr: 3.11.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-markdown-it-py-2.2.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 82091
+    checksum: sha256:b803fe1f9ec31caa5ed37d5a4dc59a4500e946040d91009fc4d796bbf211f045
+    name: python3.12-markdown-it-py
+    evr: 2.2.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-markuppy-1.18-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 21952
+    checksum: sha256:74850bda7a4120a73069a5120924c3849fa944f54a5ceff6d408e973ce7b606e
+    name: python3.12-markuppy
+    evr: 1.18-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-markupsafe-3.0.4-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 166755
+    checksum: sha256:96faf2d950b95fc4ad63f7bf5ab8cb6951d1d69c16b1f5fc1771bfb669f2eccb
+    name: python3.12-markupsafe
+    evr: 3.0.4-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-mccabe-0.7.0-6.el10.src.rpm
+    repoid: pulpcore-source
+    size: 19982
+    checksum: sha256:88adb9860f6ed9678f69c8bb57b84a2b6f821227c05941474a9db3a0a71a4416
+    name: python3.12-mccabe
+    evr: 0.7.0-6.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-mdurl-0.1.2-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 23248
+    checksum: sha256:70b9537780fa3e404db9b688e1a8db22ec39f79bc1f183529329c26b4fe68930
+    name: python3.12-mdurl
+    evr: 0.1.2-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-multidict-6.7.1-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 114655
+    checksum: sha256:ac3928457c533bbb98607d45efa977dce1596450fe5f4f2c8a9f1884daf4c948
+    name: python3.12-multidict
+    evr: 6.7.1-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-mypy-extensions-1.2.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 21989
+    checksum: sha256:b831ff9080b347da5a94527432185725cade2b4b2f20e69fa3212e1f958b73d0
+    name: python3.12-mypy-extensions
+    evr: 1.2.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-nh3-0.3.7-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 4291220
+    checksum: sha256:e83cf7570df25330e9e02d87d6553bc2c0ee97d54a005fa7f2b88c3dd1a7c7aa
+    name: python3.12-nh3
+    evr: 0.3.7-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-odfpy-1.4.1-12.el10.src.rpm
+    repoid: pulpcore-source
+    size: 726706
+    checksum: sha256:56845f60d7ada6fa70cb6d7e5a55ae09f558bdde7b80d2395b0aa9daee29e2d0
+    name: python3.12-odfpy
+    evr: 1.4.1-12.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-openpyxl-3.1.5-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 197349
+    checksum: sha256:90769ba7dbf302b8990caaade9e86c63c26bb96488c132100cc75c887912df6d
+    name: python3.12-openpyxl
+    evr: 3.1.5-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_api-1.45.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 91308
+    checksum: sha256:e542b56f086132040d90537a0e1f8e1f93463ba083eb846ca48c3c50c2f638b9
+    name: python3.12-opentelemetry_api
+    evr: 1.45.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_exporter_http_transport-0.66b2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 29323
+    checksum: sha256:2f301bf7c08ba2cee8203e1c2b3ba683e6a13b07bd9f8442ab759f94e4784cdb
+    name: python3.12-opentelemetry_exporter_http_transport
+    evr: 0.66b2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_exporter_otlp_common-0.66b2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 31012
+    checksum: sha256:64b023111a36250b932c5fe64b314a92afa07b3f2409d52a8e9979ba5e36a1a4
+    name: python3.12-opentelemetry_exporter_otlp_common
+    evr: 0.66b2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_exporter_otlp_proto_common-1.45.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 37144
+    checksum: sha256:d73f970223051ad6d417dd145d292524d4c6ca8bf0a59a453a698128f320a04d
+    name: python3.12-opentelemetry_exporter_otlp_proto_common
+    evr: 1.45.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_exporter_otlp_proto_http-1.45.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 48734
+    checksum: sha256:53f5623f8dd9fbfaeb21d1015937d96f3789c0eef8379a8f842808ee0fe5a382
+    name: python3.12-opentelemetry_exporter_otlp_proto_http
+    evr: 1.45.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_proto-1.45.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 64352
+    checksum: sha256:8b09968b64695a92a3525e773b58dd5b04976719875cacd274c76d7a6d2f0799
+    name: python3.12-opentelemetry_proto
+    evr: 1.45.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_sdk-1.45.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 239432
+    checksum: sha256:10baf2fbffd4c02f7e62bf1b35657854f8cfec0cabe3337f34ff14f0dcaada52
+    name: python3.12-opentelemetry_sdk
+    evr: 1.45.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-opentelemetry_semantic_conventions-0.66b2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 168428
+    checksum: sha256:a0a02b5fdc83defc65ae32a7f0dadd3795f76880350deabce180f403054eb737
+    name: python3.12-opentelemetry_semantic_conventions
+    evr: 0.66b2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-packaging-26.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 332395
+    checksum: sha256:27c0f0852965154e3d0aeb3d73741813bf190aefbae9d8a2a62de0826c1184a6
+    name: python3.12-packaging
+    evr: 26.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-parsley-1.3-8.el10.src.rpm
+    repoid: pulpcore-source
+    size: 109722
+    checksum: sha256:b8af2bd7e0ad31b629b7ee799defc7e9834a37931692d743d6d81c318271f96d
+    name: python3.12-parsley
+    evr: 1.3-8.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pathspec-1.1.1-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 145673
+    checksum: sha256:8e35fdc25bb779c304105ec1b31cfc60817af903dd69459b5f8fba994390e578
+    name: python3.12-pathspec
+    evr: 1.1.1-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pbr-7.1.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 152029
+    checksum: sha256:15c6cf2ce5d36dbc16a764e9983218ef4341ab252b6ceee46ab616c12fd54a18
+    name: python3.12-pbr
+    evr: 7.1.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pillow-13.0.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 46942444
+    checksum: sha256:a5e46287d669e1722a0082e71e5e8cd3d8ffa3c2e424277cb6e88f16d0986fdd
+    name: python3.12-pillow
+    evr: 13.0.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pkginfo-1.12.1.2-4.el10.src.rpm
+    repoid: pulpcore-source
+    size: 463995
+    checksum: sha256:9b72b564f0a20823665908f504a35417a178ff1644521be298325b2cbaed13b3
+    name: python3.12-pkginfo
+    evr: 1.12.1.2-4.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-platformdirs-4.14.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 91914
+    checksum: sha256:9292cdcff5e21f1d029db263cce5d7815e2b80f1629c4e9f679f62eeaa2b96c9
+    name: python3.12-platformdirs
+    evr: 4.14.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-productmd-1.33-10.el10.src.rpm
+    repoid: pulpcore-source
+    size: 159311
+    checksum: sha256:43af125c99b05cdef532b04c6f51af4d275e255356933db0435dd80f309bdf74
+    name: python3.12-productmd
+    evr: 1.33-10.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-propcache-0.5.4-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 80904
+    checksum: sha256:91bedfc8934a393a2e099d2bcc5659f83f24d597b3b9b671e9f2d884f683f20d
+    name: python3.12-propcache
+    evr: 0.5.4-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-protobuf-7.36.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 530395
+    checksum: sha256:41f1d86a413278e624863cf154a6251dbdbb1c30e8224b3ec2ece7e26cc7ab7e
+    name: python3.12-protobuf
+    evr: 7.36.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-psycopg-3.3.8-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 187993
+    checksum: sha256:961ab567d60ec8e6434658669ae41a92ff097f815009b40429f6e31dd05aac50
+    name: python3.12-psycopg
+    evr: 3.3.8-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-psycopg_c-3.3.8-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 721619
+    checksum: sha256:2e2e208e5e09d2d0a464f00557a536092c8d584bbc9162aa44443f4bc96576da
+    name: python3.12-psycopg_c
+    evr: 3.3.8-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-ansible-0.30.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 191472
+    checksum: sha256:5e63aaebf8ef882b83b32a8fdbf2b7f94de6a7c392e9e31098b45c9085450e31
+    name: python3.12-pulp-ansible
+    evr: 1:0.30.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-container-2.29.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 213381
+    checksum: sha256:935dd6d735c1914ddcce75e6d8d964be5e6e50c0afca01ddfe06acf44175804a
+    name: python3.12-pulp-container
+    evr: 2.29.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-deb-3.11.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 424150
+    checksum: sha256:a8feaa6fb936813480285ee0da19db320b9da1815b3dd2d9acb89c47e884fee2
+    name: python3.12-pulp-deb
+    evr: 3.11.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-glue-0.41.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 76335
+    checksum: sha256:9ed88bb198c219d828e7abce2fd7677a502bb7391324dc5cdbb6028dd7eaaa44
+    name: python3.12-pulp-glue
+    evr: 0.41.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-ostree-2.6.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 60233
+    checksum: sha256:b222b1341b1a0e92f5d648bcc91c677b63cbb94ee290708366f66a754ad65b74
+    name: python3.12-pulp-ostree
+    evr: 2.6.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-python-3.36.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 141012
+    checksum: sha256:c1763d8cb0940735ab647d3cf1640e996a392ef1bd6f0842376585c8fbfac531
+    name: python3.12-pulp-python
+    evr: 3.36.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-rpm-3.39.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 358900
+    checksum: sha256:fe8620819e9abc5163b5d5825b7fb1e10650a8a764581b101cad3c06fef2490f
+    name: python3.12-pulp-rpm
+    evr: 3.39.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulp-smart-proxy-0.6.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 30651
+    checksum: sha256:e0a5057e88af00a8b21698d78346b49a2e3b135a0eed8c26ed74703ae83d9ffb
+    name: python3.12-pulp-smart-proxy
+    evr: 0.6.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pulpcore-3.118.7-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 814107
+    checksum: sha256:337460595baa67011c9149b974ec318c0c0d3b078d596e468179eb73d69833b3
+    name: python3.12-pulpcore
+    evr: 3.118.7-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pyOpenSSL-26.4.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 195430
+    checksum: sha256:e663bcf74229f09eb72b7df48504a0f2f5def3ae4588b890d7c1cffc189e2190
+    name: python3.12-pyOpenSSL
+    evr: 26.4.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pyasn1-0.6.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 171140
+    checksum: sha256:cd9da6c5528d3d4c01a069cb6f6b8d00c967e233a1f80cf12d01dfd86258d31c
+    name: python3.12-pyasn1
+    evr: 0.6.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pycairo-1.29.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 681354
+    checksum: sha256:75abb363929346bc927abb1f0ef8d7aed10a2566c46b1f13e0da631d0e7778da
+    name: python3.12-pycairo
+    evr: 1.29.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pycodestyle-2.11.1-4.el10.src.rpm
+    repoid: pulpcore-source
+    size: 50175
+    checksum: sha256:d02b34925bb519f5833c3417307e4f12bc9f7d08d5c01272a252c0031e70eb7a
+    name: python3.12-pycodestyle
+    evr: 2.11.1-4.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pycparser-3.12-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 175039
+    checksum: sha256:df3d41beb6e2e82bf3e7d6c390af6e36726316b9f8921ff9eff08ff5b2213b5e
+    name: python3.12-pycparser
+    evr: 3.12-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pydantic-2.14.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 944406
+    checksum: sha256:4a53498364e451e0b6ebdadc91afe4639e0c66ddbdfd783b4d4ce50dcdf1b52d
+    name: python3.12-pydantic
+    evr: 2.14.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pydantic-core-2.50.4-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 9171500
+    checksum: sha256:cca2b3784ff53f208394aa280e5938d62ddc5ab8187b160cca52770b611dc93b
+    name: python3.12-pydantic-core
+    evr: 2.50.4-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pyflakes-3.1.0-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 74599
+    checksum: sha256:0a6fb192fbcd4e7590876fe645ec827c6523026fb880f7a80444f692588db4e0
+    name: python3.12-pyflakes
+    evr: 3.1.0-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pygments-2.21.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 5016281
+    checksum: sha256:d1f0acd7ff100682bf3473d5487069891631f84f27a4f8d0ae1ef578b001c9d2
+    name: python3.12-pygments
+    evr: 2.21.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pygobject-3.50.2-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 1103764
+    checksum: sha256:f02770e1ad31f13c53a812f06df7c2d0e471b4309afce5e51d5096bd40b1d8c8
+    name: python3.12-pygobject
+    evr: 1:3.50.2-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pygtrie-2.6.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 71435
+    checksum: sha256:c69a723c4df3c1141b05f933af7e31dc0581a7ba94ec347550fcfcbe9db355ac
+    name: python3.12-pygtrie
+    evr: 2.6.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pyjwt-2.15.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 140460
+    checksum: sha256:70bc8995c3e6d7b927af3a26d5b7e3d643b0dc35d984aa006aef447f23665932
+    name: python3.12-pyjwt
+    evr: 2.15.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pyparsing-3.3.3-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 1068382
+    checksum: sha256:9d5fa4bd4012c2ac27c34af998faadd4bbe9bf2b542f3bb6c06d40dd45737819
+    name: python3.12-pyparsing
+    evr: 3.3.3-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pypi-attestations-0.0.28-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 141134
+    checksum: sha256:e4b549cb078a4046d13ce81ea02312b4225c124ea14aa9115eb85af9bd358c8d
+    name: python3.12-pypi-attestations
+    evr: 0.0.28-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pypi-simple-1.8.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 73852
+    checksum: sha256:8a942f2fd002d36953bc31e6c050f56ec005e924592a8c58b8f6e180ec07c529
+    name: python3.12-pypi-simple
+    evr: 1.8.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pysequoia-0.1.36-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 15838216
+    checksum: sha256:e244fc3cf7d24c839d770d340899f179922db48a05f665aa3708ee0bd79ad919
+    name: python3.12-pysequoia
+    evr: 0.1.36-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-pyyaml-6.0.3-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 139464
+    checksum: sha256:2d7d16aa56bd006a445c56f7ea89e0d48f627822f1c62b7df2659f8fc17a3e4d
+    name: python3.12-pyyaml
+    evr: 6.0.3-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-redis-8.1.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 5273662
+    checksum: sha256:a926ead29ee9cb1c0a046fb73e68a8672569410c2c43f7f79ae765a04efd5ebf
+    name: python3.12-redis
+    evr: 8.1.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-requests-2.33.1-3.el10.src.rpm
+    repoid: pulpcore-source
+    size: 153166
+    checksum: sha256:89c79ade037adc529539678d943eb3a54d7447586f335b6217ef29ab1d884f69
+    name: python3.12-requests
+    evr: 2.33.1-3.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-requirements-parser-0.2.0-9.el10.src.rpm
+    repoid: pulpcore-source
+    size: 16585
+    checksum: sha256:4f3d52360dccf75a56c53ec4964da4d29a5ad4bfee40d41d40d86c9e551f143a
+    name: python3.12-requirements-parser
+    evr: 0.2.0-9.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-rfc3161-client-1.0.9-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 10100357
+    checksum: sha256:5bed4834dd99ed636928265d4fec26e28b9945052a1800e1b29c7c35c2a8acd3
+    name: python3.12-rfc3161-client
+    evr: 1.0.9-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-rfc3986-2.0.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 63541
+    checksum: sha256:d239c8901602d2da487f739f1a19204797f661dab7b3049bac43b2ab53f98016
+    name: python3.12-rfc3986
+    evr: 2.0.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-rfc8785-0.1.4-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 28910
+    checksum: sha256:0ee268577de02ccf0527fb28a634cd262d3ab3caefd050bf3dd7b8704951c9e0
+    name: python3.12-rfc8785
+    evr: 0.1.4-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-rich-15.0.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 248968
+    checksum: sha256:e96f434b3875f209e0c6c166f0142c33730a1227cd08ef2be671db4ab838051d
+    name: python3.12-rich
+    evr: 15.0.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-rpm-rs-0.30.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 38576415
+    checksum: sha256:c2f6fd85a3b080945aa0e0d62b9b042bb30eae252fcacec91fdda04d0bf446cc
+    name: python3.12-rpm-rs
+    evr: 0.30.2-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-rpmrepo-metadata-0.9.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 26871358
+    checksum: sha256:db6aee2a21877d0439ed96495e948dde7203c6868b0c23fd55aca59d7cbacdca
+    name: python3.12-rpmrepo-metadata
+    evr: 0.9.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-ruamel-yaml-0.19.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 161326
+    checksum: sha256:468a996b10e6d6ceb15c7d62d6c861223e52ff31b9f1f0d90a80fb1bbcf86267
+    name: python3.12-ruamel-yaml
+    evr: 0.19.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-securesystemslib-1.6.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 967046
+    checksum: sha256:579540accaa075e62462e0e84841d331dfdf31702cd876a197b82dd973b44982
+    name: python3.12-securesystemslib
+    evr: 1.6.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-semantic-version-2.10.0-7.el10.src.rpm
+    repoid: pulpcore-source
+    size: 63177
+    checksum: sha256:3006821e5f08e95e228b39d81b2c65c0c54b1238490fc976a113d333c7f50b45
+    name: python3.12-semantic-version
+    evr: 2.10.0-7.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-sigstore-4.5.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 108634
+    checksum: sha256:b679a6ee9250301af5d02ccdb2f4a09beb165eb69533361fda9ae58eff057987
+    name: python3.12-sigstore
+    evr: 4.5.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-sigstore-models-0.0.6-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 22012
+    checksum: sha256:b9afe2ac30fac8cc9b141d6a49f8941d0753375702ed1d5efd8b033cccb5f36f
+    name: python3.12-sigstore-models
+    evr: 0.0.6-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-sigstore-rekor-types-0.0.18-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 30985
+    checksum: sha256:be91fedc055e548f44b2928ad19898a54d1b9938af93f232709f45ad9240c6ad
+    name: python3.12-sigstore-rekor-types
+    evr: 0.0.18-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-smmap-5.0.3-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 33404
+    checksum: sha256:1119daf50591d2296bf11a4c1d4b3ca33491871a80eafe8ce6f61be061629811
+    name: python3.12-smmap
+    evr: 5.0.3-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-socks-3.2.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 58614
+    checksum: sha256:41b1b6cc6cc1c2c1d18ad2c551ac0b17be931bacaa338d0f2b91fcdc4aefc778
+    name: python3.12-socks
+    evr: 3.2.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-soupsieve-4.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 180499
+    checksum: sha256:addadfb3608d172b2571a0e7d2287f5c77c2f324a2986d140a3d3d82f596f70a
+    name: python3.12-soupsieve
+    evr: 4.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-sqlparse-0.6.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 201238
+    checksum: sha256:dfb82185b62672475536503b3af25f09fdfb030cb995b7c3e601a21367e0c433
+    name: python3.12-sqlparse
+    evr: 0.6.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-subprocess-tee-0.4.2-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 30113
+    checksum: sha256:27f347dc35bc46f8a78f0fc869732f051525fda31ddb9965d9586ea92dc38ad4
+    name: python3.12-subprocess-tee
+    evr: 0.4.2-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-tablib-3.10.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 144692
+    checksum: sha256:4db5d94b2ad39a09ef54e2346d2ebf81bd51470013a2bc115faaccfdc7c2cb85
+    name: python3.12-tablib
+    evr: 3.10.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-tuf-7.0.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 289736
+    checksum: sha256:cbb93627be732469fbb024ec04e33ff29556d335048a8f695743a33abf882c74
+    name: python3.12-tuf
+    evr: 7.0.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-typing-extensions-4.16.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 131739
+    checksum: sha256:45d671ec8bb44434a8e29597679d0f7652fa99a4f50008f547adda8922599a6e
+    name: python3.12-typing-extensions
+    evr: 4.16.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-typing-inspection-0.4.5-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 97361
+    checksum: sha256:81a62feb5dc7cb31e72e8c9c99b158f706f563745ae48553289f27726210f97f
+    name: python3.12-typing-inspection
+    evr: 0.4.5-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-uritemplate-4.2.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 44297
+    checksum: sha256:ec1fe9ddab067dde3b62ea39df4184f110a78198c90295f199a53152d6698479
+    name: python3.12-uritemplate
+    evr: 4.2.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-url-normalize-3.0.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 45673
+    checksum: sha256:242eb6cc7136b2200bdbf4866cda75b1283d99ead59d545d6982067e7fd463dd
+    name: python3.12-url-normalize
+    evr: 3.0.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-urllib3-2.8.0-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 477050
+    checksum: sha256:4cbc66bcede46e610e2596d628bf032c82f47cf95ec41825ce39e7d01ab0cfb0
+    name: python3.12-urllib3
+    evr: 2.8.0-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-uuid6-2025.0.1-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 30678
+    checksum: sha256:5fa406e35e5496d1ecd2b637ebc49b070d61cddd81ff4d005ca551a68f43bc5b
+    name: python3.12-uuid6
+    evr: 2025.0.1-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-wcmatch-12.0.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 181149
+    checksum: sha256:073379ba62eb7020c49ea4080618274f3474ee5e76bd7e573d2ae7a814d9aaff
+    name: python3.12-wcmatch
+    evr: 12.0.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-whitenoise-6.12.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 44328
+    checksum: sha256:5d63bd6f1c374943b9697ae391951090016bab9d959b66426686e434ff04f6a2
+    name: python3.12-whitenoise
+    evr: 6.12.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-yamllint-1.38.0-2.el10.src.rpm
+    repoid: pulpcore-source
+    size: 156441
+    checksum: sha256:fc47e97b6ce3569413659e2d03bfef3aa6161040dcf9e9be180d52ce953031f8
+    name: python3.12-yamllint
+    evr: 1.38.0-2.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-yarl-1.25.1-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 263838
+    checksum: sha256:c4bdc37aafbf437e04f8797d490302d56ccea55dea27a8a822521967e6d13915
+    name: python3.12-yarl
+    evr: 1.25.1-1.el10
+  - url: https://yum.theforeman.org/pulpcore/3.118/el10/source/python3.12-zipp-4.1.2-1.el10.src.rpm
+    repoid: pulpcore-source
+    size: 46487
+    checksum: sha256:08aed3799d2e6942712612c9bc7dab08a71c66e993671fe3e17772d79104936b
+    name: python3.12-zipp
+    evr: 4.1.2-1.el10
+  module_metadata: []
