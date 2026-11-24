@@ -7,7 +7,7 @@ on:
       foremanctl_ref:
         description: 'foremanctl branch or tag to test against'
         required: false
-        default: 'master'
+        default: "3.3-stable"
   pull_request:
     paths:
       - 'images/pulp/**'
@@ -21,8 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CONTAINER_TAG_STREAM: nightly
-  PULP_IMAGE_TAG: foreman-nightly
+  CONTAINER_TAG_STREAM: "5.1"
+  PULP_IMAGE_TAG: "foreman-5.1"
 
 jobs:
   integration:
