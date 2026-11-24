@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
   annotations:
+    pipelinesascode.tekton.dev/task: "github-add-comment:0.3.0"
     build.appstudio.openshift.io/repo: https://github.com/theforeman/pulp-oci-images?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
@@ -31,6 +32,12 @@ spec:
     value: images/pulp/Containerfile
   - name: path-context
     value: images/pulp
+  - name: hermetic
+    value: "true"
+  - name: build-args
+    value: [USE_HERMETO_REPOS=true]
+  - name: prefetch-input
+    value: '[{"type":"rpm","path":"images/pulp"}]'
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
@@ -75,7 +82,7 @@ spec:
         1h, 2d, 3w for hours, days, and weeks, respectively.
       name: image-expires-after
       type: string
-    - default: "false"
+    - default: "true"
       description: Build a source image.
       name: build-source-image
       type: string
@@ -198,7 +205,7 @@ spec:
         - name: name
           value: prefetch-dependencies-oci-ta
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies-oci-ta:0.10.1@sha256:c09c1c3ced67fb8740b2925a7de09c0810d4e8c8f148d41c21ffe37810d85c62
+          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies-oci-ta:0.11.0@sha256:6c63bc1ef05e823bb07fe73b4626a82b602ee3e6d3315fc5afa58dd5c532c270
         - name: kind
           value: task
         resolver: bundles
@@ -247,7 +254,7 @@ spec:
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
-        value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+        value: $(tasks.prefetch-dependencies.results.PREFETCH_ARTIFACT)
       runAfter:
       - prefetch-dependencies
       taskRef:
@@ -255,7 +262,7 @@ spec:
         - name: name
           value: buildah-oci-ta
         - name: bundle
-          value: quay.io/konflux-ci/tekton-catalog/task-buildah-oci-ta:0.10.5@sha256:5fcf620537b0dece56a9c9a8090ce7592a874da92cc2a5d398abdc2382eb8a3c
+          value: quay.io/foreman/tekton-catalog/task-buildah-oci-ta@sha256:2b5c6df75cf64c59f7725a6515b3d2c260fb487425ccc33bb907d22a350efc55
         - name: kind
           value: task
         resolver: bundles
@@ -290,7 +297,7 @@ spec:
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
-        value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+        value: $(tasks.prefetch-dependencies.results.PREFETCH_ARTIFACT)
       runAfter:
       - build-image-index
       taskRef:
@@ -382,7 +389,7 @@ spec:
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
-        value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+        value: $(tasks.prefetch-dependencies.results.PREFETCH_ARTIFACT)
       runAfter:
       - build-image-index
       taskRef:
@@ -432,7 +439,7 @@ spec:
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
-        value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+        value: $(tasks.prefetch-dependencies.results.PREFETCH_ARTIFACT)
       runAfter:
       - build-image-index
       taskRef:
@@ -460,7 +467,7 @@ spec:
       - name: SOURCE_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
-        value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+        value: $(tasks.prefetch-dependencies.results.PREFETCH_ARTIFACT)
       runAfter:
       - build-image-index
       taskRef:
@@ -483,6 +490,9 @@ spec:
         value: $(tasks.build-image-index.results.IMAGE_URL)
       - name: IMAGE_DIGEST
         value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+      - name: ADDITIONAL_TAGS
+        value:
+        - "pull-request-{{pull_request_number}}"
       runAfter:
       - build-image-index
       taskRef:
@@ -494,6 +504,26 @@ spec:
         - name: kind
           value: task
         resolver: bundles
+    - name: post-image-tag
+      runAfter:
+      - apply-tags
+      taskRef:
+        name: github-add-comment
+      params:
+      - name: REQUEST_URL
+        value: "{{ repo_url }}/pull/{{ pull_request_number }}"
+      - name: COMMENT_OR_FILE
+        value: |
+          :package: **Build complete!**
+
+          Pull this image with:
+          `podman pull quay.io/foreman/stage/pulp:pull-request-{{ pull_request_number }}`
+
+          Built from commit: [`{{ revision }}`]({{ repo_url }}/commit/{{ revision }})
+      - name: GITHUB_TOKEN_SECRET_NAME
+        value: "{{ git_auth_secret }}"
+      - name: GITHUB_TOKEN_SECRET_KEY
+        value: "git-provider-token"
     - name: push-dockerfile
       params:
       - name: IMAGE
