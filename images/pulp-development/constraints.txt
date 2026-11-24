@@ -1,1 +1,0 @@
-pulp-smart-proxy @ file:///tmp/pulp_smart_proxy
