@@ -80,7 +80,8 @@ jobs:
       - name: Load images into VM
         working-directory: foremanctl
         run: |
-          vagrant ssh quadlet -- sudo podman load -i /vagrant/pulp-image.tar
+          vagrant upload pulp-image.tar quadlet
+          vagrant ssh quadlet -- sudo podman load -i /home/vagrant/pulp-image.tar
 
       - name: Free disk space
         run: |
