@@ -1,5 +1,9 @@
 FROM quay.io/foreman/base@sha256:9c1fa667f1b0c31bf520a4b14569c9d3c5eaf4b83428a40dd9cf5381381109be
 
+LABEL org.opencontainers.image.title="Pulp" \
+    org.opencontainers.image.description="Pulp is a platform for managing software package repositories." \
+    org.opencontainers.image.licenses="GPL-2.0-or-later"
+
 ARG VERSION=3.118
 ARG USE_HERMETO_REPOS=false
 
