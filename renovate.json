@@ -2,17 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>theforeman/theforeman-rel-eng-konflux//renovate/konflux-tekton"
-  ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "managerFilePatterns": [
-        "/(^|/)Containerfile\\.digest$/"
-      ],
-      "matchStrings": [
-        "(?<depName>[\\w\\-\\.\\/]+):?(?<currentValue>[\\w\\-\\.]+)?@(?<currentDigest>sha256:[a-f0-9]+)"
-      ],
-      "datasourceTemplate": "docker"
-    }
   ]
 }
