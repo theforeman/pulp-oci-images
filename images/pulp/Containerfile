@@ -1,4 +1,4 @@
-FROM quay.io/foreman/base@sha256:9c1fa667f1b0c31bf520a4b14569c9d3c5eaf4b83428a40dd9cf5381381109be
+FROM quay.io/foreman/base@sha256:a20af22f7fa89a0a9c4c8c6e1f255b3d3bd7da34603f0563a0b0db0478da0376
 
 LABEL org.opencontainers.image.title="Pulp" \
     org.opencontainers.image.description="Pulp is a platform for managing software package repositories." \
